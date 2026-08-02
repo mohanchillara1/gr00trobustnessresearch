@@ -4,21 +4,33 @@ GR00T Research — TFRecord to LeRobot Conversion + Visual Degradation Pipeline
 ==============================================================================
 Reads LIBERO alphabet_soup episodes from TFRecord format.
 Converts to LeRobot parquet + mp4 format that GR00T can train on.
-Applies 6 visual degradation conditions to the video stream only.
+Applies 5 visual degradations to the video stream, plus a clean baseline.
 Action labels and state data are NEVER modified.
 
-Output: 6 dataset folders at /workspace/datasets/condition_*/
-  A_clean      — no modification (baseline)
-  B_dim        — brightness x 0.30
-  C_rotation   — 30 degree affine rotation
-  D_blur       — Gaussian blur kernel=11
-  E_combined   — dim + rotation + blur together
-  F_diverse    — 50% clean + 50% blurred per episode
+Output: 6 dataset folders at /workspace/datasets/<condition>/
+  A_clean      no modification (baseline)
+  B_dim        brightness x 0.30
+  C_rotation   30 degree affine rotation
+  D_blur       Gaussian blur kernel=11
+  E_combined   dim + rotation + blur together
+  F_diverse    50% clean + 50% blurred per episode
 
 Usage:
   python3 convert_and_degrade.py
 
-Author: GR00T Research Team (Mohan Jr. + Aahan + Dr. Chiruvelli + Dr. Smith)
+KNOWN ISSUES with this file, see the "Known limitations" section of README.md:
+  1. apply_rotation() pads with cv2.BORDER_REFLECT, so a rotated frame carries
+     mirrored copies of the scene in its corners. Condition C therefore changes
+     two things at once, viewpoint and image content, and the 0.00 success rate
+     it produces cannot be attributed to the rotation alone. A BORDER_CONSTANT
+     rerun is planned.
+  2. This is the single-camera version of the converter. It writes only
+     observation.images.image. GR00T N1.7 also needs the wrist stream, and the
+     fix for that (Bug 2 in the README) is not applied here.
+
+Authors:
+  Mohan Chillara  (Wakeland High School, Frisco TX)
+  Aahan Kumbham   (Panther Creek High School, Frisco TX)
 """
 
 import os
@@ -61,7 +73,14 @@ def apply_dim(frame):
     return (frame.astype(np.float32) * 0.30).clip(0, 255).astype(np.uint8)
 
 def apply_rotation(frame):
-    """Condition C — 30 degree affine rotation."""
+    """
+    Condition C: 30 degree affine rotation.
+
+    CONFOUND: BORDER_REFLECT mirrors the scene into the corners the rotation
+    empties out, so the frame gains duplicated table and object pixels on top
+    of the viewpoint change. Switching this to cv2.BORDER_CONSTANT is the
+    one-line change needed to separate the two effects. See README.md.
+    """
     h, w = frame.shape[:2]
     M = cv2.getRotationMatrix2D((w / 2, h / 2), 30, 1.0)
     return cv2.warpAffine(frame, M, (w, h), flags=cv2.INTER_LINEAR,
