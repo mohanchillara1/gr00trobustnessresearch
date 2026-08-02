@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+title: >-
+  Training Data Visual Degradation and Object Transfer in GR00T N1.7:
+  A Systematic Study
+message: If you use this code or data, please cite it as below.
+type: software
+authors:
+  - given-names: Mohan
+    family-names: Chillara
+    affiliation: Wakeland High School, Frisco, TX
+  - given-names: Aahan
+    family-names: Kumbham
+    affiliation: Panther Creek High School, Frisco, TX
+repository-code: https://github.com/mohanchillara1/gr00trobustnessresearch
+license: MIT
+year: 2026
+abstract: >-
+  Six GR00T N1.7 checkpoints fine-tuned on the same LIBERO-Object
+  demonstrations, differing only in the visual quality of the training video.
+  Includes the conversion and degradation pipeline, the evaluation scripts, the
+  raw evaluation logs, and the Object Transfer Score results for four novel
+  objects.
+keywords:
+  - robot-learning
+  - vision-language-action
+  - GR00T
+  - LIBERO
+  - robustness
+  - generalization
