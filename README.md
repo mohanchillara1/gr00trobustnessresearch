@@ -215,7 +215,7 @@ The first conversion pass extracted only the main camera. GR00T N1.7 needs both 
 
 ## Acknowledgments
 
-Dr. Aravind Chiruvelli, Sr. Director of Data Science at Walmart Global Technology, for guidance on the project.
+Dr. Aravind Chiruvelli, Sr. Director of Data Science at Walmart Global Technology, who proposed the object-transfer question this study is built around and reviewed the experimental design. He asked to be acknowledged rather than listed as an author.
 
 Dr. Alice E. Smith, Auburn University, NAE member and IEEE Life Fellow, for review of the methodology.
 
