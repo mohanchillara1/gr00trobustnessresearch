@@ -1,3 +1,26 @@
+#!/usr/bin/env bash
+#
+# Novel-object evaluation for the GR00T N1.7 visual-degradation study.
+#
+# Runs each of the four surviving checkpoints (A_clean, B_dim, D_blur,
+# F_diverse) against four LIBERO objects that never appeared in fine-tuning,
+# 50 episodes per pair, and appends every rollout log to
+# /workspace/novel_obj_results.txt. C_rotation and E_combined are excluded
+# because their training-object success rate is 0.00, which makes the Object
+# Transfer Score undefined.
+#
+# One run per pair, not three. The training-object numbers are averaged over
+# three trials; these are not.
+#
+# Expects a policy server reachable on 127.0.0.1:5555 and Isaac-GR00T at
+# /Isaac-GR00T. Run from the Isaac-GR00T checkout root.
+#
+# Authors:
+#   Aahan Kumbham  (Panther Creek High School, Frisco TX) - novel-object
+#                  evaluation and OTS computation
+#   Mohan Chillara (Wakeland High School, Frisco TX) - fine-tuning pipeline
+#                  and training-object evaluation
+
 export HF_HOME=/workspace/hf_cache
 export TRANSFORMERS_CACHE=/workspace/hf_cache
 export TMPDIR=/workspace/tmp
