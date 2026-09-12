@@ -20,11 +20,15 @@ Gymnasium's API documentation, verbatim:
 
 In LIBERO: `LiberoEnv.reset()` calls `self._env.seed(int(seed))` then `self._env.reset()` and never
 calls `set_init_state()`; and only the **first** reset of a rollout is seeded
-(`rollout_policy.py:302-309`). Every later episode therefore draws from a PRNG whose position
-depends on how many times it was advanced — i.e. on how many steps the policy took.
+(`rollout_policy.py:302-309`).
 
-This has never been filed as a LIBERO bug because it is **documented, intentional Gymnasium
-behaviour**, not a defect. That is also why it survived 15 months unnoticed.
+🔴 **SUPERSEDED 2026-09-12 19:32 UTC — the inference that used to sit here was wrong.** It read:
+*"Every later episode therefore draws from a PRNG whose position depends on how many times it was
+advanced — i.e. on how many steps the policy took."* **That does not follow.** A PRNG that is *not
+reset* simply continues deterministically, identically for every arm reaching the same point. The
+gymnasium run confirmed it: T2 and T4 both passed. Original wording kept above the line so the
+error stays visible. The live hypothesis is now **T5** (global-RNG consumption), not step count —
+see "Two runs" below.
 
 ## Why it supersedes the 2026-08-25 check
 
@@ -67,14 +71,15 @@ Open `eval_determinism_gate.ipynb` in Colab and run top to bottom. No phase swit
 | Test | What it checks | Prediction |
 |---|---|---|
 | **T1** | `seed(s)` + `reset()` twice in fresh envs → identical first observation? | PASS |
-| **T2** | reset *after* a rollout of K steps, no reseed → does the initial state depend on K? | **FAIL** |
+| **T2** | reset *after* a rollout of K steps, no reseed → does the initial state depend on K? | ~~**FAIL**~~ → **predicted FAIL, actually PASSED** |
 | **T3** | same as T2 but reseeding explicitly every episode | PASS — the fix |
 
 Plus a **control**: two runs of the *same* arm with the same K. If the control disagrees with
 itself, T2 is uninterpretable and the notebook says `INCONCLUSIVE` rather than claiming a result.
 
 **T2 failing is the finding, not a bug in this notebook.** Written down before the first run so it
-cannot be rationalised afterwards.
+cannot be rationalised afterwards. **It did not fail** — see "Two runs" below. The pre-registration
+is the only reason that was undeniable rather than quietly reframed.
 
 ## What "done" looks like
 
@@ -97,7 +102,7 @@ and the notebook prints one of four verdicts with a UTC timestamp:
 `mohanvault/01 Projects/Paper Choice 2026-09-12.md` §13.** A verdict that exists only in a Colab
 output has not happened.
 
-## If T2 fails
+## If T2 fails — ⚠️ moot for the gymnasium run, still live for the robosuite one
 
 Three things follow, in order:
 
@@ -107,12 +112,47 @@ Three things follow, in order:
 3. Only then is the renderer work (`../renderer-luminance-gate/`) worth building out, because a
    2×2 measured on a confounded harness measures nothing.
 
+## Two runs: gymnasium (done) and robosuite/LIBERO (built, not run)
+
+| Notebook | Stack | Status |
+|---|---|---|
+| `eval_determinism_gate.ipynb` | gymnasium MuJoCo | **RUN 2026-09-12 19:32 UTC** in the Composio workbench. Verdict **HARNESS SOUND**. |
+| **`robosuite_gate.ipynb`** | **robosuite 1.4.0 + LIBERO** | built, not run. Needs Colab (Python 3.12). |
+
+**The gymnasium run refuted the original hypothesis.** On `Reacher-v5`, T2 passed: stepping does
+not advance the env PRNG, so the next episode is independent of step count. T4 passed too: a
+6-reset run and a 5-reset run share the same first five episodes. **The predicted failure did not
+happen**, and confidence in the eval-nondeterminism paper dropped from MEDIUM-HIGH to LOW.
+
+That result does not transfer, and reading LIBERO's source says why:
+
+1. LIBERO never calls gymnasium's `reset(seed=)`. `ControlEnv.seed(s)` calls robosuite's
+   `self.env.seed(s)`, and `reset()` takes no seed.
+2. **robosuite 1.4's placement samplers draw from the GLOBAL `np.random`**, which any code in the
+   process can advance. A per-env PRNG cannot be disturbed that way. Different failure mode.
+3. 🔴 **`ControlEnv.reset()` retries on `RandomizationError` in a `while` loop**, so the number of
+   RNG draws consumed per reset is *variable*. Two arms can consume different randomness per
+   episode with no step-count difference at all.
+
+`robosuite_gate.ipynb` adds **T5** for exactly this: burn 1000 `np.random.random()` calls between
+resets and see whether the next episode changes. **Pre-registered prediction: T5 FAILS.** If it
+does, that is the paper. If it passes, P6 is dead and gets recorded as dead.
+
+**Version note:** LIBERO pins `numpy==1.22.4`, which has no wheel for Colab's Python; the notebook
+uses `1.26.4`, the newest `numpy<2` that does, and records the deviation in its output JSON.
+`robosuite==1.4.0` is required, not cosmetic — `ControlEnv` calls `suite.load_controller_config`,
+removed in 1.5. mujoco is left to the resolver rather than pinned to 3.3.3, because robosuite 1.4
+predates mujoco 3.x; the resolved version is recorded in the JSON.
+
 ## Status
 
 ⚠️ **Not executed.** The `chrome-devtools` MCP server was disconnected in the session that wrote
 this, so Colab could not be driven. Verified instead, at primary:
 
-- Every code cell parses (`ast.parse`, 14 cells, clean).
+- Every code cell parses — `eval_determinism_gate.ipynb` 14 cells, `robosuite_gate.ipynb` 17 cells.
+- LIBERO's `requirements.txt` pins (`robosuite==1.4.0`, `numpy==1.22.4`, `gym==0.25.2`,
+  `bddl==1.0.1`) and `ControlEnv.seed` / `.reset` / `.get_sim_state` were read at primary from
+  `libero/libero/envs/env_wrapper.py`.
 - `mujoco==3.3.3` exists and is installable (PyPI JSON API).
 - The task BDDL file exists in LIBERO's `libero_object` suite.
 - The Gymnasium sentence quoted above was fetched and confirmed at
