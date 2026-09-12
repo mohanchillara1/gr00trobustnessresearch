@@ -117,7 +117,29 @@ Three things follow, in order:
 | Notebook | Stack | Status |
 |---|---|---|
 | `eval_determinism_gate.ipynb` | gymnasium MuJoCo | **RUN 2026-09-12 19:32 UTC** in the Composio workbench. Verdict **HARNESS SOUND**. |
-| **`robosuite_gate.ipynb`** | **robosuite 1.4.0 + LIBERO** | built, not run. Needs Colab (Python 3.12). |
+| ~~`robosuite_gate.ipynb`~~ | robosuite + LIBERO | 🔴 **RUN 2026-09-12, FAILED AT INSTALL. No evidence produced.** Superseded. |
+| **`robosuite_gate_v2.ipynb`** | **robosuite 1.4.0 + LIBERO in a uv Python 3.11 venv** | built, not run |
+
+### Why v1 failed, recorded so it is not repeated
+
+Two faults, both in cell 1, and the tests never executed:
+
+1. **Colab is Python 3.13 now**, not 3.12. `numpy<2` has no cp313 wheel, so the resolver silently
+   overrode the `numpy==1.26.4` pin with **numpy 2.1.3**, and `mujoco` resolved to **3.13.0** —
+   both far outside what robosuite 1.4.0 expects. `gym 0.25.2` warned about NumPy 2.
+2. **`pip install git+… --no-deps` produced no importable package.** Cell 2 raised
+   `ModuleNotFoundError: No module named 'libero'`.
+
+**Wrong assumption on my part: that pinning a version in a pip command means that version gets
+installed.** A pin with no wheel for the live interpreter is a *suggestion* — pip resolves past it
+and reports success. The lesson generalises past this notebook: print resolved versions from the
+interpreter that will run the code, before running it.
+
+**v2's fixes are structural, not cosmetic:** a `uv`-built **Python 3.11** venv so the pins actually
+have wheels; LIBERO `git clone`d and installed **editable** so it is importable; `mujoco<3.2`; all
+five tests in one `/content/gate.py` run as a subprocess under `/content/venv/bin/python`, because
+a Colab cell cannot import from another interpreter's venv; resolved versions printed from inside
+the venv before any test; and EGL with a one-shot OSMesa fallback.
 
 **The gymnasium run refuted the original hypothesis.** On `Reacher-v5`, T2 passed: stepping does
 not advance the env PRNG, so the next episode is independent of step count. T4 passed too: a
