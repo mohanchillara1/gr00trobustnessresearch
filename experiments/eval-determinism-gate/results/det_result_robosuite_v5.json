@@ -1,0 +1,42 @@
+{
+  "timestamp_utc": "2026-09-12T22:32:27+00:00",
+  "verdict": "CONFOUND CONFIRMED",
+  "reading": "The episode sequence depends on global-RNG consumption, so two arms differing in that respect are scored on different episodes. This is the paper.",
+  "versions": {
+    "python": "3.11.16",
+    "numpy": "1.26.4",
+    "robosuite": "1.4.0",
+    "mujoco": "3.1.6",
+    "bddl": "installed-no-__version__",
+    "gym": "0.25.2",
+    "torch": "2.14.0+cpu",
+    "libero": "installed-no-__version__ (LIBERO main, git clone --depth 1 on 2026-09-12)"
+  },
+  "T1_pass": true,
+  "T2_pass": true,
+  "T3_pass": true,
+  "T4_prefix_aligned": true,
+  "T5_pass": false,
+  "control_ok": true,
+  "t5_control_ok": true,
+  "predictions": {
+    "T1": "PASS",
+    "T2": "PASS",
+    "T3": "PASS",
+    "T4": "PASS",
+    "T5": "FAIL (pre-registered)"
+  },
+  "task": "libero_object / pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+  "seeds": [
+    11,
+    12,
+    13
+  ],
+  "k_short": 40,
+  "k_long": 80,
+  "global_draws": 1000,
+  "mujoco_gl": "egl (first try; OSMesa fallback not needed)",
+  "cell5_elapsed_ms": 821621,
+  "exit_code": 0,
+  "provenance": "Transcribed by the director from the Colab autosave of robosuite_gate_v5.ipynb (Drive id 1RVhcaH-bbIAW5hdLsMHgkH1aDOKdAxkU), which is the primary record. Hashes copied verbatim."
+}
