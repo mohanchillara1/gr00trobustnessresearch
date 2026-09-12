@@ -118,7 +118,33 @@ Three things follow, in order:
 |---|---|---|
 | `eval_determinism_gate.ipynb` | gymnasium MuJoCo | **RUN 2026-09-12 19:32 UTC** in the Composio workbench. Verdict **HARNESS SOUND**. |
 | ~~`robosuite_gate.ipynb`~~ | robosuite + LIBERO | 🔴 **RUN 2026-09-12, FAILED AT INSTALL. No evidence produced.** Superseded. |
-| **`robosuite_gate_v2.ipynb`** | **robosuite 1.4.0 + LIBERO in a uv Python 3.11 venv** | built, not run |
+| ~~`robosuite_gate_v2.ipynb`~~ | robosuite + LIBERO, uv Python 3.11 venv | 🔴 **RUN 2026-09-12, FAILED AT IMPORT. No evidence produced.** Superseded. |
+| **`robosuite_gate_v3.ipynb`** | same, plus PYTHONPATH and an import-repair loop | built, not run |
+
+### Why v2 failed
+
+The venv built correctly and **every pin held** — `CPython 3.11.16`, `numpy 1.26.4`, `mujoco 3.1.6`,
+`gym 0.25.2`. The probe still showed `robosuite IMPORT FAILED: No module named termcolor`,
+`bddl IMPORT FAILED: No module named future`, `libero IMPORT FAILED: No module named libero`.
+
+1. **`--no-deps` dropped the transitive dependencies.** It was used to stop the resolver dragging
+   in a conflicting numpy, and it threw out `termcolor`, `future`, and `torch` (which
+   `libero.libero.benchmark` imports) along with it.
+2. **The editable install produced nothing importable.** `uv pip install -e` printed
+   `+ libero==0.1.0 (from file:///content/LIBERO)` and `import libero` still failed — a
+   `uv`-created venv has no setuptools path finder, so the editable hook never resolves.
+
+**The same wrong assumption as v1, in a different costume: that a package manager reporting
+success means the thing is usable.** v1 trusted a pin that had been silently overridden; v2
+trusted an editable install that installed nothing. Both times the install step said OK and the
+import step was the truth. **Rule: verify by importing from the interpreter that will run the
+code, never by reading the installer's output.**
+
+**v3:** `PYTHONPATH=/content/LIBERO` plus `sys.path.insert` in both scripts, so the editable
+install is no longer load-bearing; the dropped transitive deps installed on purpose; and an
+import-repair loop that installs whatever `ModuleNotFoundError` names, up to 15 rounds, with a
+module→package alias table and a refusal to pip-install `libero` itself. The gate does not run
+until the probe prints `PROBE OK`.
 
 ### Why v1 failed, recorded so it is not repeated
 
