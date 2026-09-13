@@ -1,0 +1,115 @@
+{
+  "timestamp_utc": "2026-09-13T05:36:45+00:00",
+  "verdict": "GENERAL",
+  "reading": "Global-RNG consumption shifts the episode sequence on all 3 suites. The confound is a property of LIBERO, not of one task.",
+  "t5_failed_on": [
+    "libero_object",
+    "libero_spatial",
+    "libero_goal"
+  ],
+  "T6_pass_all": true,
+  "controls_ok": true,
+  "v5_control": {
+    "reproduced": true,
+    "note": "libero_object T2 and T5-burned hashes identical to v5 on all three seeds"
+  },
+  "per_suite": {
+    "libero_object": {
+      "task": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+      "T2_pass": true,
+      "T2_control_ok": true,
+      "T5_pass": false,
+      "T5_control_ok": true,
+      "T6_pass": true,
+      "T2_hash_K40_eq_K80": {
+        "11": "cbb3470b4c447f68",
+        "12": "c732927029d36125",
+        "13": "c09097460e7814a5"
+      },
+      "T5_burned_hash": {
+        "11": "e78e0d1a180b3e6a",
+        "12": "42bec853db81b54b",
+        "13": "dfa9091d9724f85f"
+      },
+      "T6_hash_noburn_eq_burned": {
+        "11": "2ef16bcbf9deb737",
+        "12": "c7f55ad206b80b4e",
+        "13": "f2cc23d230f9b9f3"
+      }
+    },
+    "libero_spatial": {
+      "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+      "T2_pass": true,
+      "T2_control_ok": true,
+      "T5_pass": false,
+      "T5_control_ok": true,
+      "T6_pass": true,
+      "T2_hash_K40_eq_K80": {
+        "11": "c8c5d6f7fcd64ca7",
+        "12": "3adb49be3cdb4c98",
+        "13": "f0c44c4e94ab6e4b"
+      },
+      "T5_burned_hash": {
+        "11": "8ce291ea7da4400d",
+        "12": "59302ec595f649a8",
+        "13": "218553800c6a44a2"
+      },
+      "T6_hash_noburn_eq_burned": {
+        "11": "be32f15ebf16c42b",
+        "12": "4b709dccef47455b",
+        "13": "6f1022549dc6487c"
+      }
+    },
+    "libero_goal": {
+      "task": "open_the_middle_drawer_of_the_cabinet",
+      "T2_pass": true,
+      "T2_control_ok": true,
+      "T5_pass": false,
+      "T5_control_ok": true,
+      "T6_pass": true,
+      "T2_hash_K40_eq_K80": {
+        "11": "d70b8e1a58ff3d4d",
+        "12": "b2eac4e2ae3624da",
+        "13": "1caf678d26e8e927"
+      },
+      "T5_burned_hash": {
+        "11": "48170b1c605a688d",
+        "12": "044748923dd17c75",
+        "13": "7434500db4e962c5"
+      },
+      "T6_hash_noburn_eq_burned": {
+        "11": "2dbffb7c5eefd3bb",
+        "12": "cf677202b12e8f4a",
+        "13": "2f38318d91ddf719"
+      }
+    }
+  },
+  "seeds": [
+    11,
+    12,
+    13
+  ],
+  "k_short": 40,
+  "k_long": 80,
+  "global_draws": 1000,
+  "mujoco_gl": "egl (first try)",
+  "versions": {
+    "python": "3.11.16",
+    "numpy": "1.26.4",
+    "robosuite": "1.4.0",
+    "mujoco": "3.1.6",
+    "gym": "0.25.2",
+    "torch": "2.14.0+cpu",
+    "libero": "main, clone 2026-09-13",
+    "bddl": "installed, no __version__"
+  },
+  "cell5_elapsed_min": 38.1,
+  "exit_code": 0,
+  "predictions": {
+    "T2": "PASS all suites",
+    "T5": "FAIL all suites",
+    "T6": "PASS all suites",
+    "v5_control": "reproduce exactly"
+  },
+  "provenance": "Transcribed by the director from the Colab autosave of robosuite_gate_v6.ipynb (Drive id 1PXQLI7vbAffB2fdLKeqDCZa4IEpiUypn), the primary record. Hashes copied verbatim."
+}
