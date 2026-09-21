@@ -1,0 +1,24 @@
+{
+  "timestamp_utc": "2026-09-21T21:51:02+00:00",
+  "verdict": "GENERAL",
+  "reading": "Global-RNG consumption shifts the episode sequence on all 3 suites. The confound is a property of LIBERO, not of one task.",
+  "t5_failed_on": ["libero_object", "libero_spatial", "libero_goal"],
+  "T6_pass_all": true,
+  "controls_ok": true,
+  "v5_control": {
+    "detail": {
+      "11": {"t2_now": "cbb3470b4c447f68", "t2_v5": "cbb3470b4c447f68", "t2_match": true, "t5_now": "e78e0d1a180b3e6a", "t5_v5": "e78e0d1a180b3e6a", "t5_match": true},
+      "12": {"t2_now": "c732927029d36125", "t2_v5": "c732927029d36125", "t2_match": true, "t5_now": "42bec853db81b54b", "t5_v5": "42bec853db81b54b", "t5_match": true},
+      "13": {"t2_now": "c09097460e7814a5", "t2_v5": "c09097460e7814a5", "t2_match": true, "t5_now": "dfa9091d9724f85f", "t5_v5": "dfa9091d9724f85f", "t5_match": true}
+    },
+    "reproduced": true
+  },
+  "versions": {"python": "3.11.16", "numpy": "1.26.4", "robosuite": "1.4.0", "mujoco": "3.1.6", "gym": "0.25.2", "torch": "2.14.0+cpu"},
+  "predictions": {"T2": "PASS all suites", "T5": "FAIL all suites", "T6": "PASS all suites", "v5_control": "reproduce exactly"},
+  "run_by": "Mohan Chillara Jr, Colab free CPU runtime, notebook uploaded from local robosuite_gate_v6.ipynb (commit 69c76e8), Run all; pasted into chat by dad 2026-09-21; elapsed 23.0 min; exit code 0",
+  "hashes": {
+    "libero_object":  {"T2": ["cbb3470b4c447f68","c732927029d36125","c09097460e7814a5"], "T5_burned": ["e78e0d1a180b3e6a","42bec853db81b54b","dfa9091d9724f85f"], "T6": ["2ef16bcbf9deb737","c7f55ad206b80b4e","f2cc23d230f9b9f3"]},
+    "libero_spatial": {"T2": ["c8c5d6f7fcd64ca7","3adb49be3cdb4c98","f0c44c4e94ab6e4b"], "T5_burned": ["8ce291ea7da4400d","59302ec595f649a8","218553800c6a44a2"], "T6": ["be32f15ebf16c42b","4b709dccef47455b","6f1022549dc6487c"]},
+    "libero_goal":    {"T2": ["d70b8e1a58ff3d4d","b2eac4e2ae3624da","1caf678d26e8e927"], "T5_burned": ["48170b1c605a688d","044748923dd17c75","7434500db4e962c5"], "T6": ["2dbffb7c5eefd3bb","cf677202b12e8f4a","2f38318d91ddf719"]}
+  }
+}

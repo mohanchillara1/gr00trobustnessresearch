@@ -134,6 +134,19 @@ simpler one — no seeding — not the leak.
 
 ---
 
+## Run 3 — Mohan's own replication (v6, 2026-09-21 21:51 UTC, 23.0 min)
+
+Run by **Mohan Chillara Jr** on a free Colab CPU runtime: the local `robosuite_gate_v6.ipynb` (commit `69c76e8`)
+uploaded via File → Upload notebook, Runtime → Run all, no edits. Output pasted into chat by dad the same evening;
+saved verbatim as `results/det_result_v6_mohan_2026-09-21.json`.
+
+**Verdict: GENERAL. T2 pass 9/9, T5 fail 9/9, T6 pass 9/9. All 27 hashes identical to Run 2 (2026-09-13).**
+The v5 replication control reproduced all six `libero_object` hashes exactly. Stack: Python 3.11.16, numpy 1.26.4,
+robosuite 1.4.0, mujoco 3.1.6, gym 0.25.2, torch 2.14.0+cpu — same as Run 2.
+
+This is the first run of the gate by a human on the team. It clears item 1 of the council's 2026-09-15 gate list
+for the P6 submissions (re-run end to end yourself); the code-read, intro and related work remain his to do.
+
 ## Files
 
 | | |
