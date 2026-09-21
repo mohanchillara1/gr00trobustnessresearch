@@ -215,9 +215,7 @@ The first conversion pass extracted only the main camera. GR00T N1.7 needs both 
 
 ## Acknowledgments
 
-We thank Dr. Aravind Chiruvelli, Sr. Director of Data Science at Walmart Global Technology, who conceived the object-transfer question this study is built around, reviewed the experimental design, shaped the discussion, and gave final approval. He asked to be acknowledged rather than listed as an author.
-
-We thank Dr. Alice E. Smith of Auburn University, NAE member and IEEE Life Fellow, for reviewing the methodology.
+We thank Dr. Aravind Chiruvelli, Sr. Director of Data Science at Walmart Global Technology, who conceived the object-transfer question this study is built around, reviewed the experimental design, shaped the discussion, and gave final approval. 
 
 We also thank NVIDIA for open-sourcing the Isaac-GR00T framework and the GR00T N1.7 weights, and the LIBERO team at UT Austin for the benchmark and dataset. Compute on RunPod.
 
