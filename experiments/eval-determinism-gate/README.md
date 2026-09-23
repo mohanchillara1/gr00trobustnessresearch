@@ -3,6 +3,33 @@
 **Run this first. It is the gate for the winning paper, and nothing downstream is interpretable
 until it returns a dated verdict.**
 
+## Open it in Colab — no install, no GPU, no checkpoint
+
+| notebook | what it is | open |
+|---|---|---|
+| `robosuite_gate_v6.ipynb` | **the gate the papers cite.** 27 initial-state hashes on the raw robosuite path. CPU, ~20 min. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mohanchillara1/gr00trobustnessresearch/blob/main/experiments/eval-determinism-gate/robosuite_gate_v6.ipynb) |
+| `eval_determinism_gate.ipynb` | the earlier gymnasium-path probe (T2/T4 both passed; kept for the record) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mohanchillara1/gr00trobustnessresearch/blob/main/experiments/eval-determinism-gate/eval_determinism_gate.ipynb) |
+
+Expected verdict from v6 is in [`RESULTS.md`](RESULTS.md): **GENERAL** — T2 passes 9/9, T5 fails
+9/9, T6 passes 9/9. Run 2 produced those 27 hashes on 2026-09-13; Run 3 reproduced all 27 of them
+identically on 2026-09-21, on different hardware. If your run disagrees with either, that is a
+finding and we want to hear about it.
+
+The magnitude experiment (`p6_magnitude_kaggle_v2.ipynb`) needs a GPU and is written for **Kaggle**,
+not Colab — import it there by URL; see the notebook's own cell 0.
+
+**Running v6 anywhere other than Colab.** The notebook hard-codes `/content` — it builds its venv at
+`/content/venv` and clones LIBERO to `/content/LIBERO`. That is correct on Colab and nowhere else.
+The file is left as-is on purpose: it is the exact artifact Runs 2 and 3 executed, and the papers
+cite it. To run it elsewhere, rewrite the paths on a copy rather than editing it in place:
+
+```bash
+sed 's#/content#'"$PWD"'#g' robosuite_gate_v6.ipynb > robosuite_gate_v6_local.ipynb
+jupyter nbconvert --to notebook --execute robosuite_gate_v6_local.ipynb
+```
+
+Point it at a writable path with no spaces in it. The venv and the LIBERO clone both land there.
+
 ## What it tests
 
 > When two policy arms take a different number of steps, do they see the same evaluation episodes,
@@ -57,6 +84,10 @@ not care.
 ## Exact command
 
 Open `eval_determinism_gate.ipynb` in Colab and run top to bottom. No phase switching, no restart.
+
+**Reading this today: run `robosuite_gate_v6.ipynb` instead** (badge table at the top). This
+section describes the original gymnasium-path probe, which is superseded — it is kept because the
+inference it tested, and disproved, is part of the record.
 
 ## Runtime and cost
 
