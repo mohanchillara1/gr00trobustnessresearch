@@ -67,3 +67,17 @@
 15204.3s	405	EP arm=B i=66 seed=10066 init_hash=929178ff8ce6b492 success=True steps=193 sec=216 dev=cuda | arm B so far 59/67
 15385.5s	406	EP arm=B i=67 seed=10067 init_hash=44977888f9c03979 success=True steps=156 sec=175 dev=cuda | arm B so far 60/68
 15595.3s	407	EP arm=B i=68 seed=10068 init_hash=08ed030d9670b9fa success=True steps=181 sec=204 dev=cuda | arm B so far 61/69
+15934.8s	408	EP arm=B i=69 seed=10069 init_hash=6e0f8afc23622183 success=False steps=300 sec=333 dev=cuda | arm B so far 61/70
+16109.7s	409	EP arm=B i=70 seed=10070 init_hash=6ca767dfe8ba84a2 success=True steps=151 sec=169 dev=cuda | arm B so far 62/71
+16326.9s	410	EP arm=B i=71 seed=10071 init_hash=e81993c0c4b3af32 success=True steps=189 sec=211 dev=cuda | arm B so far 63/72
+16510.2s	411	EP arm=B i=72 seed=10072 init_hash=be51fd5dc20744e3 success=True steps=159 sec=177 dev=cuda | arm B so far 64/73
+16678.0s	412	EP arm=B i=73 seed=10073 init_hash=b7d1cd25d0d1bfd7 success=True steps=144 sec=162 dev=cuda | arm B so far 65/74
+17018.9s	413	EP arm=B i=74 seed=10074 init_hash=a8a54c416bed32a5 success=False steps=300 sec=335 dev=cuda | arm B so far 65/75
+17356.6s	414	EP arm=B i=75 seed=10075 init_hash=4324fa9ea445193d success=False steps=300 sec=331 dev=cuda | arm B so far 65/76
+17693.6s	415	EP arm=B i=76 seed=10076 init_hash=4d1ec857e1ed0f3c success=False steps=300 sec=331 dev=cuda | arm B so far 65/77
+17869.8s	416	EP arm=B i=77 seed=10077 init_hash=2496f509fc89bdde success=True steps=152 sec=170 dev=cuda | arm B so far 66/78
+18057.3s	417	EP arm=B i=78 seed=10078 init_hash=0a7befb8178e098e success=True steps=162 sec=181 dev=cuda | arm B so far 67/79
+18273.3s	418	EP arm=B i=79 seed=10079 init_hash=6da9667cffd8ec78 success=True steps=186 sec=210 dev=cuda | arm B so far 68/80
+18458.2s	419	EP arm=B i=80 seed=10080 init_hash=03eb550bed53c626 success=True steps=159 sec=179 dev=cuda | arm B so far 69/81
+18697.6s	420	EP arm=B i=81 seed=10081 init_hash=c96ffd03d963822f success=True steps=208 sec=233 dev=cuda | arm B so far 70/82
+19035.6s	421	EP arm=B i=82 seed=10082 init_hash=7e3f713a4936ce64 success=False steps=300 sec=332 dev=cuda | arm B so far 70/83
