@@ -1,0 +1,60 @@
+2026-09-28 21:20:02
+==== iframe 38103D42
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+config.json: 
+ 2.11k/? [00:00<00:00, 148kB/s]
+WARNING:root:No accelerated backend detected. Using default cpu, this will be slow.
+WARNING:lerobot.configs.policies:Device 'cuda' is not available. Switching to 'cpu'.
+Loading  HuggingFaceTB/SmolVLM2-500M-Instruct weights ...
+
+config.json: 
+ 3.77k/? [00:00<00:00, 272kB/s]
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+model.safetensors: 100%
+ 2.03G/2.03G [00:14<00:00, 208MB/s]
+Loading weights: 100%
+ 489/489 [00:01<00:00, 399.47it/s]
+generation_config.json: 100%
+ 136/136 [00:00<00:00, 10.9kB/s]
+processor_config.json: 100%
+ 67.0/67.0 [00:00<00:00, 5.04kB/s]
+chat_template.json: 100%
+ 430/430 [00:00<00:00, 24.9kB/s]
+preprocessor_config.json: 100%
+ 599/599 [00:00<00:00, 45.2kB/s]
+tokenizer_config.json: 
+ 28.6k/? [00:00<00:00, 1.96MB/s]
+vocab.json: 
+ 801k/? [00:00<00:00, 17.2MB/s]
+merges.txt: 
+ 466k/? [00:00<00:00, 14.1MB/s]
+added_tokens.json: 
+ 4.74k/? [00:00<00:00, 188kB/s]
+special_tokens_map.json: 100%
+ 868/868 [00:00<00:00, 61.0kB/s]
+tokenizer.json: 
+ 3.55M/? [00:00<00:00, 53.5MB/s]
+model.safetensors: 100%
+ 1.22G/1.22G [00:11<00:00, 145MB/s]
+policy_preprocessor.json: 
+ 1.71k/? [00:00<00:00, 43.4kB/s]
+policy_preprocessor_step_5_normalizer_pr(…): 100%
+ 416/416 [00:00<00:00, 2.07kB/s]
+policy_postprocessor.json: 100%
+ 660/660 [00:00<00:00, 54.8kB/s]
+policy device: cpu
+policy loaded (patched loader v2): HuggingFaceVLA/smolvla_libero | persist -> /content/p6_runs
+resume: found 20 arm-A and 16 arm-B episodes in /content/p6_runs/p6_stage2_episodes.json
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /kaggle/working/LIBERO/libero/libero/../datasets does not exist!
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /kaggle/working/LIBERO/libero/libero/../datasets does not exist!
+
+==== iframe 482D9C67
+ 
+==== iframe ECA0E987
+ 
+==== page 78D20C1A ERR Connection timed out
