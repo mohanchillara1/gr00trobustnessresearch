@@ -1,0 +1,1131 @@
+Logs
+Comments (0)
+Settings
+Logs
+file_download
+Download Logs
+check_circle
+Successfully ran in 24962.5s
+Accelerator
+
+GPU T4 x2
+
+Environment
+
+Latest Container Image
+
+Output
+
+775.73 MB
+
+Time
+	
+#
+	
+Log Message
+
+7.6s	1	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+
+7.6s	2	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+
+7.6s	3	0.00s - to python to disable frozen modules.
+
+7.6s	4	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+
+8.2s	5	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+
+8.2s	6	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+
+8.2s	7	0.00s - to python to disable frozen modules.
+
+8.2s	8	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+
+9.3s	9	{
+
+9.3s	10	  "written_utc": "2026-09-22",
+
+9.3s	11	  "prediction_1_overlap": "arm A and arm B initial-state hash sets are DISJOINT (overlap 0)",
+
+9.3s	12	  "prediction_2_success": "arms differ; NO direction or magnitude predicted",
+
+9.3s	13	  "prediction_3_paired": "per-episode paired agreement between arms is LOW",
+
+9.3s	14	  "falsifier": "overlap==0 but success rates identical -> leak real, cost not measurable at this N"
+
+9.3s	15	}
+
+9.3s	16	
+
+9.3s	17	SUITE=libero_object TASK=0 N=20 MAXSTEPS=300 POLICY=HuggingFaceVLA/smolvla_libero
+
+9.3s	18	output dir: /kaggle/working
+
+9.3s	19	EXTEND C1 RUN: arm=B N=200 seeds 10000..10199
+
+33.1s	20	extras install rc 0 ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+
+33.1s	21	google-adk 1.29.0 requires google-cloud-bigquery-storage>=2.0.0, which is not installed.
+
+33.1s	22	google-colab 1.0.0 requires jupyter-server==2.14.0, but you have jupyter-server 2.12.5 which is incompatible.
+
+33.1s	23	google-colab 1.0.0 requires pandas==2.2.2, but you have pandas 2.3.3 which is incompatible.
+
+33.1s	24	
+
+33.1s	25	platform: kaggle | lerobot 0.6.1 | transformers 5.5.4 | torch 2.10.0+cu128
+
+33.1s	26	committed episodes file sha256: 4987dcf4be9e42ea14e7d7c6a0d57718709b50cb1b5e7b13a37cfdade9a2b12a bytes 25094
+
+33.1s	27	resume file seeded with 100 committed arm-B episodes (successes 85)
+
+33.1s	28	numpy already loaded in this kernel before the pin: True /usr/local/lib/python3.12/dist-packages/numpy/__init__.py
+
+33.1s	29	scratch dir: /kaggle/temp (1201.4 GB free) | candidates: /kaggle/temp=1201.4GB, /tmp=1201.4GB, /kaggle/working=20.9GB, .=20.9GB
+
+33.1s	30	>>> nvidia-smi --query-gpu=name,memory.total --format=csv,noheader || echo NO-GPU 
+
+33.2s	31	Tesla T4, 15360 MiB
+
+33.2s	32	Tesla T4, 15360 MiB
+
+33.3s	33	python: 3.12.13 /usr/bin/python3
+
+33.3s	34	
+
+33.3s	35	image numpy (fresh subprocess, before): 2.0.2 /usr/local/lib/python3.12/dist-packages/numpy/__init__.py
+
+33.3s	36	>>> /usr/bin/python3 -m pip download --timeout 120 --retries 5 -q -d /kaggle/temp/p6_wheels 'numpy==1.26.4' 'robosuite==1.4.0' 'bddl==1.0.1' 'gym==0.25.2' 'mujoco<3.2' easydict pyyaml 'opencv-python-headless==4.10.0.84' termcolor future hydra-core h5py pillow matplotlib cloudpickle imageio tqdm (attempt 1/3)
+
+59.1s	37	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.9/59.9 MB 32.1 MB/s eta 0:00:00
+
+59.1s	38	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 91.7/91.7 kB 3.9 MB/s eta 0:00:00
+
+59.1s	39	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 44.7 MB/s eta 0:00:00
+
+59.1s	40	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 172.9/172.9 kB 8.4 MB/s eta 0:00:00
+
+59.1s	41	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 221.7/221.7 kB 11.3 MB/s eta 0:00:00
+
+59.1s	42	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.7/66.7 kB 3.1 MB/s eta 0:00:00
+
+59.1s	43	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.8/79.8 kB 3.9 MB/s eta 0:00:00
+
+59.1s	44	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 2.2 MB/s eta 0:00:00
+
+59.1s	45	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.6/90.6 kB 4.6 MB/s eta 0:00:00
+
+59.1s	46	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 86.2/86.2 kB 4.4 MB/s eta 0:00:00
+
+59.1s	47	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.5/67.5 kB 2.7 MB/s eta 0:00:00
+
+59.1s	48	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 366.2/366.2 kB 14.0 MB/s eta 0:00:00
+
+59.1s	49	>>> /usr/bin/python3 -m pip install --timeout 120 --retries 5 -q --upgrade --no-warn-conflicts --target /kaggle/temp/p6_stack --find-links /kaggle/temp/p6_wheels 'numpy==1.26.4' 'robosuite==1.4.0' 'bddl==1.0.1' 'gym==0.25.2' 'mujoco<3.2' easydict pyyaml 'opencv-python-headless==4.10.0.84' termcolor future hydra-core h5py pillow matplotlib cloudpickle imageio tqdm (attempt 1/3)
+
+108.1s	50	
+
+108.1s	51	>>> /usr/bin/python3 -m pip install --timeout 120 --retries 5 -q 'transformers>=4.50' accelerate safetensors huggingface_hub (attempt 1/3)
+
+111.6s	52	
+
+111.6s	53	>>> git clone -q https://github.com/Lifelong-Robot-Learning/LIBERO.git /kaggle/working/LIBERO 
+
+126.2s	54	
+
+126.6s	55	
+
+126.6s	56	numpy seen by a fresh subprocess (with STACK): 1.26.4 /kaggle/temp/p6_stack/numpy/__init__.py
+
+128.1s	57	simulator stack import (fresh subprocess): OK
+
+128.1s	58	[robosuite WARNING] No private macro file found! (__init__.py:7)
+
+128.1s	59	[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+
+128.1s	60	[robosuite WARNING] To setup, run: python /kaggle/temp/p6_stack/robosuite/scripts/setup_macros.py (__init__.py:9)
+
+128.1s	61	Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+
+128.1s	62	Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+
+128.1s	63	See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+
+128.1s	64	robosuite 1.4.0 | gym 0.25.2 | mujoco 3.1.6 | numpy 1.26.4
+
+160.3s	65	
+
+160.3s	66	numpy copies on disk:
+
+160.3s	67	  /kaggle/temp/p6_stack/numpy-1.26.4.dist-info
+
+160.3s	68	  /usr/local/lib/python3.12/dist-packages/numpy-2.0.2.dist-info
+
+160.3s	69	
+
+160.3s	70	numpy in this kernel: 2.0.2 /usr/local/lib/python3.12/dist-packages/numpy/__init__.py
+
+160.3s	71	
+
+160.3s	72	numpy pin, fresh subprocess: HELD
+
+160.3s	73	numpy pin, this kernel:       NOT HELD
+
+160.3s	74	robosuite/gym/mujoco import:  OK
+
+160.3s	75	
+
+160.3s	76	======================================================================
+
+160.3s	77	numpy was ALREADY LOADED in this kernel before the pin (/usr/local/lib/python3.12/dist-packages/numpy/__init__.py).
+
+160.3s	78	A running Python cannot swap numpy, so this kernel keeps the image's copy.
+
+160.3s	79	NUMPY PIN NOT HELD IN THIS KERNEL -> 2.0.2 /usr/local/lib/python3.12/dist-packages/numpy/__init__.py
+
+160.3s	80	Do NOT treat the magnitude number as comparable to the 09-13/09-21 runs
+
+160.3s	81	unless the stack-drift control (cell 1b) reproduces all six reference hashes.
+
+160.3s	82	Send p6_stack_report.json back with the other outputs.
+
+160.3s	83	======================================================================
+
+160.3s	84	env setup 2.1 min
+
+160.5s	85	wrote /root/.libero/config.yaml
+
+160.5s	86	  benchmark_root  /kaggle/working/LIBERO/libero/libero  
+
+160.5s	87	  bddl_files      /kaggle/working/LIBERO/libero/libero/./bddl_files  
+
+160.5s	88	  init_states     /kaggle/working/LIBERO/libero/libero/./init_files  
+
+160.5s	89	  datasets        /kaggle/working/LIBERO/libero/libero/../datasets  (does not exist yet; LIBERO only warns)
+
+160.5s	90	  assets          /kaggle/working/LIBERO/libero/libero/./assets  
+
+160.5s	91	
+
+160.5s	92	import libero.libero with stdin closed -> OK
+
+160.5s	93	config: /root/.libero/config.yaml
+
+160.5s	94	[Warning]: datasets path /kaggle/working/LIBERO/libero/libero/../datasets does not exist!
+
+160.5s	95	bddl_files: /kaggle/working/LIBERO/libero/libero/./bddl_files
+
+168.6s	96	
+
+168.6s	97	import benchmark + OffScreenRenderEnv -> OK
+
+168.6s	98	[robosuite WARNING] No private macro file found! (__init__.py:7)
+
+168.6s	99	[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+
+168.6s	100	[robosuite WARNING] To setup, run: python /kaggle/temp/p6_stack/robosuite/scripts/setup_macros.py (__init__.py:9)
+
+168.6s	101	Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+
+168.6s	102	Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+
+168.6s	103	See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+
+168.6s	104	benchmark + envs import OK with numpy 1.26.4 /kaggle/temp/p6_stack/numpy/__init__.py
+
+168.7s	105	[robosuite WARNING] No private macro file found! (__init__.py:7)
+
+168.7s	106	
+
+168.7s	107	[robosuite WARNING] No private macro file found! (__init__.py:7)
+
+168.7s	108	[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+
+168.7s	109	
+
+168.7s	110	[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+
+168.7s	111	[robosuite WARNING] To setup, run: python /kaggle/temp/p6_stack/robosuite/scripts/setup_macros.py (__init__.py:9)
+
+168.7s	112	
+
+168.7s	113	[robosuite WARNING] To setup, run: python /kaggle/temp/p6_stack/robosuite/scripts/setup_macros.py (__init__.py:9)
+
+169.3s	114	Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+
+169.3s	115	Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+
+169.3s	116	See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+
+169.3s	117	
+
+169.3s	118	Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+
+169.3s	119	Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+
+169.3s	120	See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+
+169.7s	121	/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+169.7s	122	  return datetime.utcnow().replace(tzinfo=utc)
+
+169.7s	123	
+
+169.7s	124	/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+169.7s	125	  return datetime.utcnow().replace(tzinfo=utc)
+
+176.2s	126	{
+
+176.2s	127	  "python": "3.12.13",
+
+176.2s	128	  "numpy": "2.0.2",
+
+176.2s	129	  "robosuite": "1.4.0",
+
+176.2s	130	  "mujoco": "3.1.6",
+
+176.2s	131	  "gym": "0.25.2",
+
+176.2s	132	  "torch": "2.10.0+cu128",
+
+176.2s	133	  "transformers": "5.5.4",
+
+176.2s	134	  "numpy_file": "/usr/local/lib/python3.12/dist-packages/numpy/__init__.py",
+
+176.2s	135	  "numpy_preloaded_before_pin": true
+
+176.2s	136	}
+
+176.2s	137	/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+176.2s	138	  return datetime.utcnow().replace(tzinfo=utc)
+
+176.2s	139	
+
+176.2s	140	/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+176.2s	141	  return datetime.utcnow().replace(tzinfo=utc)
+
+176.4s	142	[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+176.4s	143	[Warning]: datasets path /kaggle/working/LIBERO/libero/libero/../datasets does not exist!
+
+176.4s	144	/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+176.4s	145	  return datetime.utcnow().replace(tzinfo=utc)
+
+176.4s	146	
+
+176.4s	147	/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+176.4s	148	  return datetime.utcnow().replace(tzinfo=utc)
+
+319.3s	149	test         seed  reference          this run           
+
+319.3s	150	T2           11    cbb3470b4c447f68   cbb3470b4c447f68   MATCH
+
+319.3s	151	T2           12    c732927029d36125   c732927029d36125   MATCH
+
+319.3s	152	T2           13    c09097460e7814a5   c09097460e7814a5   MATCH
+
+319.3s	153	T5_burned    11    e78e0d1a180b3e6a   e78e0d1a180b3e6a   MATCH
+
+319.3s	154	T5_burned    12    42bec853db81b54b   42bec853db81b54b   MATCH
+
+319.3s	155	T5_burned    13    dfa9091d9724f85f   dfa9091d9724f85f   MATCH
+
+319.3s	156	
+
+319.3s	157	numpy: 2.0.2 | control took 2.4 min
+
+319.3s	158	VERDICT: STACK DRIFT HARMLESS (6/6 reference hashes reproduced) -- the magnitude number stands
+
+319.3s	159	/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+319.3s	160	  return datetime.utcnow().replace(tzinfo=utc)
+
+319.3s	161	
+
+319.3s	162	/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+319.3s	163	  return datetime.utcnow().replace(tzinfo=utc)
+
+319.5s	164	[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+319.5s	165	[Warning]: datasets path /kaggle/working/LIBERO/libero/libero/../datasets does not exist!
+
+1096.4s	166	[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+1096.4s	167	[Warning]: datasets path /kaggle/working/LIBERO/libero/libero/../datasets does not exist!
+
+1950.5s	168	{
+
+1950.5s	169	  "task_language": "pick up the alphabet soup and place it in the basket",
+
+1950.5s	170	  "seeds": [
+
+1950.5s	171	    10000,
+
+1950.5s	172	    10001,
+
+1950.5s	173	    10002,
+
+1950.5s	174	    10003,
+
+1950.5s	175	    10004,
+
+1950.5s	176	    10005,
+
+1950.5s	177	    10006,
+
+1950.5s	178	    10007,
+
+1950.5s	179	    10008,
+
+1950.5s	180	    10009,
+
+1950.5s	181	    10010,
+
+1950.5s	182	    10011,
+
+1950.5s	183	    10012,
+
+1950.5s	184	    10013,
+
+1950.5s	185	    10014,
+
+1950.5s	186	    10015,
+
+1950.5s	187	    10016,
+
+1950.5s	188	    10017,
+
+1950.5s	189	    10018,
+
+1950.5s	190	    10019,
+
+1950.5s	191	    10020,
+
+1950.5s	192	    10021,
+
+1950.5s	193	    10022,
+
+1950.5s	194	    10023,
+
+1950.5s	195	    10024,
+
+1950.5s	196	    10025,
+
+1950.5s	197	    10026,
+
+1950.5s	198	    10027,
+
+1950.5s	199	    10028,
+
+1950.5s	200	    10029,
+
+1950.5s	201	    10030,
+
+1950.5s	202	    10031,
+
+1950.5s	203	    10032,
+
+1950.5s	204	    10033,
+
+1950.5s	205	    10034,
+
+1950.5s	206	    10035,
+
+1950.5s	207	    10036,
+
+1950.5s	208	    10037,
+
+1950.5s	209	    10038,
+
+1950.5s	210	    10039,
+
+1950.5s	211	    10040,
+
+1950.5s	212	    10041,
+
+1950.5s	213	    10042,
+
+1950.5s	214	    10043,
+
+1950.5s	215	    10044,
+
+1950.5s	216	    10045,
+
+1950.5s	217	    10046,
+
+1950.5s	218	    10047,
+
+1950.5s	219	    10048,
+
+1950.5s	220	    10049,
+
+1950.5s	221	    10050,
+
+1950.5s	222	    10051,
+
+1950.5s	223	    10052,
+
+1950.5s	224	    10053,
+
+1950.5s	225	    10054,
+
+1950.5s	226	    10055,
+
+1950.5s	227	    10056,
+
+1950.5s	228	    10057,
+
+1950.5s	229	    10058,
+
+1950.5s	230	    10059,
+
+1950.5s	231	    10060,
+
+1950.5s	232	    10061,
+
+1950.5s	233	    10062,
+
+1950.5s	234	    10063,
+
+1950.5s	235	    10064,
+
+1950.5s	236	    10065,
+
+1950.5s	237	    10066,
+
+1950.5s	238	    10067,
+
+1950.5s	239	    10068,
+
+1950.5s	240	    10069,
+
+1950.5s	241	    10070,
+
+1950.5s	242	    10071,
+
+1950.5s	243	    10072,
+
+1950.5s	244	    10073,
+
+1950.5s	245	    10074,
+
+1950.5s	246	    10075,
+
+1950.5s	247	    10076,
+
+1950.5s	248	    10077,
+
+1950.5s	249	    10078,
+
+1950.5s	250	    10079,
+
+1950.5s	251	    10080,
+
+1950.5s	252	    10081,
+
+1950.5s	253	    10082,
+
+1950.5s	254	    10083,
+
+1950.5s	255	    10084,
+
+1950.5s	256	    10085,
+
+1950.5s	257	    10086,
+
+1950.5s	258	    10087,
+
+1950.5s	259	    10088,
+
+1950.5s	260	    10089,
+
+1950.5s	261	    10090,
+
+1950.5s	262	    10091,
+
+1950.5s	263	    10092,
+
+1950.5s	264	    10093,
+
+1950.5s	265	    10094,
+
+1950.5s	266	    10095,
+
+1950.5s	267	    10096,
+
+1950.5s	268	    10097,
+
+1950.5s	269	    10098,
+
+1950.5s	270	    10099,
+
+1950.5s	271	    10100,
+
+1950.5s	272	    10101,
+
+1950.5s	273	    10102,
+
+1950.5s	274	    10103,
+
+1950.5s	275	    10104,
+
+1950.5s	276	    10105,
+
+1950.5s	277	    10106,
+
+1950.5s	278	    10107,
+
+1950.5s	279	    10108,
+
+1950.5s	280	    10109,
+
+1950.5s	281	    10110,
+
+1950.5s	282	    10111,
+
+1950.5s	283	    10112,
+
+1950.5s	284	    10113,
+
+1950.5s	285	    10114,
+
+1950.5s	286	    10115,
+
+1950.5s	287	    10116,
+
+1950.5s	288	    10117,
+
+1950.5s	289	    10118,
+
+1950.5s	290	    10119,
+
+1950.5s	291	    10120,
+
+1950.5s	292	    10121,
+
+1950.5s	293	    10122,
+
+1950.5s	294	    10123,
+
+1950.5s	295	    10124,
+
+1950.5s	296	    10125,
+
+1950.5s	297	    10126,
+
+1950.5s	298	    10127,
+
+1950.5s	299	    10128,
+
+1950.5s	300	    10129,
+
+1950.5s	301	    10130,
+
+1950.5s	302	    10131,
+
+1950.5s	303	    10132,
+
+1950.5s	304	    10133,
+
+1950.5s	305	    10134,
+
+1950.5s	306	    10135,
+
+1950.5s	307	    10136,
+
+1950.5s	308	    10137,
+
+1950.5s	309	    10138,
+
+1950.5s	310	    10139,
+
+1950.5s	311	    10140,
+
+1950.5s	312	    10141,
+
+1950.5s	313	    10142,
+
+1950.5s	314	    10143,
+
+1950.5s	315	    10144,
+
+1950.5s	316	    10145,
+
+1950.5s	317	    10146,
+
+1950.5s	318	    10147,
+
+1950.5s	319	    10148,
+
+1950.5s	320	    10149,
+
+1950.5s	321	    10150,
+
+1950.5s	322	    10151,
+
+1950.5s	323	    10152,
+
+1950.5s	324	    10153,
+
+1950.5s	325	    10154,
+
+1950.5s	326	    10155,
+
+1950.5s	327	    10156,
+
+1950.5s	328	    10157,
+
+1950.5s	329	    10158,
+
+1950.5s	330	    10159,
+
+1950.5s	331	    10160,
+
+1950.5s	332	    10161,
+
+1950.5s	333	    10162,
+
+1950.5s	334	    10163,
+
+1950.5s	335	    10164,
+
+1950.5s	336	    10165,
+
+1950.5s	337	    10166,
+
+1950.5s	338	    10167,
+
+1950.5s	339	    10168,
+
+1950.5s	340	    10169,
+
+1950.5s	341	    10170,
+
+1950.5s	342	    10171,
+
+1950.5s	343	    10172,
+
+1950.5s	344	    10173,
+
+1950.5s	345	    10174,
+
+1950.5s	346	    10175,
+
+1950.5s	347	    10176,
+
+1950.5s	348	    10177,
+
+1950.5s	349	    10178,
+
+1950.5s	350	    10179,
+
+1950.5s	351	    10180,
+
+1950.5s	352	    10181,
+
+1950.5s	353	    10182,
+
+1950.5s	354	    10183,
+
+1950.5s	355	    10184,
+
+1950.5s	356	    10185,
+
+1950.5s	357	    10186,
+
+1950.5s	358	    10187,
+
+1950.5s	359	    10188,
+
+1950.5s	360	    10189,
+
+1950.5s	361	    10190,
+
+1950.5s	362	    10191,
+
+1950.5s	363	    10192,
+
+1950.5s	364	    10193,
+
+1950.5s	365	    10194,
+
+1950.5s	366	    10195,
+
+1950.5s	367	    10196,
+
+1950.5s	368	    10197,
+
+1950.5s	369	    10198,
+
+1950.5s	370	    10199
+
+1950.5s	371	  ],
+
+1950.5s	372	  "overlap": 1,
+
+1950.5s	373	  "armA_distinct": 200,
+
+1950.5s	374	  "armB_distinct": 200,
+
+1950.5s	375	  "minutes": 27.19
+
+1950.5s	376	}
+
+1950.5s	377	
+
+1950.5s	378	arm A first 5: ['d8cc2300b48a717d', '093001335e8d4a65', 'e652ce48248721bc', '1ef92cc440acfe12', 'a8b35d3bacd3cf90']
+
+1950.5s	379	arm B first 5: ['d8cc2300b48a717d', '98cee1eda2089661', 'e24a63ad58448030', '3a28c8b518d90320', 'f4a92dac25fdddb7']
+
+1950.5s	380	
+
+1950.5s	381	STAGE 1: INCONCLUSIVE — arms overlap; Stage 2 is not interpretable
+
+1950.5s	382	>>> pip install --timeout 120 --retries 5 -q 'lerobot' (attempt 1/3)
+
+1958.7s	383	google-adk 1.29.0 requires google-cloud-bigquery-storage>=2.0.0, which is not installed.
+
+1958.7s	384	datasets 4.8.5 requires fsspec[http]<=2026.2.0,>=2023.1.0, but you have fsspec 2026.9.0 which is incompatible.
+
+1958.7s	385	ydata-profiling 4.18.4 requires matplotlib<=3.10,>=3.5, but you have matplotlib 3.11.2 which is incompatible.
+
+1958.7s	386	ydata-profiling 4.18.4 requires numba<0.63,>=0.60, but you have numba 0.67.0 which is incompatible.
+
+1958.7s	387	ydata-profiling 4.18.4 requires scipy<1.17,>=1.8, but you have scipy 1.17.1 which is incompatible.
+
+1958.7s	388	gymnax 0.0.8 requires gym>=0.26, but you have gym 0.25.2 which is incompatible.
+
+1958.7s	389	google-colab 1.0.0 requires jupyter-server==2.14.0, but you have jupyter-server 2.12.5 which is incompatible.
+
+1958.7s	390	google-colab 1.0.0 requires pandas==2.2.2, but you have pandas 2.3.3 which is incompatible.
+
+1958.7s	391	moviepy 1.0.3 requires decorator<5.0,>=4.0.2, but you have decorator 5.3.1 which is incompatible.
+
+1958.7s	392	cuml-cu12 26.2.0 requires numba<0.62.0,>=0.60.0, but you have numba 0.67.0 which is incompatible.
+
+1958.7s	393	cudf-cu12 26.2.1 requires numba<0.62.0,>=0.60.0, but you have numba 0.67.0 which is incompatible.
+
+1958.7s	394	gradio 5.50.0 requires pillow<12.0,>=8.0, but you have pillow 12.3.0 which is incompatible.
+
+1958.7s	395	POLICY LOAD FAILED -> ModuleNotFoundError: No module named 'lerobot.common.policies'
+
+1958.7s	396	
+
+1958.7s	397	This is the most likely failure point and it is isolated on purpose.
+
+1958.7s	398	If lerobot's API moved, fix the two lines above; everything else is unaffected.
+
+1958.7s	399	Stage 1 above is already saved to p6_magnitude_partial.json.
+
+1958.7s	400	Stage 2 skipped.
+
+1958.7s	401	WROTE /kaggle/working/p6_magnitude_result.json
+
+1958.7s	402	
+
+1958.7s	403	================ READ THIS BACK TO THE VAULT ================
+
+1958.7s	404	stack-drift control  : STACK DRIFT HARMLESS (6/6 reference hashes reproduced) -- the magnitude number stands
+
+1958.7s	405	stage 1 overlap      : 1 ( 0 = leak confirmed )
+
+1958.7s	406	stage 2              : SKIPPED — ModuleNotFoundError: No module named 'lerobot.common.policies'
+
+1958.7s	407	============================================================
+
+1974.2s	408	<frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+
+1974.2s	409	<frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+
+1974.2s	410	
+
+1974.2s	411	<frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+
+1974.2s	412	<frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+
+1974.4s	413	/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+1974.4s	414	  return datetime.utcnow().replace(tzinfo=utc)
+
+1974.4s	415	
+
+1974.4s	416	/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+1974.4s	417	  return datetime.utcnow().replace(tzinfo=utc)
+
+1981.6s	418	Flax classes are deprecated and will be removed in Diffusers v1.0.0. We recommend migrating to PyTorch classes or pinning your version of Diffusers.
+
+1981.6s	419	
+
+1981.6s	420	Flax classes are deprecated and will be removed in Diffusers v1.0.0. We recommend migrating to PyTorch classes or pinning your version of Diffusers.
+
+1981.6s	421	/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+1981.6s	422	  return datetime.utcnow().replace(tzinfo=utc)
+
+1981.6s	423	Flax classes are deprecated and will be removed in Diffusers v1.0.0. We recommend migrating to PyTorch classes or pinning your version of Diffusers.
+
+1981.6s	424	
+
+1981.6s	425	/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+1981.6s	426	  return datetime.utcnow().replace(tzinfo=utc)
+
+1981.6s	427	Flax classes are deprecated and will be removed in Diffusers v1.0.0. We recommend migrating to PyTorch classes or pinning your version of Diffusers.
+
+1982.2s	428	Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+1982.2s	429	
+
+1982.2s	430	Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+1982.2s	431	WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+1982.2s	432	
+
+1982.2s	433	WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+1982.4s	434	Loading  HuggingFaceTB/SmolVLM2-500M-Instruct weights ...
+
+1982.5s	435	`torch_dtype` is deprecated! Use `dtype` instead!
+
+1982.5s	436	
+
+1982.5s	437	`torch_dtype` is deprecated! Use `dtype` instead!
+
+2019.0s	438	policy device: cuda
+
+2019.0s	439	policy loaded (patched loader v2): HuggingFaceVLA/smolvla_libero | persist -> /kaggle/working/p6_runs
+
+2019.0s	440	resume: found 0 arm-A and 100 arm-B episodes in /kaggle/working/p6_runs/p6_stage2_episodes.json
+
+2019.2s	441	[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+2019.2s	442	[Warning]: datasets path /kaggle/working/LIBERO/libero/libero/../datasets does not exist!
+
+2298.1s	443	EP arm=B i=100 seed=10100 init_hash=2449b5920b1190a2 success=True steps=224 sec=268 dev=cuda | arm B so far 86/101
+
+2525.0s	444	EP arm=B i=101 seed=10101 init_hash=964a32035fa986ef success=True steps=183 sec=220 dev=cuda | arm B so far 87/102
+
+2751.3s	445	EP arm=B i=102 seed=10102 init_hash=7cbea54555776639 success=True steps=183 sec=220 dev=cuda | arm B so far 88/103
+
+2933.4s	446	EP arm=B i=103 seed=10103 init_hash=5834feb2b8d4448a success=True steps=146 sec=175 dev=cuda | arm B so far 89/104
+
+3139.7s	447	EP arm=B i=104 seed=10104 init_hash=103c154dd2305802 success=True steps=166 sec=200 dev=cuda | arm B so far 90/105
+
+3314.6s	448	EP arm=B i=105 seed=10105 init_hash=18de37e1d8db8725 success=True steps=145 sec=168 dev=cuda | arm B so far 91/106
+
+3498.6s	449	EP arm=B i=106 seed=10106 init_hash=89656264945fd4e2 success=True steps=152 sec=178 dev=cuda | arm B so far 92/107
+
+3697.3s	450	EP arm=B i=107 seed=10107 init_hash=ec40cd75f0cbf56c success=True steps=161 sec=192 dev=cuda | arm B so far 93/108
+
+3892.2s	451	EP arm=B i=108 seed=10108 init_hash=4f9060e7b56594ba success=True steps=161 sec=188 dev=cuda | arm B so far 94/109
+
+4079.8s	452	EP arm=B i=109 seed=10109 init_hash=284907315ebd1b99 success=True steps=158 sec=181 dev=cuda | arm B so far 95/110
+
+4248.3s	453	EP arm=B i=110 seed=10110 init_hash=9d1441892e74d4db success=True steps=143 sec=162 dev=cuda | arm B so far 96/111
+
+4456.3s	454	EP arm=B i=111 seed=10111 init_hash=7b082787ea9d6b96 success=True steps=169 sec=201 dev=cuda | arm B so far 97/112
+
+4821.2s	455	EP arm=B i=112 seed=10112 init_hash=eb9be3f9ca07c5bc success=False steps=300 sec=358 dev=cuda | arm B so far 97/113
+
+5021.8s	456	EP arm=B i=113 seed=10113 init_hash=94a790bd80e90202 success=True steps=163 sec=194 dev=cuda | arm B so far 98/114
+
+5209.1s	457	EP arm=B i=114 seed=10114 init_hash=166ae21fe85a21ec success=True steps=151 sec=180 dev=cuda | arm B so far 99/115
+
+5394.4s	458	EP arm=B i=115 seed=10115 init_hash=6fd143e0a08ba019 success=True steps=148 sec=179 dev=cuda | arm B so far 100/116
+
+5573.5s	459	EP arm=B i=116 seed=10116 init_hash=60ef6c81af680abb success=True steps=144 sec=172 dev=cuda | arm B so far 101/117
+
+5761.2s	460	EP arm=B i=117 seed=10117 init_hash=7aa4f7e8f25dc9a8 success=True steps=150 sec=181 dev=cuda | arm B so far 102/118
+
+6009.2s	461	EP arm=B i=118 seed=10118 init_hash=0f9d39530e303149 success=True steps=200 sec=241 dev=cuda | arm B so far 103/119
+
+6219.3s	462	EP arm=B i=119 seed=10119 init_hash=66a84a0f4239c641 success=True steps=158 sec=203 dev=cuda | arm B so far 104/120
+
+6594.8s	463	EP arm=B i=120 seed=10120 init_hash=7d49e14dc2e561d2 success=False steps=300 sec=368 dev=cuda | arm B so far 104/121
+
+6801.6s	464	EP arm=B i=121 seed=10121 init_hash=0ff2e794da455776 success=True steps=162 sec=200 dev=cuda | arm B so far 105/122
+
+7059.6s	465	EP arm=B i=122 seed=10122 init_hash=8ba54341e0ef5b32 success=True steps=204 sec=251 dev=cuda | arm B so far 106/123
+
+7258.5s	466	EP arm=B i=123 seed=10123 init_hash=283aa7414a484486 success=True steps=154 sec=192 dev=cuda | arm B so far 107/124
+
+7478.6s	467	EP arm=B i=124 seed=10124 init_hash=d01a62336ad40f39 success=True steps=172 sec=213 dev=cuda | arm B so far 108/125
+
+7650.2s	468	EP arm=B i=125 seed=10125 init_hash=0576241982eef43d success=True steps=134 sec=165 dev=cuda | arm B so far 109/126
+
+7841.3s	469	EP arm=B i=126 seed=10126 init_hash=b3efb202f2326805 success=True steps=150 sec=184 dev=cuda | arm B so far 110/127
+
+8042.1s	470	EP arm=B i=127 seed=10127 init_hash=87f788a11e695413 success=True steps=156 sec=194 dev=cuda | arm B so far 111/128
+
+8242.0s	471	EP arm=B i=128 seed=10128 init_hash=e17d264303050720 success=True steps=152 sec=193 dev=cuda | arm B so far 112/129
+
+8463.6s	472	EP arm=B i=129 seed=10129 init_hash=387a42f115b6f54f success=True steps=164 sec=214 dev=cuda | arm B so far 113/130
+
+8871.1s	473	EP arm=B i=130 seed=10130 init_hash=be06f002aaf51268 success=False steps=300 sec=400 dev=cuda | arm B so far 113/131
+
+9078.5s	474	EP arm=B i=131 seed=10131 init_hash=cab46b3fbfa4bc29 success=True steps=147 sec=200 dev=cuda | arm B so far 114/132
+
+9453.7s	475	EP arm=B i=132 seed=10132 init_hash=6c4f1c94316433d0 success=False steps=300 sec=367 dev=cuda | arm B so far 114/133
+
+9618.9s	476	EP arm=B i=133 seed=10133 init_hash=9c91fb38c00b69eb success=True steps=149 sec=159 dev=cuda | arm B so far 115/134
+
+9824.0s	477	EP arm=B i=134 seed=10134 init_hash=950b31a60a364795 success=True steps=184 sec=199 dev=cuda | arm B so far 116/135
+
+9987.1s	478	EP arm=B i=135 seed=10135 init_hash=33400ce856fd612d success=True steps=145 sec=157 dev=cuda | arm B so far 117/136
+
+10161.8s	479	EP arm=B i=136 seed=10136 init_hash=e38248a1776dee0e success=True steps=148 sec=169 dev=cuda | arm B so far 118/137
+
+10525.5s	480	EP arm=B i=137 seed=10137 init_hash=f56f11080fd4b511 success=False steps=300 sec=358 dev=cuda | arm B so far 118/138
+
+10751.6s	481	EP arm=B i=138 seed=10138 init_hash=5b6bd70d0228a895 success=True steps=163 sec=219 dev=cuda | arm B so far 119/139
+
+10962.6s	482	EP arm=B i=139 seed=10139 init_hash=fd86cff20cf60e82 success=True steps=157 sec=204 dev=cuda | arm B so far 120/140
+
+11152.9s	483	EP arm=B i=140 seed=10140 init_hash=2e3f833cd4e28bea success=True steps=148 sec=182 dev=cuda | arm B so far 121/141
+
+11520.1s	484	EP arm=B i=141 seed=10141 init_hash=899398f091234276 success=False steps=300 sec=361 dev=cuda | arm B so far 121/142
+
+11721.5s	485	EP arm=B i=142 seed=10142 init_hash=a21a7c65ea8d539c success=True steps=158 sec=195 dev=cuda | arm B so far 122/143
+
+11905.2s	486	EP arm=B i=143 seed=10143 init_hash=f43f333c13bf1e99 success=True steps=144 sec=177 dev=cuda | arm B so far 123/144
+
+12108.9s	487	EP arm=B i=144 seed=10144 init_hash=3def2ae763451dda success=True steps=158 sec=197 dev=cuda | arm B so far 124/145
+
+12315.6s	488	EP arm=B i=145 seed=10145 init_hash=7330abae9ad70e60 success=True steps=163 sec=199 dev=cuda | arm B so far 125/146
+
+12515.0s	489	EP arm=B i=146 seed=10146 init_hash=7fa06fbd7e6c5f42 success=True steps=156 sec=193 dev=cuda | arm B so far 126/147
+
+12700.5s	490	EP arm=B i=147 seed=10147 init_hash=2e27aeb2087f1ddd success=True steps=142 sec=178 dev=cuda | arm B so far 127/148
+
+12890.2s	491	EP arm=B i=148 seed=10148 init_hash=2d43b6b9de256bf4 success=True steps=147 sec=183 dev=cuda | arm B so far 128/149
+
+13276.9s	492	EP arm=B i=149 seed=10149 init_hash=de83258f452d6f90 success=False steps=300 sec=380 dev=cuda | arm B so far 128/150
+
+13504.0s	493	EP arm=B i=150 seed=10150 init_hash=ff6543687bac1a5e success=True steps=168 sec=220 dev=cuda | arm B so far 129/151
+
+13734.7s	494	EP arm=B i=151 seed=10151 init_hash=1c0f7ee71d577e47 success=True steps=173 sec=223 dev=cuda | arm B so far 130/152
+
+14111.0s	495	EP arm=B i=152 seed=10152 init_hash=f74bb163c54d39dc success=False steps=300 sec=369 dev=cuda | arm B so far 130/153
+
+14313.5s	496	EP arm=B i=153 seed=10153 init_hash=7669f1a69b039c98 success=True steps=157 sec=196 dev=cuda | arm B so far 131/154
+
+14524.3s	497	EP arm=B i=154 seed=10154 init_hash=7f4f56d58004ca0c success=True steps=164 sec=204 dev=cuda | arm B so far 132/155
+
+14718.2s	498	EP arm=B i=155 seed=10155 init_hash=703291d0fb6552a5 success=True steps=148 sec=187 dev=cuda | arm B so far 133/156
+
+14919.0s	499	EP arm=B i=156 seed=10156 init_hash=d8dc632ffb5e84f7 success=True steps=153 sec=194 dev=cuda | arm B so far 134/157
+
+15173.6s	500	EP arm=B i=157 seed=10157 init_hash=608c44f023858e08 success=True steps=201 sec=248 dev=cuda | arm B so far 135/158
+
+15343.8s	501	EP arm=B i=158 seed=10158 init_hash=1ededa1bfd543806 success=True steps=135 sec=163 dev=cuda | arm B so far 136/159
+
+15578.3s	502	EP arm=B i=159 seed=10159 init_hash=f08e9cbae4f89c0c success=True steps=185 sec=228 dev=cuda | arm B so far 137/160
+
+15822.5s	503	EP arm=B i=160 seed=10160 init_hash=a9f2fda71f3ba492 success=True steps=195 sec=237 dev=cuda | arm B so far 138/161
+
+16008.2s	504	EP arm=B i=161 seed=10161 init_hash=ccaed999d57e1f6e success=True steps=150 sec=179 dev=cuda | arm B so far 139/162
+
+16195.5s	505	EP arm=B i=162 seed=10162 init_hash=a258caa1c905a21e success=True steps=150 sec=181 dev=cuda | arm B so far 140/163
+
+16392.9s	506	EP arm=B i=163 seed=10163 init_hash=c555a32272a1ac48 success=True steps=157 sec=191 dev=cuda | arm B so far 141/164
+
+16584.3s	507	EP arm=B i=164 seed=10164 init_hash=0e41c38255df5391 success=True steps=147 sec=184 dev=cuda | arm B so far 142/165
+
+16850.5s	508	EP arm=B i=165 seed=10165 init_hash=69dccefbcc429eb9 success=True steps=209 sec=259 dev=cuda | arm B so far 143/166
+
+17219.9s	509	EP arm=B i=166 seed=10166 init_hash=7cff4fc190eef0a1 success=False steps=300 sec=362 dev=cuda | arm B so far 143/167
+
+17407.2s	510	EP arm=B i=167 seed=10167 init_hash=17d28ee68f9025b8 success=True steps=155 sec=181 dev=cuda | arm B so far 144/168
+
+17742.6s	511	EP arm=B i=168 seed=10168 init_hash=6132e21c14a1e0dc success=False steps=300 sec=329 dev=cuda | arm B so far 144/169
+
+17972.1s	512	EP arm=B i=169 seed=10169 init_hash=e575ecfafaa9489d success=True steps=197 sec=224 dev=cuda | arm B so far 145/170
+
+18162.8s	513	EP arm=B i=170 seed=10170 init_hash=9d8c796a43babfee success=True steps=151 sec=184 dev=cuda | arm B so far 146/171
+
+18415.7s	514	EP arm=B i=171 seed=10171 init_hash=17e2a923b2613c10 success=True steps=206 sec=246 dev=cuda | arm B so far 147/172
+
+18591.0s	515	EP arm=B i=172 seed=10172 init_hash=cc2eb5752278c6d6 success=True steps=150 sec=169 dev=cuda | arm B so far 148/173
+
+18951.0s	516	EP arm=B i=173 seed=10173 init_hash=6902c0d90d630a8a success=False steps=300 sec=354 dev=cuda | arm B so far 148/174
+
+19133.9s	517	EP arm=B i=174 seed=10174 init_hash=f010055ded463848 success=True steps=147 sec=176 dev=cuda | arm B so far 149/175
+
+19335.7s	518	EP arm=B i=175 seed=10175 init_hash=a261ffa65f6ffcd0 success=True steps=164 sec=195 dev=cuda | arm B so far 150/176
+
+19538.4s	519	EP arm=B i=176 seed=10176 init_hash=56acf46c0522f4ff success=True steps=159 sec=196 dev=cuda | arm B so far 151/177
+
+19759.5s	520	EP arm=B i=177 seed=10177 init_hash=48267d9186033358 success=True steps=175 sec=214 dev=cuda | arm B so far 152/178
+
+19973.3s	521	EP arm=B i=178 seed=10178 init_hash=c61b11c1464615ed success=True steps=168 sec=207 dev=cuda | arm B so far 153/179
+
+20162.2s	522	EP arm=B i=179 seed=10179 init_hash=d50bd6aee4752d71 success=True steps=149 sec=182 dev=cuda | arm B so far 154/180
+
+20391.1s	523	EP arm=B i=180 seed=10180 init_hash=e9821e713aeedfc7 success=True steps=184 sec=222 dev=cuda | arm B so far 155/181
+
+20754.8s	524	EP arm=B i=181 seed=10181 init_hash=2a3a639a011d9125 success=False steps=300 sec=357 dev=cuda | arm B so far 155/182
+
+20913.5s	525	EP arm=B i=182 seed=10182 init_hash=4b771b73f08b4d47 success=True steps=134 sec=153 dev=cuda | arm B so far 156/183
+
+21256.1s	526	EP arm=B i=183 seed=10183 init_hash=f11cb8e38d4048e1 success=False steps=300 sec=336 dev=cuda | arm B so far 156/184
+
+21433.4s	527	EP arm=B i=184 seed=10184 init_hash=64bfc02b902b94e7 success=True steps=155 sec=171 dev=cuda | arm B so far 157/185
+
+21600.7s	528	EP arm=B i=185 seed=10185 init_hash=090cadec707b107a success=True steps=144 sec=161 dev=cuda | arm B so far 158/186
+
+21970.1s	529	EP arm=B i=186 seed=10186 init_hash=d38e3bb9acbad39b success=False steps=300 sec=363 dev=cuda | arm B so far 158/187
+
+22165.5s	530	EP arm=B i=187 seed=10187 init_hash=9056952db46107b3 success=True steps=153 sec=189 dev=cuda | arm B so far 159/188
+
+22355.0s	531	EP arm=B i=188 seed=10188 init_hash=ea51f3c0171d0c6a success=True steps=150 sec=183 dev=cuda | arm B so far 160/189
+
+22565.3s	532	EP arm=B i=189 seed=10189 init_hash=3ba77e744a022dd8 success=True steps=168 sec=203 dev=cuda | arm B so far 161/190
+
+22751.6s	533	EP arm=B i=190 seed=10190 init_hash=f939dcb5b7baae09 success=True steps=148 sec=180 dev=cuda | arm B so far 162/191
+
+23134.3s	534	EP arm=B i=191 seed=10191 init_hash=e290a1536a90f54e success=False steps=300 sec=376 dev=cuda | arm B so far 162/192
+
+23517.1s	535	EP arm=B i=192 seed=10192 init_hash=014baa11544d9920 success=False steps=300 sec=376 dev=cuda | arm B so far 162/193
+
+23733.9s	536	EP arm=B i=193 seed=10193 init_hash=81ee11750d23fd01 success=True steps=166 sec=210 dev=cuda | arm B so far 163/194
+
+23931.6s	537	EP arm=B i=194 seed=10194 init_hash=b998951556fe105d success=True steps=153 sec=191 dev=cuda | arm B so far 164/195
+
+24139.9s	538	EP arm=B i=195 seed=10195 init_hash=f22b06e0f3cd34bb success=True steps=162 sec=201 dev=cuda | arm B so far 165/196
+
+24365.2s	539	EP arm=B i=196 seed=10196 init_hash=bacdc4c84042ff1d success=True steps=177 sec=218 dev=cuda | arm B so far 166/197
+
+24570.9s	540	EP arm=B i=197 seed=10197 init_hash=c475a51714a4e9f9 success=True steps=163 sec=199 dev=cuda | arm B so far 167/198
+
+24761.6s	541	EP arm=B i=198 seed=10198 init_hash=2ca3661b064ad507 success=True steps=153 sec=184 dev=cuda | arm B so far 168/199
+
+24949.8s	542	EP arm=B i=199 seed=10199 init_hash=dc1a7f5c802a44b3 success=True steps=150 sec=181 dev=cuda | arm B so far 169/200
+
+24950.3s	543	HASHCHECK arm B: 200/200 episodes match Stage 1 init_hash; mismatches at []
+
+24950.3s	544	SCALE RESULT arm B: 169/200 success
+
+24950.3s	545	EXTEND C1 NEW arm B: 84/100 success (i=100..199)
+
+24956.4s	546	/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+
+24956.4s	547	  cells[i][c] = re.sub('\\\\\|', '|', cell)
+
+24956.5s	548	/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+
+24956.5s	549	  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+
+24957.3s	550	[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+
+24957.7s	551	[NbConvertApp] Writing 304687 bytes to __notebook__.ipynb
+
+24960.5s	552	[NbConvertApp] Converting notebook __notebook__.ipynb to html
+
+24961.8s	553	[NbConvertApp] Writing 665052 bytes to __results__.html
