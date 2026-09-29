@@ -1,0 +1,442 @@
+{
+ "run": "P6 magnitude replication 2026-09-28",
+ "armA_successes": 16,
+ "armB_successes": 17,
+ "n": 20,
+ "delta_pp_B_minus_A": 5.0,
+ "paired_agreement": 13,
+ "A_success_B_fail": 3,
+ "A_fail_B_success": 4,
+ "mcnemar_exact_two_sided_p": 1.0,
+ "init_hash_overlap": 1,
+ "armA_fail_i": [
+  5,
+  10,
+  12,
+  15
+ ],
+ "armB_fail_i": [
+  0,
+  13,
+  16
+ ],
+ "platforms": "arm A i=0-19 and arm B i=0-15: Colab T4 (2026.04, torch 2.10.0+cu128, patch v2); arm B i=16-19: Kaggle T4 (patch v3, same logic); arm A replay verified on Kaggle",
+ "comparison_0927": {
+  "armA": 19,
+  "armB": 15,
+  "paired_agreement": 14,
+  "A_only": 5,
+  "B_only": 1,
+  "mcnemar_p": 0.2188
+ },
+ "pooled_both_runs": {
+  "armA": 35,
+  "armB": 32,
+  "n": 40
+ },
+ "status": "EXPLORATORY: Stage 1 INCONCLUSIVE as pre-registered (overlap 1/20); harness patched after pre-registration",
+ "armA": [
+  {
+   "i": 0,
+   "seed": 10000,
+   "init_hash": "d8cc2300b48a717d",
+   "success": true,
+   "steps": 161,
+   "sec": 212.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 1,
+   "seed": 10001,
+   "init_hash": "093001335e8d4a65",
+   "success": true,
+   "steps": 171,
+   "sec": 225.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 2,
+   "seed": 10002,
+   "init_hash": "e652ce48248721bc",
+   "success": true,
+   "steps": 166,
+   "sec": 217.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 3,
+   "seed": 10003,
+   "init_hash": "1ef92cc440acfe12",
+   "success": true,
+   "steps": 152,
+   "sec": 197.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 4,
+   "seed": 10004,
+   "init_hash": "a8b35d3bacd3cf90",
+   "success": true,
+   "steps": 153,
+   "sec": 198.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 5,
+   "seed": 10005,
+   "init_hash": "29ede4598a65c8a8",
+   "success": false,
+   "steps": 300,
+   "sec": 382.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 6,
+   "seed": 10006,
+   "init_hash": "832263cd673d1f5a",
+   "success": true,
+   "steps": 169,
+   "sec": 219.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 7,
+   "seed": 10007,
+   "init_hash": "987039fd2bd5fd84",
+   "success": true,
+   "steps": 153,
+   "sec": 199.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 8,
+   "seed": 10008,
+   "init_hash": "a5d782fc9623ae97",
+   "success": true,
+   "steps": 155,
+   "sec": 200.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 9,
+   "seed": 10009,
+   "init_hash": "bd2247acc42716e6",
+   "success": true,
+   "steps": 174,
+   "sec": 224.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 10,
+   "seed": 10010,
+   "init_hash": "07f90abef9e148a1",
+   "success": false,
+   "steps": 300,
+   "sec": 383.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 11,
+   "seed": 10011,
+   "init_hash": "f93b6532db9e5be7",
+   "success": true,
+   "steps": 143,
+   "sec": 183.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 12,
+   "seed": 10012,
+   "init_hash": "076c9d721ead00e6",
+   "success": false,
+   "steps": 300,
+   "sec": 384.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 13,
+   "seed": 10013,
+   "init_hash": "019f8e4389c85f8e",
+   "success": true,
+   "steps": 181,
+   "sec": 232.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 14,
+   "seed": 10014,
+   "init_hash": "07c777e52dd23487",
+   "success": true,
+   "steps": 179,
+   "sec": 230.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 15,
+   "seed": 10015,
+   "init_hash": "7cc95153fc65a26c",
+   "success": false,
+   "steps": 300,
+   "sec": 379.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 16,
+   "seed": 10016,
+   "init_hash": "e973d1fc8d1cb112",
+   "success": true,
+   "steps": 147,
+   "sec": 189.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 17,
+   "seed": 10017,
+   "init_hash": "88c9a2faf66b3b58",
+   "success": true,
+   "steps": 161,
+   "sec": 207.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 18,
+   "seed": 10018,
+   "init_hash": "54c9e526b5d52f88",
+   "success": true,
+   "steps": 188,
+   "sec": 244.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 19,
+   "seed": 10019,
+   "init_hash": "0e869c687d8fb7b6",
+   "success": true,
+   "steps": 144,
+   "sec": 185.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  }
+ ],
+ "armB": [
+  {
+   "i": 0,
+   "seed": 10000,
+   "init_hash": "d8cc2300b48a717d",
+   "success": false,
+   "steps": 300,
+   "sec": 381.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 1,
+   "seed": 10001,
+   "init_hash": "98cee1eda2089661",
+   "success": true,
+   "steps": 175,
+   "sec": 226.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 2,
+   "seed": 10002,
+   "init_hash": "e24a63ad58448030",
+   "success": true,
+   "steps": 151,
+   "sec": 193.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 3,
+   "seed": 10003,
+   "init_hash": "3a28c8b518d90320",
+   "success": true,
+   "steps": 206,
+   "sec": 265.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 4,
+   "seed": 10004,
+   "init_hash": "f4a92dac25fdddb7",
+   "success": true,
+   "steps": 161,
+   "sec": 206.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 5,
+   "seed": 10005,
+   "init_hash": "aab203c94cdc72f5",
+   "success": true,
+   "steps": 162,
+   "sec": 206.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 6,
+   "seed": 10006,
+   "init_hash": "f5b6bbdd036ec461",
+   "success": true,
+   "steps": 172,
+   "sec": 223.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 7,
+   "seed": 10007,
+   "init_hash": "9472cd6c2ee3115c",
+   "success": true,
+   "steps": 154,
+   "sec": 196.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 8,
+   "seed": 10008,
+   "init_hash": "9c854cedb32ae197",
+   "success": true,
+   "steps": 153,
+   "sec": 195.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 9,
+   "seed": 10009,
+   "init_hash": "fec8b0a1e18e1b1c",
+   "success": true,
+   "steps": 155,
+   "sec": 198.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 10,
+   "seed": 10010,
+   "init_hash": "5531d27cd7d21d94",
+   "success": true,
+   "steps": 155,
+   "sec": 199.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 11,
+   "seed": 10011,
+   "init_hash": "fcb3fc27d59d20fd",
+   "success": true,
+   "steps": 148,
+   "sec": 190.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 12,
+   "seed": 10012,
+   "init_hash": "6e8ca6cd6263fe17",
+   "success": true,
+   "steps": 153,
+   "sec": 194.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 13,
+   "seed": 10013,
+   "init_hash": "b0419a5503102068",
+   "success": false,
+   "steps": 300,
+   "sec": 379.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 14,
+   "seed": 10014,
+   "init_hash": "a8bd6c19cfbc9cd3",
+   "success": true,
+   "steps": 175,
+   "sec": 223.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 15,
+   "seed": 10015,
+   "init_hash": "55ef5dbe63e7cfb1",
+   "success": true,
+   "steps": 158,
+   "sec": 201.0,
+   "restored_from": "EP line 2026-09-28",
+   "platform": "colab T4"
+  },
+  {
+   "i": 16,
+   "seed": 10016,
+   "init_hash": "22f95e8c2c1d1b94",
+   "success": false,
+   "steps": 300,
+   "sec": 308.0,
+   "device": "cuda",
+   "platform": "kaggle T4"
+  },
+  {
+   "i": 17,
+   "seed": 10017,
+   "init_hash": "b76807e0f2d2686c",
+   "success": true,
+   "steps": 157,
+   "sec": 166.0,
+   "device": "cuda",
+   "platform": "kaggle T4"
+  },
+  {
+   "i": 18,
+   "seed": 10018,
+   "init_hash": "a7355fbda4b0015c",
+   "success": true,
+   "steps": 189,
+   "sec": 200.0,
+   "device": "cuda",
+   "platform": "kaggle T4"
+  },
+  {
+   "i": 19,
+   "seed": 10019,
+   "init_hash": "6cabd049db98f39f",
+   "success": true,
+   "steps": 158,
+   "sec": 167.0,
+   "device": "cuda",
+   "platform": "kaggle T4"
+  }
+ ]
+}

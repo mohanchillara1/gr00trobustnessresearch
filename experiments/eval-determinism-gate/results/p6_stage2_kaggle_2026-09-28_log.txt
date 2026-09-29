@@ -1,0 +1,598 @@
+# captured 2026-09-28 22:12:50 CT
+Log Message
+
+11.4s	1	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+
+11.4s	2	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+
+11.4s	3	0.00s - to python to disable frozen modules.
+
+11.4s	4	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+
+12.2s	5	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+
+12.2s	6	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+
+12.2s	7	0.00s - to python to disable frozen modules.
+
+12.2s	8	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+
+13.6s	9	{
+
+13.6s	10	  "written_utc": "2026-09-22",
+
+13.6s	11	  "prediction_1_overlap": "arm A and arm B initial-state hash sets are DISJOINT (overlap 0)",
+
+13.6s	12	  "prediction_2_success": "arms differ; NO direction or magnitude predicted",
+
+13.6s	13	  "prediction_3_paired": "per-episode paired agreement between arms is LOW",
+
+13.6s	14	  "falsifier": "overlap==0 but success rates identical -> leak real, cost not measurable at this N"
+
+13.6s	15	}
+
+13.6s	16	
+
+13.6s	17	SUITE=libero_object TASK=0 N=20 MAXSTEPS=300 POLICY=HuggingFaceVLA/smolvla_libero
+
+13.6s	18	output dir: /kaggle/working
+
+13.8s	19	resume file seeded: A=20 B=16
+
+39.9s	20	extras install rc 0 ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+
+39.9s	21	google-adk 1.29.0 requires google-cloud-bigquery-storage>=2.0.0, which is not installed.
+
+39.9s	22	google-colab 1.0.0 requires jupyter-server==2.14.0, but you have jupyter-server 2.12.5 which is incompatible.
+
+39.9s	23	google-colab 1.0.0 requires pandas==2.2.2, but you have pandas 2.3.3 which is incompatible.
+
+39.9s	24	
+
+39.9s	25	platform: kaggle | lerobot 0.6.1 | transformers 5.5.4 | torch 2.10.0+cu128
+
+39.9s	26	numpy already loaded in this kernel before the pin: True /usr/local/lib/python3.12/dist-packages/numpy/__init__.py
+
+39.9s	27	scratch dir: /kaggle/temp (1201.4 GB free) | candidates: /kaggle/temp=1201.4GB, /tmp=1201.4GB, /kaggle/working=20.9GB, .=20.9GB
+
+39.9s	28	>>> nvidia-smi --query-gpu=name,memory.total --format=csv,noheader || echo NO-GPU 
+
+39.9s	29	Tesla T4, 15360 MiB
+
+39.9s	30	Tesla T4, 15360 MiB
+
+40.1s	31	python: 3.12.13 /usr/bin/python3
+
+40.1s	32	
+
+40.1s	33	image numpy (fresh subprocess, before): 2.0.2 /usr/local/lib/python3.12/dist-packages/numpy/__init__.py
+
+40.1s	34	>>> /usr/bin/python3 -m pip download --timeout 120 --retries 5 -q -d /kaggle/temp/p6_wheels 'numpy==1.26.4' 'robosuite==1.4.0' 'bddl==1.0.1' 'gym==0.25.2' 'mujoco<3.2' easydict pyyaml 'opencv-python-headless==4.10.0.84' termcolor future hydra-core h5py pillow matplotlib cloudpickle imageio tqdm (attempt 1/3)
+
+67.5s	35	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.9/59.9 MB 27.0 MB/s eta 0:00:00
+
+67.5s	36	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 91.7/91.7 kB 3.6 MB/s eta 0:00:00
+
+67.5s	37	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 37.0 MB/s eta 0:00:00
+
+67.5s	38	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 172.9/172.9 kB 10.0 MB/s eta 0:00:00
+
+67.5s	39	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 221.7/221.7 kB 11.5 MB/s eta 0:00:00
+
+67.5s	40	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.7/66.7 kB 3.3 MB/s eta 0:00:00
+
+67.5s	41	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.8/79.8 kB 4.2 MB/s eta 0:00:00
+
+67.5s	42	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 2.1 MB/s eta 0:00:00
+
+67.5s	43	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.6/90.6 kB 5.0 MB/s eta 0:00:00
+
+67.5s	44	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 86.2/86.2 kB 5.1 MB/s eta 0:00:00
+
+67.5s	45	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.5/67.5 kB 2.6 MB/s eta 0:00:00
+
+67.5s	46	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 366.2/366.2 kB 16.5 MB/s eta 0:00:00
+
+67.5s	47	>>> /usr/bin/python3 -m pip install --timeout 120 --retries 5 -q --upgrade --no-warn-conflicts --target /kaggle/temp/p6_stack --find-links /kaggle/temp/p6_wheels 'numpy==1.26.4' 'robosuite==1.4.0' 'bddl==1.0.1' 'gym==0.25.2' 'mujoco<3.2' easydict pyyaml 'opencv-python-headless==4.10.0.84' termcolor future hydra-core h5py pillow matplotlib cloudpickle imageio tqdm (attempt 1/3)
+
+118.1s	48	
+
+118.1s	49	>>> /usr/bin/python3 -m pip install --timeout 120 --retries 5 -q 'transformers>=4.50' accelerate safetensors huggingface_hub (attempt 1/3)
+
+121.5s	50	
+
+121.5s	51	>>> git clone -q https://github.com/Lifelong-Robot-Learning/LIBERO.git /kaggle/working/LIBERO 
+
+135.3s	52	
+
+135.8s	53	
+
+135.8s	54	numpy seen by a fresh subprocess (with STACK): 1.26.4 /kaggle/temp/p6_stack/numpy/__init__.py
+
+142.8s	55	simulator stack import (fresh subprocess): OK
+
+142.8s	56	[robosuite WARNING] No private macro file found! (__init__.py:7)
+
+142.8s	57	[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+
+142.8s	58	[robosuite WARNING] To setup, run: python /kaggle/temp/p6_stack/robosuite/scripts/setup_macros.py (__init__.py:9)
+
+142.8s	59	Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+
+142.8s	60	Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+
+142.8s	61	See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+
+142.8s	62	robosuite 1.4.0 | gym 0.25.2 | mujoco 3.1.6 | numpy 1.26.4
+
+203.5s	63	
+
+203.5s	64	numpy copies on disk:
+
+203.5s	65	  /kaggle/temp/p6_stack/numpy-1.26.4.dist-info
+
+203.5s	66	  /usr/local/lib/python3.12/dist-packages/numpy-2.0.2.dist-info
+
+203.5s	67	
+
+203.5s	68	numpy in this kernel: 2.0.2 /usr/local/lib/python3.12/dist-packages/numpy/__init__.py
+
+203.5s	69	
+
+203.5s	70	numpy pin, fresh subprocess: HELD
+
+203.5s	71	numpy pin, this kernel:       NOT HELD
+
+203.5s	72	robosuite/gym/mujoco import:  OK
+
+203.5s	73	
+
+203.5s	74	======================================================================
+
+203.5s	75	numpy was ALREADY LOADED in this kernel before the pin (/usr/local/lib/python3.12/dist-packages/numpy/__init__.py).
+
+203.5s	76	A running Python cannot swap numpy, so this kernel keeps the image's copy.
+
+203.5s	77	NUMPY PIN NOT HELD IN THIS KERNEL -> 2.0.2 /usr/local/lib/python3.12/dist-packages/numpy/__init__.py
+
+203.5s	78	Do NOT treat the magnitude number as comparable to the 09-13/09-21 runs
+
+203.5s	79	unless the stack-drift control (cell 1b) reproduces all six reference hashes.
+
+203.5s	80	Send p6_stack_report.json back with the other outputs.
+
+203.5s	81	======================================================================
+
+203.5s	82	env setup 2.7 min
+
+203.7s	83	wrote /root/.libero/config.yaml
+
+203.7s	84	  benchmark_root  /kaggle/working/LIBERO/libero/libero  
+
+203.7s	85	  bddl_files      /kaggle/working/LIBERO/libero/libero/./bddl_files  
+
+203.7s	86	  init_states     /kaggle/working/LIBERO/libero/libero/./init_files  
+
+203.7s	87	  datasets        /kaggle/working/LIBERO/libero/libero/../datasets  (does not exist yet; LIBERO only warns)
+
+203.7s	88	  assets          /kaggle/working/LIBERO/libero/libero/./assets  
+
+203.7s	89	
+
+203.7s	90	import libero.libero with stdin closed -> OK
+
+203.7s	91	config: /root/.libero/config.yaml
+
+203.7s	92	[Warning]: datasets path /kaggle/working/LIBERO/libero/libero/../datasets does not exist!
+
+203.7s	93	bddl_files: /kaggle/working/LIBERO/libero/libero/./bddl_files
+
+215.8s	94	
+
+215.8s	95	import benchmark + OffScreenRenderEnv -> OK
+
+215.8s	96	[robosuite WARNING] No private macro file found! (__init__.py:7)
+
+215.8s	97	[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+
+215.8s	98	[robosuite WARNING] To setup, run: python /kaggle/temp/p6_stack/robosuite/scripts/setup_macros.py (__init__.py:9)
+
+215.8s	99	Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+
+215.8s	100	Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+
+215.8s	101	See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+
+215.8s	102	benchmark + envs import OK with numpy 1.26.4 /kaggle/temp/p6_stack/numpy/__init__.py
+
+215.9s	103	[robosuite WARNING] No private macro file found! (__init__.py:7)
+
+215.9s	104	
+
+215.9s	105	[robosuite WARNING] No private macro file found! (__init__.py:7)
+
+215.9s	106	[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+
+215.9s	107	
+
+215.9s	108	[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+
+215.9s	109	[robosuite WARNING] To setup, run: python /kaggle/temp/p6_stack/robosuite/scripts/setup_macros.py (__init__.py:9)
+
+215.9s	110	
+
+215.9s	111	[robosuite WARNING] To setup, run: python /kaggle/temp/p6_stack/robosuite/scripts/setup_macros.py (__init__.py:9)
+
+217.0s	112	Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+
+217.0s	113	Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+
+217.0s	114	See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+
+217.0s	115	
+
+217.0s	116	Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+
+217.0s	117	Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+
+217.0s	118	See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+
+217.2s	119	/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+217.2s	120	  return datetime.utcnow().replace(tzinfo=utc)
+
+217.2s	121	
+
+217.2s	122	/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+217.2s	123	  return datetime.utcnow().replace(tzinfo=utc)
+
+217.4s	124	/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+217.4s	125	  return datetime.utcnow().replace(tzinfo=utc)
+
+217.4s	126	
+
+217.4s	127	/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+217.4s	128	  return datetime.utcnow().replace(tzinfo=utc)
+
+217.6s	129	/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+217.6s	130	  return datetime.utcnow().replace(tzinfo=utc)
+
+217.6s	131	
+
+217.6s	132	/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+217.6s	133	  return datetime.utcnow().replace(tzinfo=utc)
+
+224.1s	134	{
+
+224.1s	135	  "python": "3.12.13",
+
+224.1s	136	  "numpy": "2.0.2",
+
+224.1s	137	  "robosuite": "1.4.0",
+
+224.1s	138	  "mujoco": "3.1.6",
+
+224.1s	139	  "gym": "0.25.2",
+
+224.1s	140	  "torch": "2.10.0+cu128",
+
+224.1s	141	  "transformers": "5.5.4",
+
+224.1s	142	  "numpy_file": "/usr/local/lib/python3.12/dist-packages/numpy/__init__.py",
+
+224.1s	143	  "numpy_preloaded_before_pin": true
+
+224.1s	144	}
+
+224.1s	145	/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+224.1s	146	  return datetime.utcnow().replace(tzinfo=utc)
+
+224.1s	147	
+
+224.1s	148	/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+224.1s	149	  return datetime.utcnow().replace(tzinfo=utc)
+
+224.3s	150	[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+224.3s	151	[Warning]: datasets path /kaggle/working/LIBERO/libero/libero/../datasets does not exist!
+
+224.3s	152	/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+224.3s	153	  return datetime.utcnow().replace(tzinfo=utc)
+
+224.3s	154	
+
+224.3s	155	/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+224.3s	156	  return datetime.utcnow().replace(tzinfo=utc)
+
+363.2s	157	test         seed  reference          this run           
+
+363.2s	158	T2           11    cbb3470b4c447f68   cbb3470b4c447f68   MATCH
+
+363.2s	159	T2           12    c732927029d36125   c732927029d36125   MATCH
+
+363.2s	160	T2           13    c09097460e7814a5   c09097460e7814a5   MATCH
+
+363.2s	161	T5_burned    11    e78e0d1a180b3e6a   e78e0d1a180b3e6a   MATCH
+
+363.2s	162	T5_burned    12    42bec853db81b54b   42bec853db81b54b   MATCH
+
+363.2s	163	T5_burned    13    dfa9091d9724f85f   dfa9091d9724f85f   MATCH
+
+363.2s	164	
+
+363.2s	165	numpy: 2.0.2 | control took 2.3 min
+
+363.2s	166	VERDICT: STACK DRIFT HARMLESS (6/6 reference hashes reproduced) -- the magnitude number stands
+
+363.2s	167	/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+363.2s	168	  return datetime.utcnow().replace(tzinfo=utc)
+
+363.2s	169	
+
+363.2s	170	/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+363.2s	171	  return datetime.utcnow().replace(tzinfo=utc)
+
+363.4s	172	[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+363.4s	173	[Warning]: datasets path /kaggle/working/LIBERO/libero/libero/../datasets does not exist!
+
+439.4s	174	[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+439.4s	175	[Warning]: datasets path /kaggle/working/LIBERO/libero/libero/../datasets does not exist!
+
+514.3s	176	{
+
+514.3s	177	  "task_language": "pick up the alphabet soup and place it in the basket",
+
+514.3s	178	  "seeds": [
+
+514.3s	179	    10000,
+
+514.3s	180	    10001,
+
+514.3s	181	    10002,
+
+514.3s	182	    10003,
+
+514.3s	183	    10004,
+
+514.3s	184	    10005,
+
+514.3s	185	    10006,
+
+514.3s	186	    10007,
+
+514.3s	187	    10008,
+
+514.3s	188	    10009,
+
+514.3s	189	    10010,
+
+514.3s	190	    10011,
+
+514.3s	191	    10012,
+
+514.3s	192	    10013,
+
+514.3s	193	    10014,
+
+514.3s	194	    10015,
+
+514.3s	195	    10016,
+
+514.3s	196	    10017,
+
+514.3s	197	    10018,
+
+514.3s	198	    10019
+
+514.3s	199	  ],
+
+514.3s	200	  "overlap": 1,
+
+514.3s	201	  "armA_distinct": 20,
+
+514.3s	202	  "armB_distinct": 20,
+
+514.3s	203	  "minutes": 2.52
+
+514.3s	204	}
+
+514.3s	205	
+
+514.3s	206	arm A first 5: ['d8cc2300b48a717d', '093001335e8d4a65', 'e652ce48248721bc', '1ef92cc440acfe12', 'a8b35d3bacd3cf90']
+
+514.3s	207	arm B first 5: ['d8cc2300b48a717d', '98cee1eda2089661', 'e24a63ad58448030', '3a28c8b518d90320', 'f4a92dac25fdddb7']
+
+514.3s	208	
+
+514.3s	209	STAGE 1: INCONCLUSIVE — arms overlap; Stage 2 is not interpretable
+
+514.3s	210	>>> pip install --timeout 120 --retries 5 -q 'lerobot' (attempt 1/3)
+
+521.2s	211	google-adk 1.29.0 requires google-cloud-bigquery-storage>=2.0.0, which is not installed.
+
+521.2s	212	datasets 4.8.5 requires fsspec[http]<=2026.2.0,>=2023.1.0, but you have fsspec 2026.9.0 which is incompatible.
+
+521.2s	213	ydata-profiling 4.18.4 requires matplotlib<=3.10,>=3.5, but you have matplotlib 3.11.2 which is incompatible.
+
+521.2s	214	ydata-profiling 4.18.4 requires numba<0.63,>=0.60, but you have numba 0.67.0 which is incompatible.
+
+521.2s	215	ydata-profiling 4.18.4 requires scipy<1.17,>=1.8, but you have scipy 1.17.1 which is incompatible.
+
+521.2s	216	gymnax 0.0.8 requires gym>=0.26, but you have gym 0.25.2 which is incompatible.
+
+521.2s	217	google-colab 1.0.0 requires jupyter-server==2.14.0, but you have jupyter-server 2.12.5 which is incompatible.
+
+521.2s	218	google-colab 1.0.0 requires pandas==2.2.2, but you have pandas 2.3.3 which is incompatible.
+
+521.2s	219	moviepy 1.0.3 requires decorator<5.0,>=4.0.2, but you have decorator 5.3.1 which is incompatible.
+
+521.2s	220	cuml-cu12 26.2.0 requires numba<0.62.0,>=0.60.0, but you have numba 0.67.0 which is incompatible.
+
+521.2s	221	cudf-cu12 26.2.1 requires numba<0.62.0,>=0.60.0, but you have numba 0.67.0 which is incompatible.
+
+521.2s	222	gradio 5.50.0 requires pillow<12.0,>=8.0, but you have pillow 12.3.0 which is incompatible.
+
+521.2s	223	POLICY LOAD FAILED -> ModuleNotFoundError: No module named 'lerobot.common.policies'
+
+521.2s	224	
+
+521.2s	225	This is the most likely failure point and it is isolated on purpose.
+
+521.2s	226	If lerobot's API moved, fix the two lines above; everything else is unaffected.
+
+521.2s	227	Stage 1 above is already saved to p6_magnitude_partial.json.
+
+521.2s	228	Stage 2 skipped.
+
+521.3s	229	WROTE /kaggle/working/p6_magnitude_result.json
+
+521.3s	230	
+
+521.3s	231	================ READ THIS BACK TO THE VAULT ================
+
+521.3s	232	stack-drift control  : STACK DRIFT HARMLESS (6/6 reference hashes reproduced) -- the magnitude number stands
+
+521.3s	233	stage 1 overlap      : 1 ( 0 = leak confirmed )
+
+521.3s	234	stage 2              : SKIPPED — ModuleNotFoundError: No module named 'lerobot.common.policies'
+
+521.3s	235	============================================================
+
+536.6s	236	<frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+
+536.6s	237	<frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+
+536.6s	238	
+
+536.6s	239	<frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+
+536.6s	240	<frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+
+536.8s	241	/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+536.8s	242	  return datetime.utcnow().replace(tzinfo=utc)
+
+536.8s	243	
+
+536.8s	244	/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+536.8s	245	  return datetime.utcnow().replace(tzinfo=utc)
+
+544.9s	246	Flax classes are deprecated and will be removed in Diffusers v1.0.0. We recommend migrating to PyTorch classes or pinning your version of Diffusers.
+
+544.9s	247	
+
+544.9s	248	Flax classes are deprecated and will be removed in Diffusers v1.0.0. We recommend migrating to PyTorch classes or pinning your version of Diffusers.
+
+544.9s	249	/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+544.9s	250	  return datetime.utcnow().replace(tzinfo=utc)
+
+544.9s	251	Flax classes are deprecated and will be removed in Diffusers v1.0.0. We recommend migrating to PyTorch classes or pinning your version of Diffusers.
+
+544.9s	252	
+
+544.9s	253	/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+
+544.9s	254	  return datetime.utcnow().replace(tzinfo=utc)
+
+544.9s	255	Flax classes are deprecated and will be removed in Diffusers v1.0.0. We recommend migrating to PyTorch classes or pinning your version of Diffusers.
+
+545.4s	256	Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+545.4s	257	
+
+545.4s	258	Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+545.4s	259	WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+545.4s	260	
+
+545.4s	261	WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+545.7s	262	Loading  HuggingFaceTB/SmolVLM2-500M-Instruct weights ...
+
+545.9s	263	`torch_dtype` is deprecated! Use `dtype` instead!
+
+545.9s	264	
+
+545.9s	265	`torch_dtype` is deprecated! Use `dtype` instead!
+
+602.7s	266	policy device: cuda
+
+602.7s	267	policy loaded (patched loader v2): HuggingFaceVLA/smolvla_libero | persist -> /kaggle/working/p6_runs
+
+602.7s	268	resume: found 20 arm-A and 16 arm-B episodes in /kaggle/working/p6_runs/p6_stage2_episodes.json
+
+602.9s	269	[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+602.9s	270	[Warning]: datasets path /kaggle/working/LIBERO/libero/libero/../datasets does not exist!
+
+684.4s	271	[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+684.4s	272	[Warning]: datasets path /kaggle/working/LIBERO/libero/libero/../datasets does not exist!
+
+1001.5s	273	EP arm=B i=16 seed=10016 init_hash=22f95e8c2c1d1b94 success=False steps=300 sec=308 dev=cuda | arm B so far 14/17
+
+1173.7s	274	EP arm=B i=17 seed=10017 init_hash=b76807e0f2d2686c success=True steps=157 sec=166 dev=cuda | arm B so far 15/18
+
+1380.2s	275	EP arm=B i=18 seed=10018 init_hash=a7355fbda4b0015c success=True steps=189 sec=200 dev=cuda | arm B so far 16/19
+
+1553.2s	276	EP arm=B i=19 seed=10019 init_hash=6cabd049db98f39f success=True steps=158 sec=167 dev=cuda | arm B so far 17/20
+
+1553.6s	277	{
+
+1553.6s	278	  "armA_successes": 16,
+
+1553.6s	279	  "armB_successes": 17,
+
+1553.6s	280	  "n": 20,
+
+1553.6s	281	  "armA_rate": 0.8,
+
+1553.6s	282	  "armB_rate": 0.85,
+
+1553.6s	283	  "delta_pp": 5.0,
+
+1553.6s	284	  "paired_agreement": 13,
+
+1553.6s	285	  "paired_agreement_frac": 0.65,
+
+1553.6s	286	  "init_hash_overlap_stage2": 1,
+
+1553.6s	287	  "hours_this_session": 0.26,
+
+1553.6s	288	  "platform": "kaggle",
+
+1553.6s	289	  "harness_patch": "v2 2026-09-28: 09-27 patch (lerobot 0.6.1 loader + checkpoint processors + 8-dim state + HW flip + 10-step warmup) + persistence/resume"
+
+1553.6s	290	}
+
+1559.7s	291	/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+
+1559.7s	292	  cells[i][c] = re.sub('\\\\\|', '|', cell)
+
+1559.9s	293	/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+
+1559.9s	294	  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+
+1560.6s	295	[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+
+1561.0s	296	[NbConvertApp] Writing 294999 bytes to __notebook__.ipynb
+
+1563.4s	297	[NbConvertApp] Converting notebook __notebook__.ipynb to html
+
+1564.4s	298	[NbConvertApp] Writing 687694 bytes to __results__.html
