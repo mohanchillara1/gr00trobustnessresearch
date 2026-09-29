@@ -1,0 +1,47 @@
+  "prediction_1_overlap": "arm A and arm B initial-state hash sets are DISJOINT (overlap 0)",
+  "falsifier": "overlap==0 but success rates identical -> leak real, cost not measurable at this N"
+VERDICT: STACK DRIFT HARMLESS (6/6 reference hashes reproduced) -- the magnitude number stands
+  "overlap": 1,
+STAGE 1: INCONCLUSIVE — arms overlap; Stage 2 is not interpretable
+POLICY LOAD FAILED -> ModuleNotFoundError: No module named 'lerobot.common.policies'
+stack-drift control  : STACK DRIFT HARMLESS (6/6 reference hashes reproduced) -- the magnitude number stands
+stage 1 overlap      : 1 ( 0 = leak confirmed )
+stage 2              : SKIPPED — ModuleNotFoundError: No module named 'lerobot.common.policies'
+EP arm=A i=0 seed=10000 init_hash=d8cc2300b48a717d success=True steps=161 sec=212 | arm A so far 1/1
+EP arm=A i=1 seed=10001 init_hash=093001335e8d4a65 success=True steps=171 sec=225 | arm A so far 2/2
+EP arm=A i=2 seed=10002 init_hash=e652ce48248721bc success=True steps=166 sec=217 | arm A so far 3/3
+EP arm=A i=3 seed=10003 init_hash=1ef92cc440acfe12 success=True steps=152 sec=197 | arm A so far 4/4
+EP arm=A i=4 seed=10004 init_hash=a8b35d3bacd3cf90 success=True steps=153 sec=198 | arm A so far 5/5
+EP arm=A i=5 seed=10005 init_hash=29ede4598a65c8a8 success=False steps=300 sec=382 | arm A so far 5/6
+EP arm=A i=6 seed=10006 init_hash=832263cd673d1f5a success=True steps=169 sec=219 | arm A so far 6/7
+EP arm=A i=7 seed=10007 init_hash=987039fd2bd5fd84 success=True steps=153 sec=199 | arm A so far 7/8
+EP arm=A i=8 seed=10008 init_hash=a5d782fc9623ae97 success=True steps=155 sec=200 | arm A so far 8/9
+EP arm=A i=9 seed=10009 init_hash=bd2247acc42716e6 success=True steps=174 sec=224 | arm A so far 9/10
+EP arm=A i=10 seed=10010 init_hash=07f90abef9e148a1 success=False steps=300 sec=383 | arm A so far 9/11
+EP arm=A i=11 seed=10011 init_hash=f93b6532db9e5be7 success=True steps=143 sec=183 | arm A so far 10/12
+EP arm=A i=12 seed=10012 init_hash=076c9d721ead00e6 success=False steps=300 sec=384 | arm A so far 10/13
+EP arm=A i=13 seed=10013 init_hash=019f8e4389c85f8e success=True steps=181 sec=232 | arm A so far 11/14
+EP arm=A i=14 seed=10014 init_hash=07c777e52dd23487 success=True steps=179 sec=230 | arm A so far 12/15
+EP arm=A i=15 seed=10015 init_hash=7cc95153fc65a26c success=False steps=300 sec=379 | arm A so far 12/16
+EP arm=A i=16 seed=10016 init_hash=e973d1fc8d1cb112 success=True steps=147 sec=189 | arm A so far 13/17
+EP arm=A i=17 seed=10017 init_hash=88c9a2faf66b3b58 success=True steps=161 sec=207 | arm A so far 14/18
+EP arm=A i=18 seed=10018 init_hash=54c9e526b5d52f88 success=True steps=188 sec=244 | arm A so far 15/19
+EP arm=A i=19 seed=10019 init_hash=0e869c687d8fb7b6 success=True steps=144 sec=185 | arm A so far 16/20
+EP arm=B i=0 seed=10000 init_hash=d8cc2300b48a717d success=False steps=300 sec=381 | arm B so far 0/1
+EP arm=B i=1 seed=10001 init_hash=98cee1eda2089661 success=True steps=175 sec=226 | arm B so far 1/2
+EP arm=B i=2 seed=10002 init_hash=e24a63ad58448030 success=True steps=151 sec=193 | arm B so far 2/3
+EP arm=B i=3 seed=10003 init_hash=3a28c8b518d90320 success=True steps=206 sec=265 | arm B so far 3/4
+EP arm=B i=4 seed=10004 init_hash=f4a92dac25fdddb7 success=True steps=161 sec=206 | arm B so far 4/5
+EP arm=B i=5 seed=10005 init_hash=aab203c94cdc72f5 success=True steps=162 sec=206 | arm B so far 5/6
+EP arm=B i=6 seed=10006 init_hash=f5b6bbdd036ec461 success=True steps=172 sec=223 | arm B so far 6/7
+EP arm=B i=7 seed=10007 init_hash=9472cd6c2ee3115c success=True steps=154 sec=196 | arm B so far 7/8
+EP arm=B i=8 seed=10008 init_hash=9c854cedb32ae197 success=True steps=153 sec=195 | arm B so far 8/9
+EP arm=B i=9 seed=10009 init_hash=fec8b0a1e18e1b1c success=True steps=155 sec=198 | arm B so far 9/10
+EP arm=B i=10 seed=10010 init_hash=5531d27cd7d21d94 success=True steps=155 sec=199 | arm B so far 10/11
+EP arm=B i=11 seed=10011 init_hash=fcb3fc27d59d20fd success=True steps=148 sec=190 | arm B so far 11/12
+EP arm=B i=12 seed=10012 init_hash=6e8ca6cd6263fe17 success=True steps=153 sec=194 | arm B so far 12/13
+EP arm=B i=13 seed=10013 init_hash=b0419a5503102068 success=False steps=300 sec=379 | arm B so far 12/14
+EP arm=B i=14 seed=10014 init_hash=a8bd6c19cfbc9cd3 success=True steps=175 sec=223 | arm B so far 13/15
+EP arm=B i=15 seed=10015 init_hash=55ef5dbe63e7cfb1 success=True steps=158 sec=201 | arm B so far 14/16
+resume file seeded from vault EP lines (2026-09-28): A=20 B=16
+resume: found 20 arm-A and 16 arm-B episodes in /content/p6_runs/p6_stage2_episodes.json

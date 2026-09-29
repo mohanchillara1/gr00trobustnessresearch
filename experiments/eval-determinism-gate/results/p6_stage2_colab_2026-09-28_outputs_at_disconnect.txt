@@ -1,0 +1,345 @@
+2026-09-28 18:37:22
+==== iframe 482D9C67
+ 
+==== iframe D203BC7E
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+config.json: 
+ 2.11k/? [00:00<00:00, 133kB/s]
+Loading  HuggingFaceTB/SmolVLM2-500M-Instruct weights ...
+
+config.json: 
+ 3.77k/? [00:00<00:00, 311kB/s]
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+model.safetensors: 100%
+ 2.03G/2.03G [00:10<00:00, 257MB/s]
+Loading weights: 100%
+ 489/489 [00:00<00:00, 765.27it/s]
+generation_config.json: 100%
+ 136/136 [00:00<00:00, 13.6kB/s]
+processor_config.json: 100%
+ 67.0/67.0 [00:00<00:00, 6.29kB/s]
+chat_template.json: 100%
+ 430/430 [00:00<00:00, 44.8kB/s]
+preprocessor_config.json: 100%
+ 599/599 [00:00<00:00, 54.8kB/s]
+tokenizer_config.json: 
+ 28.6k/? [00:00<00:00, 2.46MB/s]
+vocab.json: 
+ 801k/? [00:00<00:00, 22.7MB/s]
+merges.txt: 
+ 466k/? [00:00<00:00, 20.9MB/s]
+added_tokens.json: 
+ 4.74k/? [00:00<00:00, 241kB/s]
+special_tokens_map.json: 100%
+ 868/868 [00:00<00:00, 75.1kB/s]
+tokenizer.json: 
+ 3.55M/? [00:00<00:00, 52.3MB/s]
+model.safetensors: 100%
+ 1.22G/1.22G [00:08<00:00, 187MB/s]
+policy_preprocessor.json: 
+ 1.71k/? [00:00<00:00, 132kB/s]
+policy_preprocessor_step_5_normalizer_pr(…): 100%
+ 416/416 [00:00<00:00, 2.07kB/s]
+policy_postprocessor.json: 100%
+ 660/660 [00:00<00:00, 57.3kB/s]
+policy loaded (patched loader v2): HuggingFaceVLA/smolvla_libero | persist -> /content/p6_runs
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /kaggle/working/LIBERO/libero/libero/../datasets does not exist!
+EP arm=A i=0 seed=10000 init_hash=d8cc2300b48a717d success=True steps=161 sec=212 | arm A so far 1/1
+EP arm=A i=1 seed=10001 init_hash=093001335e8d4a65 success=True steps=171 sec=225 | arm A so far 2/2
+EP arm=A i=2 seed=10002 init_hash=e652ce48248721bc success=True steps=166 sec=217 | arm A so far 3/3
+EP arm=A i=3 seed=10003 init_hash=1ef92cc440acfe12 success=True steps=152 sec=197 | arm A so far 4/4
+EP arm=A i=4 seed=10004 init_hash=a8b35d3bacd3cf90 success=True steps=153 sec=198 | arm A so far 5/5
+EP arm=A i=5 seed=10005 init_hash=29ede4598a65c8a8 success=False steps=300 sec=382 | arm A so far 5/6
+EP arm=A i=6 seed=10006 init_hash=832263cd673d1f5a success=True steps=169 sec=219 | arm A so far 6/7
+EP arm=A i=7 seed=10007 init_hash=987039fd2bd5fd84 success=True steps=153 sec=199 | arm A so far 7/8
+EP arm=A i=8 seed=10008 init_hash=a5d782fc9623ae97 success=True steps=155 sec=200 | arm A so far 8/9
+EP arm=A i=9 seed=10009 init_hash=bd2247acc42716e6 success=True steps=174 sec=224 | arm A so far 9/10
+EP arm=A i=10 seed=10010 init_hash=07f90abef9e148a1 success=False steps=300 sec=383 | arm A so far 9/11
+EP arm=A i=11 seed=10011 init_hash=f93b6532db9e5be7 success=True steps=143 sec=183 | arm A so far 10/12
+EP arm=A i=12 seed=10012 init_hash=076c9d721ead00e6 success=False steps=300 sec=384 | arm A so far 10/13
+EP arm=A i=13 seed=10013 init_hash=019f8e4389c85f8e success=True steps=181 sec=232 | arm A so far 11/14
+EP arm=A i=14 seed=10014 init_hash=07c777e52dd23487 success=True steps=179 sec=230 | arm A so far 12/15
+EP arm=A i=15 seed=10015 init_hash=7cc95153fc65a26c success=False steps=300 sec=379 | arm A so far 12/16
+EP arm=A i=16 seed=10016 init_hash=e973d1fc8d1cb112 success=True steps=147 sec=189 | arm A so far 13/17
+EP arm=A i=17 seed=10017 init_hash=88c9a2faf66b3b58 success=True steps=161 sec=207 | arm A so far 14/18
+EP arm=A i=18 seed=10018 init_hash=54c9e526b5d52f88 success=True steps=188 sec=244 | arm A so far 15/19
+EP arm=A i=19 seed=10019 init_hash=0e869c687d8fb7b6 success=True steps=144 sec=185 | arm A so far 16/20
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /kaggle/working/LIBERO/libero/libero/../datasets does not exist!
+EP arm=B i=0 seed=10000 init_hash=d8cc2300b48a717d success=False steps=300 sec=381 | arm B so far 0/1
+EP arm=B i=1 seed=10001 init_hash=98cee1eda2089661 success=True steps=175 sec=226 | arm B so far 1/2
+EP arm=B i=2 seed=10002 init_hash=e24a63ad58448030 success=True steps=151 sec=193 | arm B so far 2/3
+EP arm=B i=3 seed=10003 init_hash=3a28c8b518d90320 success=True steps=206 sec=265 | arm B so far 3/4
+EP arm=B i=4 seed=10004 init_hash=f4a92dac25fdddb7 success=True steps=161 sec=206 | arm B so far 4/5
+EP arm=B i=5 seed=10005 init_hash=aab203c94cdc72f5 success=True steps=162 sec=206 | arm B so far 5/6
+EP arm=B i=6 seed=10006 init_hash=f5b6bbdd036ec461 success=True steps=172 sec=223 | arm B so far 6/7
+EP arm=B i=7 seed=10007 init_hash=9472cd6c2ee3115c success=True steps=154 sec=196 | arm B so far 7/8
+EP arm=B i=8 seed=10008 init_hash=9c854cedb32ae197 success=True steps=153 sec=195 | arm B so far 8/9
+EP arm=B i=9 seed=10009 init_hash=fec8b0a1e18e1b1c success=True steps=155 sec=198 | arm B so far 9/10
+EP arm=B i=10 seed=10010 init_hash=5531d27cd7d21d94 success=True steps=155 sec=199 | arm B so far 10/11
+EP arm=B i=11 seed=10011 init_hash=fcb3fc27d59d20fd success=True steps=148 sec=190 | arm B so far 11/12
+EP arm=B i=12 seed=10012 init_hash=6e8ca6cd6263fe17 success=True steps=153 sec=194 | arm B so far 12/13
+EP arm=B i=13 seed=10013 init_hash=b0419a5503102068 success=False steps=300 sec=379 | arm B so far 12/14
+EP arm=B i=14 seed=10014 init_hash=a8bd6c19cfbc9cd3 success=True steps=175 sec=223 | arm B so far 13/15
+EP arm=B i=15 seed=10015 init_hash=55ef5dbe63e7cfb1 success=True steps=158 sec=201 | arm B so far 14/16
+
+==== iframe ECA0E987
+ 
+==== page 78D20C1A
+### CELL 0 
+
+### CELL 1 [ ]
+colab shim: /kaggle dirs + /content/p6_runs created (Drive mount skipped: needs scopes dad has not OKed)
+
+### CELL 2 [ ]
+{
+  "written_utc": "2026-09-22",
+  "prediction_1_overlap": "arm A and arm B initial-state hash sets are DISJOINT (overlap 0)",
+  "prediction_2_success": "arms differ; NO direction or magnitude predicted",
+  "prediction_3_paired": "per-episode paired agreement between arms is LOW",
+  "falsifier": "overlap==0 but success rates identical -> leak real, cost not measurable at this N"
+}
+
+SUITE=libero_object TASK=0 N=20 MAXSTEPS=300 POLICY=HuggingFaceVLA/smolvla_libero
+output dir: /kaggle/working
+
+### CELL 3 
+
+### CELL 4 
+
+### CELL 5 [ ]
+numpy already loaded in this kernel before the pin: True /usr/local/lib/python3.12/dist-packages/numpy/__init__.py
+scratch dir: /kaggle/temp (70.9 GB free) | candidates: /kaggle/temp=70.9GB, /tmp=70.9GB, /kaggle/working=70.9GB, .=70.9GB
+>>> nvidia-smi --query-gpu=name,memory.total --format=csv,noheader || echo NO-GPU 
+Tesla T4, 15360 MiB
+python: 3.12.13 /usr/bin/python3
+
+image numpy (fresh subprocess, before): 2.0.2 /usr/local/lib/python3.12/dist-packages/numpy/__init__.py
+>>> /usr/bin/python3 -m pip download --timeout 120 --retries 5 -q -d /kaggle/temp/p6_wheels 'numpy==1.26.4' 'robosuite==1.4.0' 'bddl==1.0.1' 'gym==0.25.2' 'mujoco<3.2' easydict pyyaml 'opencv-python-headless==4.10.0.84' termcolor future hydra-core h5py pillow matplotlib cloudpickle imageio tqdm (attempt 1/3)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.9/59.9 MB 15.9 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 91.7/91.7 kB 13.8 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 92.5 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 172.9/172.9 kB 25.8 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 221.7/221.7 kB 33.0 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.7/66.7 kB 10.7 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.8/79.8 kB 12.7 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 7.2 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.6/90.6 kB 15.0 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 86.2/86.2 kB 14.8 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.5/67.5 kB 11.0 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 366.2/366.2 kB 47.4 MB/s eta 0:00:00
+>>> /usr/bin/python3 -m pip install --timeout 120 --retries 5 -q --upgrade --no-warn-conflicts --target /kaggle/temp/p6_stack --find-links /kaggle/temp/p6_wheels 'numpy==1.26.4' 'robosuite==1.4.0' 'bddl==1.0.1' 'gym==0.25.2' 'mujoco<3.2' easydict pyyaml 'opencv-python-headless==4.10.0.84' termcolor future hydra-core h5py pillow matplotlib cloudpickle imageio tqdm (attempt 1/3)
+
+>>> /usr/bin/python3 -m pip install --timeout 120 --retries 5 -q 'transformers>=4.50' accelerate safetensors huggingface_hub (attempt 1/3)
+
+>>> git clone -q https://github.com/Lifelong-Robot-Learning/LIBERO.git /kaggle/working/LIBERO 
+
+
+numpy seen by a fresh subprocess (with STACK): 1.26.4 /kaggle/temp/p6_stack/numpy/__init__.py
+simulator stack import (fresh subprocess): OK
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+[robosuite WARNING] To setup, run: python /kaggle/temp/p6_stack/robosuite/scripts/setup_macros.py (__init__.py:9)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+robosuite 1.4.0 | gym 0.25.2 | mujoco 3.1.6 | numpy 1.26.4
+
+numpy copies on disk:
+  /kaggle/temp/p6_stack/numpy-1.26.4.dist-info
+  /usr/local/lib/python3.12/dist-packages/numpy-2.0.2.dist-info
+
+numpy in this kernel: 2.0.2 /usr/local/lib/python3.12/dist-packages/numpy/__init__.py
+
+numpy pin, fresh subprocess: HELD
+numpy pin, this kernel:       NOT HELD
+robosuite/gym/mujoco import:  OK
+
+======================================================================
+numpy was ALREADY LOADED in this kernel before the pin (/usr/local/lib/python3.12/dist-packages/numpy/__init__.py).
+A running Python cannot swap numpy, so this kernel keeps the image's copy.
+NUMPY PIN NOT HELD IN THIS KERNEL -> 2.0.2 /usr/local/lib/python3.12/dist-packages/numpy/__init__.py
+Do NOT treat the magnitude number as comparable to the 09-13/09-21 runs
+unless the stack-drift control (cell 1b) reproduces all six reference hashes.
+Send p6_stack_report.json back with the other outputs.
+======================================================================
+env setup 2.9 min
+
+### CELL 6 [ ]
+wrote /root/.libero/config.yaml
+  benchmark_root  /kaggle/working/LIBERO/libero/libero  
+  bddl_files      /kaggle/working/LIBERO/libero/libero/./bddl_files  
+  init_states     /kaggle/working/LIBERO/libero/libero/./init_files  
+  datasets        /kaggle/working/LIBERO/libero/libero/../datasets  (does not exist yet; LIBERO only warns)
+  assets          /kaggle/working/LIBERO/libero/libero/./assets  
+
+import libero.libero with stdin closed -> OK
+config: /root/.libero/config.yaml
+[Warning]: datasets path /kaggle/working/LIBERO/libero/libero/../datasets does not exist!
+bddl_files: /kaggle/working/LIBERO/libero/libero/./bddl_files
+
+import benchmark + OffScreenRenderEnv -> OK
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+[robosuite WARNING] To setup, run: python /kaggle/temp/p6_stack/robosuite/scripts/setup_macros.py (__init__.py:9)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+benchmark + envs import OK with numpy 1.26.4 /kaggle/temp/p6_stack/numpy/__init__.py
+
+### CELL 7 [ ]
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /kaggle/temp/p6_stack/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /kaggle/temp/p6_stack/robosuite/scripts/setup_macros.py
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  return datetime.utcnow().replace(tzinfo=utc)
+{
+  "python": "3.12.13",
+  "numpy": "2.0.2",
+  "robosuite": "1.4.0",
+  "mujoco": "3.1.6",
+  "gym": "0.25.2",
+  "torch": "2.10.0+cu128",
+  "transformers": "5.5.4",
+  "numpy_file": "/usr/local/lib/python3.12/dist-packages/numpy/__init__.py",
+  "numpy_preloaded_before_pin": true
+}
+/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  return datetime.utcnow().replace(tzinfo=utc)
+
+### CELL 8 
+
+### CELL 9 [ ]
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /kaggle/working/LIBERO/libero/libero/../datasets does not exist!
+/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  return datetime.utcnow().replace(tzinfo=utc)
+test         seed  reference          this run           
+T2           11    cbb3470b4c447f68   cbb3470b4c447f68   MATCH
+T2           12    c732927029d36125   c732927029d36125   MATCH
+T2           13    c09097460e7814a5   c09097460e7814a5   MATCH
+T5_burned    11    e78e0d1a180b3e6a   e78e0d1a180b3e6a   MATCH
+T5_burned    12    42bec853db81b54b   42bec853db81b54b   MATCH
+T5_burned    13    dfa9091d9724f85f   dfa9091d9724f85f   MATCH
+
+numpy: 2.0.2 | control took 3.1 min
+VERDICT: STACK DRIFT HARMLESS (6/6 reference hashes reproduced) -- the magnitude number stands
+/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  return datetime.utcnow().replace(tzinfo=utc)
+
+### CELL 10 
+
+### CELL 11 [ ]
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /kaggle/working/LIBERO/libero/libero/../datasets does not exist!
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /kaggle/working/LIBERO/libero/libero/../datasets does not exist!
+{
+  "task_language": "pick up the alphabet soup and place it in the basket",
+  "seeds": [
+    10000,
+    10001,
+    10002,
+    10003,
+    10004,
+    10005,
+    10006,
+    10007,
+    10008,
+    10009,
+    10010,
+    10011,
+    10012,
+    10013,
+    10014,
+    10015,
+    10016,
+    10017,
+    10018,
+    10019
+  ],
+  "overlap": 1,
+  "armA_distinct": 20,
+  "armB_distinct": 20,
+  "minutes": 3.2
+}
+
+arm A first 5: ['d8cc2300b48a717d', '093001335e8d4a65', 'e652ce48248721bc', '1ef92cc440acfe12', 'a8b35d3bacd3cf90']
+arm B first 5: ['d8cc2300b48a717d', '98cee1eda2089661', 'e24a63ad58448030', '3a28c8b518d90320', 'f4a92dac25fdddb7']
+
+STAGE 1: INCONCLUSIVE — arms overlap; Stage 2 is not interpretable
+
+### CELL 12 
+
+### CELL 13 [ ]
+>>> pip install --timeout 120 --retries 5 -q 'lerobot' (attempt 1/3)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.0/62.0 kB 4.8 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.5/16.5 MB 84.4 MB/s eta 0:00:00
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+datasets 4.8.5 requires fsspec[http]<=2026.2.0,>=2023.1.0, but you have fsspec 2026.9.0 which is incompatible.
+cudf-cu12 26.2.1 requires numba<0.62.0,>=0.60.0, but you have numba 0.67.0 which is incompatible.
+cuml-cu12 26.2.0 requires numba<0.62.0,>=0.60.0, but you have numba 0.67.0 which is incompatible.
+gradio 5.50.0 requires pillow<12.0,>=8.0, but you have pillow 12.3.0 which is incompatible.
+tensorflow 2.19.0 requires numpy<2.2.0,>=1.26.0, but you have numpy 2.2.6 which is incompatible.
+POLICY LOAD FAILED -> ModuleNotFoundError: No module named 'lerobot.common.policies'
+
+This is the most likely failure point and it is isolated on purpose.
+If lerobot's API moved, fix the two lines above; everything else is unaffected.
+Stage 1 above is already saved to p6_magnitude_partial.json.
+
+### CELL 14 [ ]
+Stage 2 skipped.
+
+### CELL 15 [ ]
+WROTE /kaggle/working/p6_magnitude_result.json
+
+================ READ THIS BACK TO THE VAULT ================
+stack-drift control  : STACK DRIFT HARMLESS (6/6 reference hashes reproduced) -- the magnitude number stands
+stage 1 overlap      : 1 ( 0 = leak confirmed )
+stage 2              : SKIPPED — ModuleNotFoundError: No module named 'lerobot.common.policies'
+============================================================
+
+### CELL 16 [ ]
+lerobot 0.6.1 | torch on disk 2.10.0+cu128 | numpy on disk 2.2.6
+<frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+<frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  return datetime.utcnow().replace(tzinfo=utc)
+Flax classes are deprecated and will be removed in Diffusers v1.0.0. We recommend migrating to PyTorch classes or pinning your version of Diffusers.
+/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  return datetime.utcnow().replace(tzinfo=utc)
+Flax classes are deprecated and will be removed in Diffusers v1.0.0. We recommend migrating to PyTorch classes or pinning your version of Diffusers.
+['act', 'diffusion', 'eo1', 'evo1', 'factory', 'fastwam', 'gaussian_actor', 'groot', 'lingbot_va', 'molmoact2', 'multi_task_dit', 'pi0', 'pi05', 'pi0_fast', 'pi_gemma', 'pretrained', 'rtc', 'smolvla', 'tdmpc', 'utils', 'vla_jepa', 'vqbet', 'wall_x', 'xvla']
+/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_auth.py:94: UserWarning: 
+The secret `HF_TOKEN` does not exist in your Colab secrets.
+To authenticate with the Hugging Face Hub, create a token in your settings tab (https://huggingface.co/settings/tokens), set it as secret in your Google Colab and restart your session.
+You will be able to reuse this secret in all of your notebooks.
+Please note that authentication is recommended but still optional to access public models or datasets.
+  warnings.warn(
+['.gitattributes', 'README.md', 'config.json', 'model.safetensors', 'policy_postprocessor.json', 'policy_postprocessor_step_1_unnormalizer_processor.safetensors', 'policy_preprocessor.json', 'policy_preprocessor_step_5_normalizer_processor.safetensors']
+102:def make_policy_config(policy_type: str, **kwargs) -> PreTrainedConfig:
+150:def make_pre_post_processors(
+240:def make_policy(
+
+
+### CELL 17 [ ]
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+cudf-cu12 26.2.1 requires numba<0.62.0,>=0.60.0, but you have numba 0.67.0 which is incompatible.
+cuml-cu12 26.2.0 requires numba<0.62.0,>=0.60.0, but you have numba 0.67.0 which is incompatible.
+gcsfs 2025.3.0 requires fsspec==2025.3.0, but you have fsspec 2026.2.0 which is incompatible.
+
+before {'torch': '2.10.0+cu128', 'transformers': '5.5.4', 'numpy': '2.2.6'}
+after  {'torch': '2.10.0+cu128', 'transformers': '5.5.4', 'numpy': '2.2.6'}
+loaded in kernel: {'torch': '2.10.0+cu128', 'transformers': '5.5.4', 'numpy': '2.0.2'}
+
+### CELL 18 [ ]

@@ -1,0 +1,20 @@
+{
+  "source": "printed stage2 dict in Colab cell output, 2026-09-27 run (patch v1)",
+  "platform": "colab T4, runtime 2026.04",
+  "run_by": "Claude (director session), not Mohan",
+  "armA_successes": 19,
+  "armB_successes": 15,
+  "n": 20,
+  "delta_pp_B_minus_A": -20.0,
+  "paired_agreement": 14,
+  "derived_discordant": {
+    "A_success_B_fail": 5,
+    "A_fail_B_success": 1
+  },
+  "mcnemar_exact_two_sided_p": 0.2188,
+  "init_hash_overlap_stage2": 1,
+  "hours": 2.57,
+  "stage1_verdict_preregistered": "INCONCLUSIVE (overlap 1/20)",
+  "status": "EXPLORATORY: Stage 1 failed its pre-registered control as written; harness patched after pre-registration",
+  "per_episode_records": "lost with the VM"
+}

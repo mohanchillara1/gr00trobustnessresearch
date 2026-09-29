@@ -1,0 +1,70 @@
+# Captured 2026-09-28 ~14:57 CT by the gpu-runs worker over raw CDP from the automation Chrome's Colab tab
+# (notebook p6_magnitude_kaggle_v3.ipynb @ c8fac05 + colab shim + p6_stage2_patch_2026-09-27.py, md5 863d7254...).
+# This is cell 18's printed output from the 09-27 run the vault recorded as lost. The VM (and its JSON) is gone;
+# per-episode records do not survive. Only this printed text does.
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+config.json: 
+ 2.11k/? [00:00<00:00, 124kB/s]
+Loading  HuggingFaceTB/SmolVLM2-500M-Instruct weights ...
+
+config.json: 
+ 3.77k/? [00:00<00:00, 171kB/s]
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+model.safetensors: 100%
+ 2.03G/2.03G [00:13<00:00, 208MB/s]
+Loading weights: 100%
+ 489/489 [00:00<00:00, 870.08it/s]
+generation_config.json: 100%
+ 136/136 [00:00<00:00, 16.0kB/s]
+processor_config.json: 100%
+ 67.0/67.0 [00:00<00:00, 5.94kB/s]
+chat_template.json: 100%
+ 430/430 [00:00<00:00, 45.7kB/s]
+preprocessor_config.json: 100%
+ 599/599 [00:00<00:00, 62.5kB/s]
+tokenizer_config.json: 
+ 28.6k/? [00:00<00:00, 2.30MB/s]
+vocab.json: 
+ 801k/? [00:00<00:00, 19.3MB/s]
+merges.txt: 
+ 466k/? [00:00<00:00, 19.8MB/s]
+added_tokens.json: 
+ 4.74k/? [00:00<00:00, 235kB/s]
+special_tokens_map.json: 100%
+ 868/868 [00:00<00:00, 44.2kB/s]
+tokenizer.json: 
+ 3.55M/? [00:00<00:00, 58.7MB/s]
+model.safetensors: 100%
+ 1.22G/1.22G [00:06<00:00, 202MB/s]
+policy_preprocessor.json: 
+ 1.71k/? [00:00<00:00, 79.2kB/s]
+policy_preprocessor_step_5_normalizer_pr(…): 100%
+ 416/416 [00:00<00:00, 1.52kB/s]
+policy_postprocessor.json: 100%
+ 660/660 [00:00<00:00, 66.7kB/s]
+policy loaded (patched loader): HuggingFaceVLA/smolvla_libero
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /kaggle/working/LIBERO/libero/libero/../datasets does not exist!
+  arm A  10/20  success so far 1.00
+  arm A  20/20  success so far 0.95
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /kaggle/working/LIBERO/libero/libero/../datasets does not exist!
+  arm B  10/20  success so far 0.80
+  arm B  20/20  success so far 0.75
+{
+  "armA_successes": 19,
+  "armB_successes": 15,
+  "n": 20,
+  "armA_rate": 0.95,
+  "armB_rate": 0.75,
+  "delta_pp": -20.0,
+  "paired_agreement": 14,
+  "paired_agreement_frac": 0.7,
+  "init_hash_overlap_stage2": 1,
+  "hours": 2.57,
+  "harness_patch": "2026-09-27 lerobot 0.6.1 loader + checkpoint processors + 8-dim state + HW flip + 10-step warmup"
+}
