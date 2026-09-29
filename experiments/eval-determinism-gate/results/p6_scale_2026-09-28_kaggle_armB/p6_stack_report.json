@@ -1,0 +1,29 @@
+{
+  "numpy_preloaded_in_kernel": true,
+  "preloaded_from": "/usr/local/lib/python3.12/dist-packages/numpy/__init__.py",
+  "kernel_numpy": [
+    "2.0.2",
+    "/usr/local/lib/python3.12/dist-packages/numpy/__init__.py"
+  ],
+  "subprocess_numpy": "1.26.4 /kaggle/temp/p6_stack/numpy/__init__.py",
+  "subprocess_sim_import_ok": true,
+  "sim_import_tail": [
+    "[robosuite WARNING] No private macro file found! (__init__.py:7)",
+    "[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)",
+    "[robosuite WARNING] To setup, run: python /kaggle/temp/p6_stack/robosuite/scripts/setup_macros.py (__init__.py:9)",
+    "Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.",
+    "Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.",
+    "See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.",
+    "robosuite 1.4.0 | gym 0.25.2 | mujoco 3.1.6 | numpy 1.26.4"
+  ],
+  "numpy_copies_on_disk": [
+    "/kaggle/temp/p6_stack/numpy-1.26.4.dist-info",
+    "/usr/local/lib/python3.12/dist-packages/numpy-2.0.2.dist-info"
+  ],
+  "sub_numpy_ok": true,
+  "kernel_numpy_ok": false,
+  "libero_config": "/root/.libero/config.yaml",
+  "libero_import_ok": true,
+  "sim_import_ok": true,
+  "repaired": []
+}

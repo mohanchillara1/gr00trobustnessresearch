@@ -1,0 +1,113 @@
+{
+  "prereg": "PREREG_p6_scale_2026-09-28.md",
+  "status": "EXPLORATORY",
+  "checks": {
+    "stage1_identical_across_versions": true,
+    "armA_hashcheck_mismatches": [],
+    "armB_hashcheck_mismatches": [],
+    "armA_devices": [
+      "cuda"
+    ],
+    "armB_devices": [
+      "cuda"
+    ],
+    "stage1_overlap": 1,
+    "stage1_overlap_indices": [
+      0
+    ],
+    "stage2_overlap_A_B": 1
+  },
+  "primary": {
+    "n_pairs": 100,
+    "armA_successes": 92,
+    "armB_successes": 85,
+    "delta_pp_B_minus_A": -7.0,
+    "paired_agreement": 81,
+    "A_success_B_fail": 13,
+    "A_fail_B_success": 6,
+    "mcnemar_exact_two_sided_p": 0.1671,
+    "armA_fail_i": [
+      16,
+      39,
+      53,
+      54,
+      71,
+      78,
+      83,
+      98
+    ],
+    "armB_fail_i": [
+      3,
+      8,
+      16,
+      18,
+      20,
+      31,
+      38,
+      53,
+      69,
+      74,
+      75,
+      76,
+      82,
+      93,
+      97
+    ]
+  },
+  "secondary": {
+    "hash_match_vs_0928_armA": 20,
+    "hash_match_vs_0928_armB": 20,
+    "armA_first20": {
+      "0927": 19,
+      "0928": 16,
+      "scale": 19
+    },
+    "armB_first20": {
+      "0927": 15,
+      "0928": 17,
+      "scale": 16
+    },
+    "armA_same_state_outcome_flips_0928_vs_scale": [
+      5,
+      10,
+      12,
+      15,
+      16
+    ],
+    "armB_same_state_outcome_flips_0928_vs_scale": [
+      0,
+      3,
+      8,
+      13,
+      18
+    ]
+  },
+  "versions": {
+    "A": {
+      "python": "3.12.13",
+      "numpy": "2.0.2",
+      "robosuite": "1.4.0",
+      "mujoco": "3.1.6",
+      "gym": "0.25.2",
+      "torch": "2.10.0+cu128",
+      "transformers": "5.5.4",
+      "numpy_file": "/usr/local/lib/python3.12/dist-packages/numpy/__init__.py",
+      "numpy_preloaded_before_pin": true
+    },
+    "B": {
+      "python": "3.12.13",
+      "numpy": "2.0.2",
+      "robosuite": "1.4.0",
+      "mujoco": "3.1.6",
+      "gym": "0.25.2",
+      "torch": "2.10.0+cu128",
+      "transformers": "5.5.4",
+      "numpy_file": "/usr/local/lib/python3.12/dist-packages/numpy/__init__.py",
+      "numpy_preloaded_before_pin": true
+    }
+  },
+  "hours": {
+    "A": 5.56,
+    "B": 5.93
+  }
+}

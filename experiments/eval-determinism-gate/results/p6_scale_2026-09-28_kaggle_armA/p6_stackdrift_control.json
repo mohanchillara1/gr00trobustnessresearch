@@ -1,0 +1,31 @@
+{
+  "numpy": "2.0.2",
+  "reference": {
+    "T2": {
+      "11": "cbb3470b4c447f68",
+      "12": "c732927029d36125",
+      "13": "c09097460e7814a5"
+    },
+    "T5_burned": {
+      "11": "e78e0d1a180b3e6a",
+      "12": "42bec853db81b54b",
+      "13": "dfa9091d9724f85f"
+    }
+  },
+  "observed": {
+    "T2": {
+      "11": "cbb3470b4c447f68",
+      "12": "c732927029d36125",
+      "13": "c09097460e7814a5"
+    },
+    "T5_burned": {
+      "11": "e78e0d1a180b3e6a",
+      "12": "42bec853db81b54b",
+      "13": "dfa9091d9724f85f"
+    }
+  },
+  "matches": 6,
+  "total": 6,
+  "drift_harmless": true,
+  "verdict": "STACK DRIFT HARMLESS (6/6 reference hashes reproduced) -- the magnitude number stands"
+}
