@@ -36,3 +36,4 @@ EP arm=A i=234 seed=10234 init_hash=7adb2dce921dd9d1 success=False steps=300 sec
 EP arm=A i=235 seed=10235 init_hash=bcf9d3823ce7fc88 success=True steps=168 sec=188 dev=cuda | arm A so far 213/236
 EP arm=A i=236 seed=10236 init_hash=b63715ec3b04440b success=True steps=222 sec=246 dev=cuda | arm A so far 214/237
 EP arm=A i=237 seed=10237 init_hash=227e16a5923e42f2 success=True steps=150 sec=165 dev=cuda | arm A so far 215/238
+EP arm=A i=238 seed=10238 init_hash=3f84d20bec6a3571 success=True steps=161 sec=178 dev=cuda | arm A so far 216/239
