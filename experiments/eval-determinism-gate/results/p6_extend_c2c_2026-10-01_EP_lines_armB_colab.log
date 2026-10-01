@@ -17,3 +17,9 @@ EP arm=B i=240 seed=10240 init_hash=4bbdf135d4ee7e69 success=True steps=187 sec=
 EP arm=B i=241 seed=10241 init_hash=7d25a49d90ab6e70 success=True steps=210 sec=257 dev=cuda | arm B so far 204/242
 EP arm=B i=242 seed=10242 init_hash=d97a7c0270f6ad38 success=True steps=147 sec=180 dev=cuda | arm B so far 205/243
 EP arm=B i=243 seed=10243 init_hash=64851c495aa7a9bc success=True steps=144 sec=176 dev=cuda | arm B so far 206/244
+EP arm=B i=244 seed=10244 init_hash=8343902fcdc7fd82 success=False steps=300 sec=361 dev=cuda | arm B so far 206/245
+EP arm=B i=245 seed=10245 init_hash=d7aa96596a4ea365 success=True steps=153 sec=185 dev=cuda | arm B so far 207/246
+EP arm=B i=246 seed=10246 init_hash=2a4051c3adca6b89 success=True steps=144 sec=175 dev=cuda | arm B so far 208/247
+EP arm=B i=247 seed=10247 init_hash=79ae23292487eb62 success=True steps=158 sec=192 dev=cuda | arm B so far 209/248
+EP arm=B i=248 seed=10248 init_hash=746539647337f523 success=True steps=154 sec=186 dev=cuda | arm B so far 210/249
+EP arm=B i=249 seed=10249 init_hash=64d72d51f6492d1f success=True steps=161 sec=195 dev=cuda | arm B so far 211/250
