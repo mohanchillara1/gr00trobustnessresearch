@@ -1,0 +1,105 @@
+STATE: done arrow_drop_down || cells: 0:- 1:- 2:- 3:- 4:- 5:- 6:- 7:- 8:- 9:- 10:-
+
+
+
+=====
+
+<frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+<frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  return datetime.utcnow().replace(tzinfo=utc)
+Flax classes are deprecated and will be removed in Diffusers v1.0.0. We recommend migrating to PyTorch classes or pinning your version of Diffusers.
+/usr/local/lib/python3.12/dist-packages/jupyter_client/session.py:203: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  return datetime.utcnow().replace(tzinfo=utc)
+Flax classes are deprecated and will be removed in Diffusers v1.0.0. We recommend migrating to PyTorch classes or pinning your version of Diffusers.
+/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_auth.py:94: UserWarning: 
+The secret `HF_TOKEN` does not exist in your Colab secrets.
+To authenticate with the Hugging Face Hub, create a token in your settings tab (https://huggingface.co/settings/tokens), set it as secret in your Google Colab and restart your session.
+You will be able to reuse this secret in all of your notebooks.
+Please note that authentication is recommended but still optional to access public models or datasets.
+  warnings.warn(
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+config.json: 
+ 2.11k/? [00:00<00:00, 93.1kB/s]
+Loading  HuggingFaceTB/SmolVLM2-500M-Instruct weights ...
+
+config.json: 
+ 3.77k/? [00:00<00:00, 188kB/s]
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+model.safetensors: 100%
+ 2.03G/2.03G [00:09<00:00, 231MB/s]
+Loading weights: 100%
+ 489/489 [00:01<00:00, 545.32it/s]
+generation_config.json: 100%
+ 136/136 [00:00<00:00, 9.88kB/s]
+processor_config.json: 100%
+ 67.0/67.0 [00:00<00:00, 4.21kB/s]
+chat_template.json: 100%
+ 430/430 [00:00<00:00, 27.7kB/s]
+preprocessor_config.json: 100%
+ 599/599 [00:00<00:00, 64.7kB/s]
+tokenizer_config.json: 
+ 28.6k/? [00:00<00:00, 2.05MB/s]
+vocab.json: 
+ 801k/? [00:00<00:00, 29.8MB/s]
+merges.txt: 
+ 466k/? [00:00<00:00, 24.5MB/s]
+added_tokens.json: 
+ 4.74k/? [00:00<00:00, 428kB/s]
+special_tokens_map.json: 100%
+ 868/868 [00:00<00:00, 96.4kB/s]
+tokenizer.json: 
+ 3.55M/? [00:00<00:00, 77.0MB/s]
+model.safetensors: 100%
+ 1.22G/1.22G [00:07<00:00, 222MB/s]
+policy_preprocessor.json: 
+ 1.71k/? [00:00<00:00, 146kB/s]
+policy_preprocessor_step_5_normalizer_pr(…): 100%
+ 416/416 [00:00<00:00, 1.45kB/s]
+policy_postprocessor.json: 100%
+ 660/660 [00:00<00:00, 70.6kB/s]
+policy device: cuda
+policy loaded (patched loader v2): HuggingFaceVLA/smolvla_libero | persist -> /kaggle/working/p6_runs
+resume: found 0 arm-A and 200 arm-B episodes in /kaggle/working/p6_runs/p6_stage2_episodes.json
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /kaggle/working/LIBERO/libero/libero/../datasets does not exist!
+EP arm=B i=200 seed=10200 init_hash=6c6f533166a6b66d success=True steps=172 sec=212 dev=cuda | arm B so far 170/201
+EP arm=B i=201 seed=10201 init_hash=a3251d6b0548aa0e success=True steps=201 sec=248 dev=cuda | arm B so far 171/202
+EP arm=B i=202 seed=10202 init_hash=c3f301d2bafadf12 success=True steps=165 sec=204 dev=cuda | arm B so far 172/203
+EP arm=B i=203 seed=10203 init_hash=6535ebc43e19e370 success=True steps=166 sec=207 dev=cuda | arm B so far 173/204
+EP arm=B i=204 seed=10204 init_hash=4eee3c67ad4371a9 success=True steps=161 sec=201 dev=cuda | arm B so far 174/205
+EP arm=B i=205 seed=10205 init_hash=be998554546f6b4e success=True steps=154 sec=190 dev=cuda | arm B so far 175/206
+EP arm=B i=206 seed=10206 init_hash=cb29683e875f4d33 success=False steps=300 sec=363 dev=cuda | arm B so far 175/207
+EP arm=B i=207 seed=10207 init_hash=ef97afa3fa32394d success=True steps=158 sec=193 dev=cuda | arm B so far 176/208
+EP arm=B i=208 seed=10208 init_hash=6811115fb4411de0 success=True steps=174 sec=213 dev=cuda | arm B so far 177/209
+EP arm=B i=209 seed=10209 init_hash=5abe2b02df03b58b success=True steps=155 sec=189 dev=cuda | arm B so far 178/210
+EP arm=B i=210 seed=10210 init_hash=4318cef09f0a8f29 success=False steps=300 sec=368 dev=cuda | arm B so far 178/211
+EP arm=B i=211 seed=10211 init_hash=820f14c72eca5902 success=True steps=152 sec=187 dev=cuda | arm B so far 179/212
+EP arm=B i=212 seed=10212 init_hash=2373afcf25ddf9f5 success=False steps=300 sec=368 dev=cuda | arm B so far 179/213
+EP arm=B i=213 seed=10213 init_hash=645b3e18024d8d63 success=True steps=155 sec=194 dev=cuda | arm B so far 180/214
+EP arm=B i=214 seed=10214 init_hash=b9913c71d03828d5 success=False steps=300 sec=375 dev=cuda | arm B so far 180/215
+EP arm=B i=215 seed=10215 init_hash=4c4ba9043518b61e success=True steps=163 sec=203 dev=cuda | arm B so far 181/216
+EP arm=B i=216 seed=10216 init_hash=452dcbe1bee737b8 success=True steps=147 sec=183 dev=cuda | arm B so far 182/217
+EP arm=B i=217 seed=10217 init_hash=b1ba2b09015ed823 success=False steps=300 sec=373 dev=cuda | arm B so far 182/218
+EP arm=B i=218 seed=10218 init_hash=cb1af7044d90d06b success=True steps=164 sec=202 dev=cuda | arm B so far 183/219
+EP arm=B i=219 seed=10219 init_hash=29ebd64cf2f1bd4b success=True steps=148 sec=182 dev=cuda | arm B so far 184/220
+EP arm=B i=220 seed=10220 init_hash=9f57b0cc29730760 success=True steps=163 sec=197 dev=cuda | arm B so far 185/221
+EP arm=B i=221 seed=10221 init_hash=7ece1f29f441d1b3 success=True steps=143 sec=173 dev=cuda | arm B so far 186/222
+EP arm=B i=222 seed=10222 init_hash=5199854755e8bc45 success=True steps=165 sec=204 dev=cuda | arm B so far 187/223
+EP arm=B i=223 seed=10223 init_hash=b8808aa22e940139 success=False steps=300 sec=364 dev=cuda | arm B so far 187/224
+EP arm=B i=224 seed=10224 init_hash=3e6f6710470a3169 success=True steps=157 sec=196 dev=cuda | arm B so far 188/225
+HASHCHECK arm B (new episodes): 25/25 match Stage 1 init_hash; mismatches at []
+SCALE RESULT arm B: 188/225 success
+EXTEND C2 NEW [c2b] arm B: 19/25 success (i=200..224)
+
+
+=====
+
+ 
+
+=====
+
+ 

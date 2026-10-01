@@ -22,3 +22,4 @@ EP arm=B i=220 seed=10220 init_hash=9f57b0cc29730760 success=True steps=163 sec=
 EP arm=B i=221 seed=10221 init_hash=7ece1f29f441d1b3 success=True steps=143 sec=173 dev=cuda | arm B so far 186/222
 EP arm=B i=222 seed=10222 init_hash=5199854755e8bc45 success=True steps=165 sec=204 dev=cuda | arm B so far 187/223
 EP arm=B i=223 seed=10223 init_hash=b8808aa22e940139 success=False steps=300 sec=364 dev=cuda | arm B so far 187/224
+EP arm=B i=224 seed=10224 init_hash=3e6f6710470a3169 success=True steps=157 sec=196 dev=cuda | arm B so far 188/225
