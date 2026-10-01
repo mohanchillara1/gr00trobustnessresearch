@@ -22,3 +22,17 @@ EP arm=A i=220 seed=10220 init_hash=ca4a7f1202c2995c success=True steps=189 sec=
 EP arm=A i=221 seed=10221 init_hash=ec5c943016eff1f2 success=True steps=191 sec=211 dev=cuda | arm A so far 200/222
 EP arm=A i=222 seed=10222 init_hash=8399883c18b38c4f success=True steps=152 sec=166 dev=cuda | arm A so far 201/223
 EP arm=A i=223 seed=10223 init_hash=1be99b570dc1de18 success=True steps=143 sec=161 dev=cuda | arm A so far 202/224
+EP arm=A i=224 seed=10224 init_hash=962a8112abbc5893 success=True steps=172 sec=191 dev=cuda | arm A so far 203/225
+EP arm=A i=225 seed=10225 init_hash=99857194474752b8 success=True steps=157 sec=172 dev=cuda | arm A so far 204/226
+EP arm=A i=226 seed=10226 init_hash=b4b09bed3a08a629 success=True steps=158 sec=175 dev=cuda | arm A so far 205/227
+EP arm=A i=227 seed=10227 init_hash=edeec7a881652b0c success=True steps=168 sec=185 dev=cuda | arm A so far 206/228
+EP arm=A i=228 seed=10228 init_hash=078b143f73636455 success=True steps=174 sec=192 dev=cuda | arm A so far 207/229
+EP arm=A i=229 seed=10229 init_hash=51b0c4d04736aae5 success=True steps=159 sec=176 dev=cuda | arm A so far 208/230
+EP arm=A i=230 seed=10230 init_hash=021f1d45f8642325 success=True steps=157 sec=172 dev=cuda | arm A so far 209/231
+EP arm=A i=231 seed=10231 init_hash=ce25977c4bdd07a5 success=True steps=158 sec=175 dev=cuda | arm A so far 210/232
+EP arm=A i=232 seed=10232 init_hash=ad0a6861b5784f42 success=True steps=179 sec=199 dev=cuda | arm A so far 211/233
+EP arm=A i=233 seed=10233 init_hash=b8741a42a748dafb success=True steps=173 sec=193 dev=cuda | arm A so far 212/234
+EP arm=A i=234 seed=10234 init_hash=7adb2dce921dd9d1 success=False steps=300 sec=324 dev=cuda | arm A so far 212/235
+EP arm=A i=235 seed=10235 init_hash=bcf9d3823ce7fc88 success=True steps=168 sec=188 dev=cuda | arm A so far 213/236
+EP arm=A i=236 seed=10236 init_hash=b63715ec3b04440b success=True steps=222 sec=246 dev=cuda | arm A so far 214/237
+EP arm=A i=237 seed=10237 init_hash=227e16a5923e42f2 success=True steps=150 sec=165 dev=cuda | arm A so far 215/238
