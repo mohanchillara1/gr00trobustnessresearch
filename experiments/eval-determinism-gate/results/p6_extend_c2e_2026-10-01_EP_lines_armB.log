@@ -1,0 +1,3 @@
+EP arm=B i=250 seed=10250 init_hash=1f6985bd990ba547 success=False steps=300 sec=306 dev=cuda | arm B so far 211/251
+EP arm=B i=251 seed=10251 init_hash=261d5966c4061777 success=True steps=175 sec=182 dev=cuda | arm B so far 212/252
+EP arm=B i=252 seed=10252 init_hash=8b7e97d1bdc1fe24 success=True steps=167 sec=175 dev=cuda | arm B so far 213/253
