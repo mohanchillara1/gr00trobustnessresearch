@@ -1,0 +1,10 @@
+EP arm=B i=200 seed=10200 init_hash=6c6f533166a6b66d success=True steps=172 sec=212 dev=cuda | arm B so far 170/201
+EP arm=B i=201 seed=10201 init_hash=a3251d6b0548aa0e success=True steps=201 sec=248 dev=cuda | arm B so far 171/202
+EP arm=B i=202 seed=10202 init_hash=c3f301d2bafadf12 success=True steps=165 sec=204 dev=cuda | arm B so far 172/203
+EP arm=B i=203 seed=10203 init_hash=6535ebc43e19e370 success=True steps=166 sec=207 dev=cuda | arm B so far 173/204
+EP arm=B i=204 seed=10204 init_hash=4eee3c67ad4371a9 success=True steps=161 sec=201 dev=cuda | arm B so far 174/205
+EP arm=B i=205 seed=10205 init_hash=be998554546f6b4e success=True steps=154 sec=190 dev=cuda | arm B so far 175/206
+EP arm=B i=206 seed=10206 init_hash=cb29683e875f4d33 success=False steps=300 sec=363 dev=cuda | arm B so far 175/207
+EP arm=B i=207 seed=10207 init_hash=ef97afa3fa32394d success=True steps=158 sec=193 dev=cuda | arm B so far 176/208
+EP arm=B i=208 seed=10208 init_hash=6811115fb4411de0 success=True steps=174 sec=213 dev=cuda | arm B so far 177/209
+EP arm=B i=209 seed=10209 init_hash=5abe2b02df03b58b success=True steps=155 sec=189 dev=cuda | arm B so far 178/210
