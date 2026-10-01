@@ -4,3 +4,9 @@ EP arm=A i=202 seed=10202 init_hash=0ee1e647f248a424 success=True steps=172 sec=
 EP arm=A i=203 seed=10203 init_hash=40a1fcb852450e39 success=True steps=180 sec=190 dev=cuda | arm A so far 184/204
 EP arm=A i=204 seed=10204 init_hash=b4516d51f6fbcba9 success=True steps=142 sec=149 dev=cuda | arm A so far 185/205
 EP arm=A i=205 seed=10205 init_hash=b8c04da5c2662a49 success=True steps=154 sec=164 dev=cuda | arm A so far 186/206
+EP arm=A i=206 seed=10206 init_hash=22b2b7aed6d7ba3c success=True steps=150 sec=170 dev=cuda | arm A so far 187/207
+EP arm=A i=207 seed=10207 init_hash=70d54394fddc3c09 success=True steps=153 sec=170 dev=cuda | arm A so far 188/208
+EP arm=A i=208 seed=10208 init_hash=ff26ccd9359c4534 success=True steps=173 sec=187 dev=cuda | arm A so far 189/209
+EP arm=A i=209 seed=10209 init_hash=ec9df6fe60a95a04 success=True steps=131 sec=142 dev=cuda | arm A so far 190/210
+EP arm=A i=210 seed=10210 init_hash=5bee27e00d118376 success=True steps=189 sec=203 dev=cuda | arm A so far 191/211
+EP arm=A i=211 seed=10211 init_hash=b57f3385189ccc5d success=True steps=160 sec=174 dev=cuda | arm A so far 192/212
