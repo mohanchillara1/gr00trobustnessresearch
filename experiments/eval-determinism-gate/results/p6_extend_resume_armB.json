@@ -1,0 +1,1912 @@
+{
+ "arm": "B",
+ "n": 200,
+ "successes": 169,
+ "sources": [
+  "0084a13 p6_scale_2026-09-28_kaggle_armB/p6_stage2_episodes.json (i 0-99)",
+  "1e38f7e p6_extend_c1_2026-09-29_EP_lines_armB.log (i 100-199)"
+ ],
+ "armB": [
+  {
+   "i": 0,
+   "seed": 10000,
+   "init_hash": "d8cc2300b48a717d",
+   "success": true,
+   "steps": 151,
+   "sec": 166.5,
+   "device": "cuda"
+  },
+  {
+   "i": 1,
+   "seed": 10001,
+   "init_hash": "98cee1eda2089661",
+   "success": true,
+   "steps": 161,
+   "sec": 179.8,
+   "device": "cuda"
+  },
+  {
+   "i": 2,
+   "seed": 10002,
+   "init_hash": "e24a63ad58448030",
+   "success": true,
+   "steps": 163,
+   "sec": 182.6,
+   "device": "cuda"
+  },
+  {
+   "i": 3,
+   "seed": 10003,
+   "init_hash": "3a28c8b518d90320",
+   "success": false,
+   "steps": 300,
+   "sec": 335.1,
+   "device": "cuda"
+  },
+  {
+   "i": 4,
+   "seed": 10004,
+   "init_hash": "f4a92dac25fdddb7",
+   "success": true,
+   "steps": 167,
+   "sec": 187.6,
+   "device": "cuda"
+  },
+  {
+   "i": 5,
+   "seed": 10005,
+   "init_hash": "aab203c94cdc72f5",
+   "success": true,
+   "steps": 142,
+   "sec": 160.4,
+   "device": "cuda"
+  },
+  {
+   "i": 6,
+   "seed": 10006,
+   "init_hash": "f5b6bbdd036ec461",
+   "success": true,
+   "steps": 149,
+   "sec": 166.6,
+   "device": "cuda"
+  },
+  {
+   "i": 7,
+   "seed": 10007,
+   "init_hash": "9472cd6c2ee3115c",
+   "success": true,
+   "steps": 240,
+   "sec": 264.1,
+   "device": "cuda"
+  },
+  {
+   "i": 8,
+   "seed": 10008,
+   "init_hash": "9c854cedb32ae197",
+   "success": false,
+   "steps": 300,
+   "sec": 330.2,
+   "device": "cuda"
+  },
+  {
+   "i": 9,
+   "seed": 10009,
+   "init_hash": "fec8b0a1e18e1b1c",
+   "success": true,
+   "steps": 143,
+   "sec": 159.2,
+   "device": "cuda"
+  },
+  {
+   "i": 10,
+   "seed": 10010,
+   "init_hash": "5531d27cd7d21d94",
+   "success": true,
+   "steps": 154,
+   "sec": 172.3,
+   "device": "cuda"
+  },
+  {
+   "i": 11,
+   "seed": 10011,
+   "init_hash": "fcb3fc27d59d20fd",
+   "success": true,
+   "steps": 160,
+   "sec": 180.2,
+   "device": "cuda"
+  },
+  {
+   "i": 12,
+   "seed": 10012,
+   "init_hash": "6e8ca6cd6263fe17",
+   "success": true,
+   "steps": 189,
+   "sec": 212.3,
+   "device": "cuda"
+  },
+  {
+   "i": 13,
+   "seed": 10013,
+   "init_hash": "b0419a5503102068",
+   "success": true,
+   "steps": 191,
+   "sec": 214.4,
+   "device": "cuda"
+  },
+  {
+   "i": 14,
+   "seed": 10014,
+   "init_hash": "a8bd6c19cfbc9cd3",
+   "success": true,
+   "steps": 218,
+   "sec": 244.0,
+   "device": "cuda"
+  },
+  {
+   "i": 15,
+   "seed": 10015,
+   "init_hash": "55ef5dbe63e7cfb1",
+   "success": true,
+   "steps": 156,
+   "sec": 173.7,
+   "device": "cuda"
+  },
+  {
+   "i": 16,
+   "seed": 10016,
+   "init_hash": "22f95e8c2c1d1b94",
+   "success": false,
+   "steps": 300,
+   "sec": 338.7,
+   "device": "cuda"
+  },
+  {
+   "i": 17,
+   "seed": 10017,
+   "init_hash": "b76807e0f2d2686c",
+   "success": true,
+   "steps": 142,
+   "sec": 159.3,
+   "device": "cuda"
+  },
+  {
+   "i": 18,
+   "seed": 10018,
+   "init_hash": "a7355fbda4b0015c",
+   "success": false,
+   "steps": 300,
+   "sec": 330.9,
+   "device": "cuda"
+  },
+  {
+   "i": 19,
+   "seed": 10019,
+   "init_hash": "6cabd049db98f39f",
+   "success": true,
+   "steps": 182,
+   "sec": 203.2,
+   "device": "cuda"
+  },
+  {
+   "i": 20,
+   "seed": 10020,
+   "init_hash": "887d58289a5dcb5d",
+   "success": false,
+   "steps": 300,
+   "sec": 333.0,
+   "device": "cuda"
+  },
+  {
+   "i": 21,
+   "seed": 10021,
+   "init_hash": "2d12c94cf82adaa4",
+   "success": true,
+   "steps": 164,
+   "sec": 182.7,
+   "device": "cuda"
+  },
+  {
+   "i": 22,
+   "seed": 10022,
+   "init_hash": "1f5dae43868bb88f",
+   "success": true,
+   "steps": 174,
+   "sec": 194.0,
+   "device": "cuda"
+  },
+  {
+   "i": 23,
+   "seed": 10023,
+   "init_hash": "19dbcf2fb53d4fef",
+   "success": true,
+   "steps": 167,
+   "sec": 186.1,
+   "device": "cuda"
+  },
+  {
+   "i": 24,
+   "seed": 10024,
+   "init_hash": "b9dccfff97bc2ac7",
+   "success": true,
+   "steps": 161,
+   "sec": 179.6,
+   "device": "cuda"
+  },
+  {
+   "i": 25,
+   "seed": 10025,
+   "init_hash": "e011c641bf537228",
+   "success": true,
+   "steps": 165,
+   "sec": 184.0,
+   "device": "cuda"
+  },
+  {
+   "i": 26,
+   "seed": 10026,
+   "init_hash": "994bd10c4d99484a",
+   "success": true,
+   "steps": 158,
+   "sec": 176.4,
+   "device": "cuda"
+  },
+  {
+   "i": 27,
+   "seed": 10027,
+   "init_hash": "2c830b5893c3bf33",
+   "success": true,
+   "steps": 194,
+   "sec": 217.5,
+   "device": "cuda"
+  },
+  {
+   "i": 28,
+   "seed": 10028,
+   "init_hash": "5ebdab76b3ae5e1d",
+   "success": true,
+   "steps": 146,
+   "sec": 163.0,
+   "device": "cuda"
+  },
+  {
+   "i": 29,
+   "seed": 10029,
+   "init_hash": "7b34ed85b4c01bb8",
+   "success": true,
+   "steps": 157,
+   "sec": 176.0,
+   "device": "cuda"
+  },
+  {
+   "i": 30,
+   "seed": 10030,
+   "init_hash": "6c8a0188b8c1c7c9",
+   "success": true,
+   "steps": 153,
+   "sec": 170.9,
+   "device": "cuda"
+  },
+  {
+   "i": 31,
+   "seed": 10031,
+   "init_hash": "be21eb9510aaccc3",
+   "success": false,
+   "steps": 300,
+   "sec": 332.0,
+   "device": "cuda"
+  },
+  {
+   "i": 32,
+   "seed": 10032,
+   "init_hash": "df69d0a65dcad00e",
+   "success": true,
+   "steps": 142,
+   "sec": 160.4,
+   "device": "cuda"
+  },
+  {
+   "i": 33,
+   "seed": 10033,
+   "init_hash": "d123249eebb03b59",
+   "success": true,
+   "steps": 157,
+   "sec": 177.0,
+   "device": "cuda"
+  },
+  {
+   "i": 34,
+   "seed": 10034,
+   "init_hash": "cf9b52ef8c0bf4b1",
+   "success": true,
+   "steps": 158,
+   "sec": 177.5,
+   "device": "cuda"
+  },
+  {
+   "i": 35,
+   "seed": 10035,
+   "init_hash": "00fed05787d9dd3d",
+   "success": true,
+   "steps": 159,
+   "sec": 177.8,
+   "device": "cuda"
+  },
+  {
+   "i": 36,
+   "seed": 10036,
+   "init_hash": "24daf17ce7d6e4da",
+   "success": true,
+   "steps": 163,
+   "sec": 182.3,
+   "device": "cuda"
+  },
+  {
+   "i": 37,
+   "seed": 10037,
+   "init_hash": "629819260e859f94",
+   "success": true,
+   "steps": 162,
+   "sec": 181.6,
+   "device": "cuda"
+  },
+  {
+   "i": 38,
+   "seed": 10038,
+   "init_hash": "030e416ceb5f82ea",
+   "success": false,
+   "steps": 300,
+   "sec": 333.4,
+   "device": "cuda"
+  },
+  {
+   "i": 39,
+   "seed": 10039,
+   "init_hash": "3f9b744c7826fcdc",
+   "success": true,
+   "steps": 124,
+   "sec": 138.4,
+   "device": "cuda"
+  },
+  {
+   "i": 40,
+   "seed": 10040,
+   "init_hash": "dc12e195969c36f1",
+   "success": true,
+   "steps": 179,
+   "sec": 201.5,
+   "device": "cuda"
+  },
+  {
+   "i": 41,
+   "seed": 10041,
+   "init_hash": "aced80ad4dd8706a",
+   "success": true,
+   "steps": 159,
+   "sec": 177.0,
+   "device": "cuda"
+  },
+  {
+   "i": 42,
+   "seed": 10042,
+   "init_hash": "934f4b4e6ec5715e",
+   "success": true,
+   "steps": 142,
+   "sec": 158.7,
+   "device": "cuda"
+  },
+  {
+   "i": 43,
+   "seed": 10043,
+   "init_hash": "8491be0324d94d50",
+   "success": true,
+   "steps": 230,
+   "sec": 257.4,
+   "device": "cuda"
+  },
+  {
+   "i": 44,
+   "seed": 10044,
+   "init_hash": "0f7e7b47206d69d2",
+   "success": true,
+   "steps": 176,
+   "sec": 197.3,
+   "device": "cuda"
+  },
+  {
+   "i": 45,
+   "seed": 10045,
+   "init_hash": "6882e16cecb8f04e",
+   "success": true,
+   "steps": 183,
+   "sec": 205.4,
+   "device": "cuda"
+  },
+  {
+   "i": 46,
+   "seed": 10046,
+   "init_hash": "2fea1157e0446c75",
+   "success": true,
+   "steps": 157,
+   "sec": 175.3,
+   "device": "cuda"
+  },
+  {
+   "i": 47,
+   "seed": 10047,
+   "init_hash": "352537d4df0d9ea1",
+   "success": true,
+   "steps": 170,
+   "sec": 190.7,
+   "device": "cuda"
+  },
+  {
+   "i": 48,
+   "seed": 10048,
+   "init_hash": "c389274e56a2b105",
+   "success": true,
+   "steps": 163,
+   "sec": 182.1,
+   "device": "cuda"
+  },
+  {
+   "i": 49,
+   "seed": 10049,
+   "init_hash": "e43d463bc2be5a7d",
+   "success": true,
+   "steps": 150,
+   "sec": 168.4,
+   "device": "cuda"
+  },
+  {
+   "i": 50,
+   "seed": 10050,
+   "init_hash": "27770b9d2a71e2b7",
+   "success": true,
+   "steps": 152,
+   "sec": 170.3,
+   "device": "cuda"
+  },
+  {
+   "i": 51,
+   "seed": 10051,
+   "init_hash": "aff130ff5fc3dadd",
+   "success": true,
+   "steps": 174,
+   "sec": 195.2,
+   "device": "cuda"
+  },
+  {
+   "i": 52,
+   "seed": 10052,
+   "init_hash": "2c850f0cf5ccc9bd",
+   "success": true,
+   "steps": 187,
+   "sec": 210.3,
+   "device": "cuda"
+  },
+  {
+   "i": 53,
+   "seed": 10053,
+   "init_hash": "910ce90715ea24d6",
+   "success": false,
+   "steps": 300,
+   "sec": 333.0,
+   "device": "cuda"
+  },
+  {
+   "i": 54,
+   "seed": 10054,
+   "init_hash": "fbe3f63bed938502",
+   "success": true,
+   "steps": 183,
+   "sec": 206.3,
+   "device": "cuda"
+  },
+  {
+   "i": 55,
+   "seed": 10055,
+   "init_hash": "5036cc14d8d1d900",
+   "success": true,
+   "steps": 167,
+   "sec": 188.5,
+   "device": "cuda"
+  },
+  {
+   "i": 56,
+   "seed": 10056,
+   "init_hash": "a4a283a31b9a1cdc",
+   "success": true,
+   "steps": 165,
+   "sec": 185.5,
+   "device": "cuda"
+  },
+  {
+   "i": 57,
+   "seed": 10057,
+   "init_hash": "5436f66e37e54c60",
+   "success": true,
+   "steps": 149,
+   "sec": 167.2,
+   "device": "cuda"
+  },
+  {
+   "i": 58,
+   "seed": 10058,
+   "init_hash": "5247e4fef35f47df",
+   "success": true,
+   "steps": 163,
+   "sec": 182.8,
+   "device": "cuda"
+  },
+  {
+   "i": 59,
+   "seed": 10059,
+   "init_hash": "7cce0a15a338ee59",
+   "success": true,
+   "steps": 161,
+   "sec": 184.1,
+   "device": "cuda"
+  },
+  {
+   "i": 60,
+   "seed": 10060,
+   "init_hash": "90f54223b1eab8c6",
+   "success": true,
+   "steps": 195,
+   "sec": 219.4,
+   "device": "cuda"
+  },
+  {
+   "i": 61,
+   "seed": 10061,
+   "init_hash": "163fd8d2c663f619",
+   "success": true,
+   "steps": 157,
+   "sec": 174.6,
+   "device": "cuda"
+  },
+  {
+   "i": 62,
+   "seed": 10062,
+   "init_hash": "5fb0e6a6e48ce866",
+   "success": true,
+   "steps": 155,
+   "sec": 173.3,
+   "device": "cuda"
+  },
+  {
+   "i": 63,
+   "seed": 10063,
+   "init_hash": "6a51474ee0d9a4fc",
+   "success": true,
+   "steps": 165,
+   "sec": 187.1,
+   "device": "cuda"
+  },
+  {
+   "i": 64,
+   "seed": 10064,
+   "init_hash": "ad4f7dab5cadc18e",
+   "success": true,
+   "steps": 146,
+   "sec": 162.4,
+   "device": "cuda"
+  },
+  {
+   "i": 65,
+   "seed": 10065,
+   "init_hash": "e8a4022335bfb02e",
+   "success": true,
+   "steps": 150,
+   "sec": 167.3,
+   "device": "cuda"
+  },
+  {
+   "i": 66,
+   "seed": 10066,
+   "init_hash": "929178ff8ce6b492",
+   "success": true,
+   "steps": 193,
+   "sec": 215.5,
+   "device": "cuda"
+  },
+  {
+   "i": 67,
+   "seed": 10067,
+   "init_hash": "44977888f9c03979",
+   "success": true,
+   "steps": 156,
+   "sec": 174.9,
+   "device": "cuda"
+  },
+  {
+   "i": 68,
+   "seed": 10068,
+   "init_hash": "08ed030d9670b9fa",
+   "success": true,
+   "steps": 181,
+   "sec": 203.7,
+   "device": "cuda"
+  },
+  {
+   "i": 69,
+   "seed": 10069,
+   "init_hash": "6e0f8afc23622183",
+   "success": false,
+   "steps": 300,
+   "sec": 333.3,
+   "device": "cuda"
+  },
+  {
+   "i": 70,
+   "seed": 10070,
+   "init_hash": "6ca767dfe8ba84a2",
+   "success": true,
+   "steps": 151,
+   "sec": 168.8,
+   "device": "cuda"
+  },
+  {
+   "i": 71,
+   "seed": 10071,
+   "init_hash": "e81993c0c4b3af32",
+   "success": true,
+   "steps": 189,
+   "sec": 211.0,
+   "device": "cuda"
+  },
+  {
+   "i": 72,
+   "seed": 10072,
+   "init_hash": "be51fd5dc20744e3",
+   "success": true,
+   "steps": 159,
+   "sec": 177.1,
+   "device": "cuda"
+  },
+  {
+   "i": 73,
+   "seed": 10073,
+   "init_hash": "b7d1cd25d0d1bfd7",
+   "success": true,
+   "steps": 144,
+   "sec": 161.6,
+   "device": "cuda"
+  },
+  {
+   "i": 74,
+   "seed": 10074,
+   "init_hash": "a8a54c416bed32a5",
+   "success": false,
+   "steps": 300,
+   "sec": 334.6,
+   "device": "cuda"
+  },
+  {
+   "i": 75,
+   "seed": 10075,
+   "init_hash": "4324fa9ea445193d",
+   "success": false,
+   "steps": 300,
+   "sec": 331.5,
+   "device": "cuda"
+  },
+  {
+   "i": 76,
+   "seed": 10076,
+   "init_hash": "4d1ec857e1ed0f3c",
+   "success": false,
+   "steps": 300,
+   "sec": 330.9,
+   "device": "cuda"
+  },
+  {
+   "i": 77,
+   "seed": 10077,
+   "init_hash": "2496f509fc89bdde",
+   "success": true,
+   "steps": 152,
+   "sec": 170.0,
+   "device": "cuda"
+  },
+  {
+   "i": 78,
+   "seed": 10078,
+   "init_hash": "0a7befb8178e098e",
+   "success": true,
+   "steps": 162,
+   "sec": 181.4,
+   "device": "cuda"
+  },
+  {
+   "i": 79,
+   "seed": 10079,
+   "init_hash": "6da9667cffd8ec78",
+   "success": true,
+   "steps": 186,
+   "sec": 209.9,
+   "device": "cuda"
+  },
+  {
+   "i": 80,
+   "seed": 10080,
+   "init_hash": "03eb550bed53c626",
+   "success": true,
+   "steps": 159,
+   "sec": 178.6,
+   "device": "cuda"
+  },
+  {
+   "i": 81,
+   "seed": 10081,
+   "init_hash": "c96ffd03d963822f",
+   "success": true,
+   "steps": 208,
+   "sec": 233.1,
+   "device": "cuda"
+  },
+  {
+   "i": 82,
+   "seed": 10082,
+   "init_hash": "7e3f713a4936ce64",
+   "success": false,
+   "steps": 300,
+   "sec": 331.9,
+   "device": "cuda"
+  },
+  {
+   "i": 83,
+   "seed": 10083,
+   "init_hash": "6e235bd1b38b05c5",
+   "success": true,
+   "steps": 170,
+   "sec": 193.1,
+   "device": "cuda"
+  },
+  {
+   "i": 84,
+   "seed": 10084,
+   "init_hash": "85ef0b43c30239a7",
+   "success": true,
+   "steps": 176,
+   "sec": 197.3,
+   "device": "cuda"
+  },
+  {
+   "i": 85,
+   "seed": 10085,
+   "init_hash": "8ea445fecc5ab7c5",
+   "success": true,
+   "steps": 170,
+   "sec": 192.0,
+   "device": "cuda"
+  },
+  {
+   "i": 86,
+   "seed": 10086,
+   "init_hash": "ed032fc3ac80283d",
+   "success": true,
+   "steps": 168,
+   "sec": 188.9,
+   "device": "cuda"
+  },
+  {
+   "i": 87,
+   "seed": 10087,
+   "init_hash": "59911ec62cd5c400",
+   "success": true,
+   "steps": 161,
+   "sec": 180.7,
+   "device": "cuda"
+  },
+  {
+   "i": 88,
+   "seed": 10088,
+   "init_hash": "f757628db7c896c6",
+   "success": true,
+   "steps": 164,
+   "sec": 184.3,
+   "device": "cuda"
+  },
+  {
+   "i": 89,
+   "seed": 10089,
+   "init_hash": "a9bde7ade6b021e8",
+   "success": true,
+   "steps": 181,
+   "sec": 204.3,
+   "device": "cuda"
+  },
+  {
+   "i": 90,
+   "seed": 10090,
+   "init_hash": "037dd1c8045a12fb",
+   "success": true,
+   "steps": 156,
+   "sec": 174.1,
+   "device": "cuda"
+  },
+  {
+   "i": 91,
+   "seed": 10091,
+   "init_hash": "df5746a2e9226896",
+   "success": true,
+   "steps": 147,
+   "sec": 165.1,
+   "device": "cuda"
+  },
+  {
+   "i": 92,
+   "seed": 10092,
+   "init_hash": "2f71fbf572c414fa",
+   "success": true,
+   "steps": 142,
+   "sec": 160.1,
+   "device": "cuda"
+  },
+  {
+   "i": 93,
+   "seed": 10093,
+   "init_hash": "4b2c8dc0930de8df",
+   "success": false,
+   "steps": 300,
+   "sec": 332.7,
+   "device": "cuda"
+  },
+  {
+   "i": 94,
+   "seed": 10094,
+   "init_hash": "a9f98c9eb0b6801b",
+   "success": true,
+   "steps": 146,
+   "sec": 164.1,
+   "device": "cuda"
+  },
+  {
+   "i": 95,
+   "seed": 10095,
+   "init_hash": "cf4698a41bc50417",
+   "success": true,
+   "steps": 159,
+   "sec": 179.1,
+   "device": "cuda"
+  },
+  {
+   "i": 96,
+   "seed": 10096,
+   "init_hash": "a865ad38d9fe55b2",
+   "success": true,
+   "steps": 161,
+   "sec": 181.5,
+   "device": "cuda"
+  },
+  {
+   "i": 97,
+   "seed": 10097,
+   "init_hash": "9a086fca26b922e9",
+   "success": false,
+   "steps": 300,
+   "sec": 334.4,
+   "device": "cuda"
+  },
+  {
+   "i": 98,
+   "seed": 10098,
+   "init_hash": "ebcdb2c64fe621c1",
+   "success": true,
+   "steps": 166,
+   "sec": 185.6,
+   "device": "cuda"
+  },
+  {
+   "i": 99,
+   "seed": 10099,
+   "init_hash": "1c060c9df2f25404",
+   "success": true,
+   "steps": 146,
+   "sec": 163.8,
+   "device": "cuda"
+  },
+  {
+   "i": 100,
+   "seed": 10100,
+   "init_hash": "2449b5920b1190a2",
+   "success": true,
+   "steps": 224,
+   "sec": 268.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 101,
+   "seed": 10101,
+   "init_hash": "964a32035fa986ef",
+   "success": true,
+   "steps": 183,
+   "sec": 220.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 102,
+   "seed": 10102,
+   "init_hash": "7cbea54555776639",
+   "success": true,
+   "steps": 183,
+   "sec": 220.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 103,
+   "seed": 10103,
+   "init_hash": "5834feb2b8d4448a",
+   "success": true,
+   "steps": 146,
+   "sec": 175.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 104,
+   "seed": 10104,
+   "init_hash": "103c154dd2305802",
+   "success": true,
+   "steps": 166,
+   "sec": 200.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 105,
+   "seed": 10105,
+   "init_hash": "18de37e1d8db8725",
+   "success": true,
+   "steps": 145,
+   "sec": 168.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 106,
+   "seed": 10106,
+   "init_hash": "89656264945fd4e2",
+   "success": true,
+   "steps": 152,
+   "sec": 178.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 107,
+   "seed": 10107,
+   "init_hash": "ec40cd75f0cbf56c",
+   "success": true,
+   "steps": 161,
+   "sec": 192.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 108,
+   "seed": 10108,
+   "init_hash": "4f9060e7b56594ba",
+   "success": true,
+   "steps": 161,
+   "sec": 188.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 109,
+   "seed": 10109,
+   "init_hash": "284907315ebd1b99",
+   "success": true,
+   "steps": 158,
+   "sec": 181.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 110,
+   "seed": 10110,
+   "init_hash": "9d1441892e74d4db",
+   "success": true,
+   "steps": 143,
+   "sec": 162.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 111,
+   "seed": 10111,
+   "init_hash": "7b082787ea9d6b96",
+   "success": true,
+   "steps": 169,
+   "sec": 201.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 112,
+   "seed": 10112,
+   "init_hash": "eb9be3f9ca07c5bc",
+   "success": false,
+   "steps": 300,
+   "sec": 358.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 113,
+   "seed": 10113,
+   "init_hash": "94a790bd80e90202",
+   "success": true,
+   "steps": 163,
+   "sec": 194.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 114,
+   "seed": 10114,
+   "init_hash": "166ae21fe85a21ec",
+   "success": true,
+   "steps": 151,
+   "sec": 180.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 115,
+   "seed": 10115,
+   "init_hash": "6fd143e0a08ba019",
+   "success": true,
+   "steps": 148,
+   "sec": 179.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 116,
+   "seed": 10116,
+   "init_hash": "60ef6c81af680abb",
+   "success": true,
+   "steps": 144,
+   "sec": 172.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 117,
+   "seed": 10117,
+   "init_hash": "7aa4f7e8f25dc9a8",
+   "success": true,
+   "steps": 150,
+   "sec": 181.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 118,
+   "seed": 10118,
+   "init_hash": "0f9d39530e303149",
+   "success": true,
+   "steps": 200,
+   "sec": 241.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 119,
+   "seed": 10119,
+   "init_hash": "66a84a0f4239c641",
+   "success": true,
+   "steps": 158,
+   "sec": 203.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 120,
+   "seed": 10120,
+   "init_hash": "7d49e14dc2e561d2",
+   "success": false,
+   "steps": 300,
+   "sec": 368.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 121,
+   "seed": 10121,
+   "init_hash": "0ff2e794da455776",
+   "success": true,
+   "steps": 162,
+   "sec": 200.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 122,
+   "seed": 10122,
+   "init_hash": "8ba54341e0ef5b32",
+   "success": true,
+   "steps": 204,
+   "sec": 251.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 123,
+   "seed": 10123,
+   "init_hash": "283aa7414a484486",
+   "success": true,
+   "steps": 154,
+   "sec": 192.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 124,
+   "seed": 10124,
+   "init_hash": "d01a62336ad40f39",
+   "success": true,
+   "steps": 172,
+   "sec": 213.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 125,
+   "seed": 10125,
+   "init_hash": "0576241982eef43d",
+   "success": true,
+   "steps": 134,
+   "sec": 165.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 126,
+   "seed": 10126,
+   "init_hash": "b3efb202f2326805",
+   "success": true,
+   "steps": 150,
+   "sec": 184.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 127,
+   "seed": 10127,
+   "init_hash": "87f788a11e695413",
+   "success": true,
+   "steps": 156,
+   "sec": 194.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 128,
+   "seed": 10128,
+   "init_hash": "e17d264303050720",
+   "success": true,
+   "steps": 152,
+   "sec": 193.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 129,
+   "seed": 10129,
+   "init_hash": "387a42f115b6f54f",
+   "success": true,
+   "steps": 164,
+   "sec": 214.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 130,
+   "seed": 10130,
+   "init_hash": "be06f002aaf51268",
+   "success": false,
+   "steps": 300,
+   "sec": 400.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 131,
+   "seed": 10131,
+   "init_hash": "cab46b3fbfa4bc29",
+   "success": true,
+   "steps": 147,
+   "sec": 200.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 132,
+   "seed": 10132,
+   "init_hash": "6c4f1c94316433d0",
+   "success": false,
+   "steps": 300,
+   "sec": 367.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 133,
+   "seed": 10133,
+   "init_hash": "9c91fb38c00b69eb",
+   "success": true,
+   "steps": 149,
+   "sec": 159.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 134,
+   "seed": 10134,
+   "init_hash": "950b31a60a364795",
+   "success": true,
+   "steps": 184,
+   "sec": 199.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 135,
+   "seed": 10135,
+   "init_hash": "33400ce856fd612d",
+   "success": true,
+   "steps": 145,
+   "sec": 157.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 136,
+   "seed": 10136,
+   "init_hash": "e38248a1776dee0e",
+   "success": true,
+   "steps": 148,
+   "sec": 169.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 137,
+   "seed": 10137,
+   "init_hash": "f56f11080fd4b511",
+   "success": false,
+   "steps": 300,
+   "sec": 358.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 138,
+   "seed": 10138,
+   "init_hash": "5b6bd70d0228a895",
+   "success": true,
+   "steps": 163,
+   "sec": 219.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 139,
+   "seed": 10139,
+   "init_hash": "fd86cff20cf60e82",
+   "success": true,
+   "steps": 157,
+   "sec": 204.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 140,
+   "seed": 10140,
+   "init_hash": "2e3f833cd4e28bea",
+   "success": true,
+   "steps": 148,
+   "sec": 182.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 141,
+   "seed": 10141,
+   "init_hash": "899398f091234276",
+   "success": false,
+   "steps": 300,
+   "sec": 361.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 142,
+   "seed": 10142,
+   "init_hash": "a21a7c65ea8d539c",
+   "success": true,
+   "steps": 158,
+   "sec": 195.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 143,
+   "seed": 10143,
+   "init_hash": "f43f333c13bf1e99",
+   "success": true,
+   "steps": 144,
+   "sec": 177.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 144,
+   "seed": 10144,
+   "init_hash": "3def2ae763451dda",
+   "success": true,
+   "steps": 158,
+   "sec": 197.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 145,
+   "seed": 10145,
+   "init_hash": "7330abae9ad70e60",
+   "success": true,
+   "steps": 163,
+   "sec": 199.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 146,
+   "seed": 10146,
+   "init_hash": "7fa06fbd7e6c5f42",
+   "success": true,
+   "steps": 156,
+   "sec": 193.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 147,
+   "seed": 10147,
+   "init_hash": "2e27aeb2087f1ddd",
+   "success": true,
+   "steps": 142,
+   "sec": 178.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 148,
+   "seed": 10148,
+   "init_hash": "2d43b6b9de256bf4",
+   "success": true,
+   "steps": 147,
+   "sec": 183.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 149,
+   "seed": 10149,
+   "init_hash": "de83258f452d6f90",
+   "success": false,
+   "steps": 300,
+   "sec": 380.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 150,
+   "seed": 10150,
+   "init_hash": "ff6543687bac1a5e",
+   "success": true,
+   "steps": 168,
+   "sec": 220.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 151,
+   "seed": 10151,
+   "init_hash": "1c0f7ee71d577e47",
+   "success": true,
+   "steps": 173,
+   "sec": 223.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 152,
+   "seed": 10152,
+   "init_hash": "f74bb163c54d39dc",
+   "success": false,
+   "steps": 300,
+   "sec": 369.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 153,
+   "seed": 10153,
+   "init_hash": "7669f1a69b039c98",
+   "success": true,
+   "steps": 157,
+   "sec": 196.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 154,
+   "seed": 10154,
+   "init_hash": "7f4f56d58004ca0c",
+   "success": true,
+   "steps": 164,
+   "sec": 204.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 155,
+   "seed": 10155,
+   "init_hash": "703291d0fb6552a5",
+   "success": true,
+   "steps": 148,
+   "sec": 187.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 156,
+   "seed": 10156,
+   "init_hash": "d8dc632ffb5e84f7",
+   "success": true,
+   "steps": 153,
+   "sec": 194.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 157,
+   "seed": 10157,
+   "init_hash": "608c44f023858e08",
+   "success": true,
+   "steps": 201,
+   "sec": 248.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 158,
+   "seed": 10158,
+   "init_hash": "1ededa1bfd543806",
+   "success": true,
+   "steps": 135,
+   "sec": 163.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 159,
+   "seed": 10159,
+   "init_hash": "f08e9cbae4f89c0c",
+   "success": true,
+   "steps": 185,
+   "sec": 228.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 160,
+   "seed": 10160,
+   "init_hash": "a9f2fda71f3ba492",
+   "success": true,
+   "steps": 195,
+   "sec": 237.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 161,
+   "seed": 10161,
+   "init_hash": "ccaed999d57e1f6e",
+   "success": true,
+   "steps": 150,
+   "sec": 179.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 162,
+   "seed": 10162,
+   "init_hash": "a258caa1c905a21e",
+   "success": true,
+   "steps": 150,
+   "sec": 181.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 163,
+   "seed": 10163,
+   "init_hash": "c555a32272a1ac48",
+   "success": true,
+   "steps": 157,
+   "sec": 191.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 164,
+   "seed": 10164,
+   "init_hash": "0e41c38255df5391",
+   "success": true,
+   "steps": 147,
+   "sec": 184.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 165,
+   "seed": 10165,
+   "init_hash": "69dccefbcc429eb9",
+   "success": true,
+   "steps": 209,
+   "sec": 259.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 166,
+   "seed": 10166,
+   "init_hash": "7cff4fc190eef0a1",
+   "success": false,
+   "steps": 300,
+   "sec": 362.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 167,
+   "seed": 10167,
+   "init_hash": "17d28ee68f9025b8",
+   "success": true,
+   "steps": 155,
+   "sec": 181.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 168,
+   "seed": 10168,
+   "init_hash": "6132e21c14a1e0dc",
+   "success": false,
+   "steps": 300,
+   "sec": 329.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 169,
+   "seed": 10169,
+   "init_hash": "e575ecfafaa9489d",
+   "success": true,
+   "steps": 197,
+   "sec": 224.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 170,
+   "seed": 10170,
+   "init_hash": "9d8c796a43babfee",
+   "success": true,
+   "steps": 151,
+   "sec": 184.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 171,
+   "seed": 10171,
+   "init_hash": "17e2a923b2613c10",
+   "success": true,
+   "steps": 206,
+   "sec": 246.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 172,
+   "seed": 10172,
+   "init_hash": "cc2eb5752278c6d6",
+   "success": true,
+   "steps": 150,
+   "sec": 169.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 173,
+   "seed": 10173,
+   "init_hash": "6902c0d90d630a8a",
+   "success": false,
+   "steps": 300,
+   "sec": 354.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 174,
+   "seed": 10174,
+   "init_hash": "f010055ded463848",
+   "success": true,
+   "steps": 147,
+   "sec": 176.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 175,
+   "seed": 10175,
+   "init_hash": "a261ffa65f6ffcd0",
+   "success": true,
+   "steps": 164,
+   "sec": 195.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 176,
+   "seed": 10176,
+   "init_hash": "56acf46c0522f4ff",
+   "success": true,
+   "steps": 159,
+   "sec": 196.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 177,
+   "seed": 10177,
+   "init_hash": "48267d9186033358",
+   "success": true,
+   "steps": 175,
+   "sec": 214.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 178,
+   "seed": 10178,
+   "init_hash": "c61b11c1464615ed",
+   "success": true,
+   "steps": 168,
+   "sec": 207.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 179,
+   "seed": 10179,
+   "init_hash": "d50bd6aee4752d71",
+   "success": true,
+   "steps": 149,
+   "sec": 182.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 180,
+   "seed": 10180,
+   "init_hash": "e9821e713aeedfc7",
+   "success": true,
+   "steps": 184,
+   "sec": 222.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 181,
+   "seed": 10181,
+   "init_hash": "2a3a639a011d9125",
+   "success": false,
+   "steps": 300,
+   "sec": 357.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 182,
+   "seed": 10182,
+   "init_hash": "4b771b73f08b4d47",
+   "success": true,
+   "steps": 134,
+   "sec": 153.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 183,
+   "seed": 10183,
+   "init_hash": "f11cb8e38d4048e1",
+   "success": false,
+   "steps": 300,
+   "sec": 336.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 184,
+   "seed": 10184,
+   "init_hash": "64bfc02b902b94e7",
+   "success": true,
+   "steps": 155,
+   "sec": 171.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 185,
+   "seed": 10185,
+   "init_hash": "090cadec707b107a",
+   "success": true,
+   "steps": 144,
+   "sec": 161.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 186,
+   "seed": 10186,
+   "init_hash": "d38e3bb9acbad39b",
+   "success": false,
+   "steps": 300,
+   "sec": 363.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 187,
+   "seed": 10187,
+   "init_hash": "9056952db46107b3",
+   "success": true,
+   "steps": 153,
+   "sec": 189.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 188,
+   "seed": 10188,
+   "init_hash": "ea51f3c0171d0c6a",
+   "success": true,
+   "steps": 150,
+   "sec": 183.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 189,
+   "seed": 10189,
+   "init_hash": "3ba77e744a022dd8",
+   "success": true,
+   "steps": 168,
+   "sec": 203.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 190,
+   "seed": 10190,
+   "init_hash": "f939dcb5b7baae09",
+   "success": true,
+   "steps": 148,
+   "sec": 180.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 191,
+   "seed": 10191,
+   "init_hash": "e290a1536a90f54e",
+   "success": false,
+   "steps": 300,
+   "sec": 376.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 192,
+   "seed": 10192,
+   "init_hash": "014baa11544d9920",
+   "success": false,
+   "steps": 300,
+   "sec": 376.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 193,
+   "seed": 10193,
+   "init_hash": "81ee11750d23fd01",
+   "success": true,
+   "steps": 166,
+   "sec": 210.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 194,
+   "seed": 10194,
+   "init_hash": "b998951556fe105d",
+   "success": true,
+   "steps": 153,
+   "sec": 191.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 195,
+   "seed": 10195,
+   "init_hash": "f22b06e0f3cd34bb",
+   "success": true,
+   "steps": 162,
+   "sec": 201.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 196,
+   "seed": 10196,
+   "init_hash": "bacdc4c84042ff1d",
+   "success": true,
+   "steps": 177,
+   "sec": 218.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 197,
+   "seed": 10197,
+   "init_hash": "c475a51714a4e9f9",
+   "success": true,
+   "steps": 163,
+   "sec": 199.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 198,
+   "seed": 10198,
+   "init_hash": "2ca3661b064ad507",
+   "success": true,
+   "steps": 153,
+   "sec": 184.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  },
+  {
+   "i": 199,
+   "seed": 10199,
+   "init_hash": "dc1a7f5c802a44b3",
+   "success": true,
+   "steps": 150,
+   "sec": 181.0,
+   "device": "cuda",
+   "source": "c1 EP line (1e38f7e)"
+  }
+ ],
+ "armA": []
+}
