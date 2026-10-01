@@ -8,6 +8,7 @@ usage: python3 make_p6_extend_c2.py ARM START STAGE1_END BUDGET_MIN DATA_SHA TAG
                session ends cleanly instead of being killed)
   DATA_SHA     commit holding results/p6_extend_resume_arm{ARM}.json (episodes 0..START-1)
   TAG          short label in file names, e.g. c2a
+  [DATA_FILE]  resume file under results/ (default p6_extend_resume_arm{ARM}.json)
 
 Experiment logic is unchanged from chunk 1 (seeds, arm A leaky chain + burn draws, arm B per-episode reseed, loader,
 processors, warm-up, clipping, MAX_STEPS, hash function). Changes are bookkeeping only:
@@ -20,6 +21,7 @@ processors, warm-up, clipping, MAX_STEPS, hash function). Changes are bookkeepin
 import json, sys, ast
 
 arm, start, s1end, budget, sha, tag = sys.argv[1], int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4]), sys.argv[5], sys.argv[6]
+DATA_FILE = sys.argv[7] if len(sys.argv) > 7 else "p6_extend_resume_arm%s.json" % arm   # optional: resume file name
 assert arm in "AB" and 200 <= start <= s1end <= 299
 src_nb = "p6_extend_c1_arm%s_2026-09-29.ipynb" % arm
 nb = json.load(open(src_nb))
@@ -31,7 +33,7 @@ def rep(s, old, new):
     return s.replace(old, new)
 
 DATA = ("https://raw.githubusercontent.com/mohanchillara1/gr00trobustnessresearch/%s/experiments/eval-determinism-gate/"
-        "results/p6_extend_resume_arm%s.json" % (sha, arm))
+        "results/%s" % (sha, DATA_FILE))
 
 put(2, f"""## EXTEND chunk 2 ({tag}): arm {arm}, new episodes i = {start}–{s1end} at most, time budget {budget} min
 
