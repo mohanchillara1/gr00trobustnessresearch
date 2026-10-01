@@ -1,3 +1,6 @@
 EP arm=B i=250 seed=10250 init_hash=1f6985bd990ba547 success=False steps=300 sec=306 dev=cuda | arm B so far 211/251
 EP arm=B i=251 seed=10251 init_hash=261d5966c4061777 success=True steps=175 sec=182 dev=cuda | arm B so far 212/252
 EP arm=B i=252 seed=10252 init_hash=8b7e97d1bdc1fe24 success=True steps=167 sec=175 dev=cuda | arm B so far 213/253
+EP arm=B i=253 seed=10253 init_hash=4f6cc92b23f1dcf7 success=False steps=300 sec=311 dev=cuda | arm B so far 213/254
+EP arm=B i=254 seed=10254 init_hash=c5bf4285f787de57 success=True steps=149 sec=156 dev=cuda | arm B so far 214/255
+EP arm=B i=255 seed=10255 init_hash=e62efd77828c44d8 success=True steps=154 sec=161 dev=cuda | arm B so far 215/256
